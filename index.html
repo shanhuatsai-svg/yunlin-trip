@@ -271,13 +271,13 @@
           <!-- 左側：第一站簡介與選項卡片 (7 cols) -->
           <div class="lg:col-span-7 space-y-4">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-pixel">
-              <i class="fa-solid fa-location-dot"></i> LEVEL 1: 斗六火車站出發
+              <i class="fa-solid fa-location-dot"></i> LEVEL 1: 起始點【斗六火車站】方圓 2 公里
             </div>
             <h2 class="text-2xl sm:text-3xl font-black text-white flex items-center gap-3">
               <span>晨光能量補給：早午餐搜尋雷達</span>
             </h2>
             <p class="text-slate-300 text-sm leading-relaxed">
-              早上 09:00 抵達斗六火車站！請選擇妳們今天想吃的料理風格，雷達將為妳精選<strong>火車站步行可達、9:00 前營業、Google 評價 4.5 星以上</strong>的優質名店！若不滿意可隨時點擊「重新尋找」換一批！
+              早上 09:00 抵達斗六火車站！以<strong>【斗六火車站】為起始點，鎖定方圓 2 公里生活圈</strong>，雷達為妳精選<strong>9:00 前營業、Google 評價 4.5 星以上、步行或短程即可抵達</strong>的在地名店！吃飽後可選搭預約計程車/包車直達萬年峽谷，或搭下午 13:30 台灣好行草嶺線！
             </p>
 
             <!-- 四大選項按鈕群 (早午餐、咖啡廳、日式、韓式) -->
@@ -306,7 +306,7 @@
             <div class="rpg-box rounded-2xl overflow-hidden p-3 bg-slate-900 border-sky-400">
               <div class="flex items-center justify-between text-xs text-sky-300 font-pixel mb-2 px-1">
                 <span><i class="fa-solid fa-radar animate-pulse text-sky-400"></i> RADAR MINI-MAP</span>
-                <span id="mapTargetLabel" class="text-amber-300 font-sans font-bold">目前定位：斗六火車站</span>
+                <span id="mapTargetLabel" class="text-amber-300 font-sans font-bold">📍 起始點：斗六火車站（方圓 2km 雷達）</span>
               </div>
               
               <div class="relative w-full h-56 sm:h-64 rounded-xl overflow-hidden border border-slate-700 bg-slate-950">
@@ -317,13 +317,13 @@
                   src="https://maps.google.com/maps?q=斗六火車站&t=&z=15&ie=UTF8&iwloc=&output=embed">
                 </iframe>
                 <div class="absolute bottom-2 right-2 bg-slate-950/80 px-2.5 py-1 rounded-md text-[10px] text-sky-300 border border-sky-500/40 backdrop-blur-sm pointer-events-none">
-                  Google Map Live
+                  Google Map Live (方圓 2km 圈)
                 </div>
               </div>
 
               <div class="mt-2 pt-2 border-t border-slate-800 flex items-center justify-between text-[11px]">
-                <span class="text-slate-400">斗六後火車站集合點</span>
-                <a id="extMapLink" href="https://www.google.com/maps/search/?api=1&query=斗六火車站" target="_blank" class="text-sky-400 hover:text-sky-300 font-bold flex items-center gap-1">
+                <span class="text-emerald-400 font-bold"><i class="fa-solid fa-compass"></i> 起始點：斗六火車站（方圓 2km 圈）</span>
+                <a id="extMapLink" href="https://www.google.com/maps/search/?api=1&query=斗六火車站+早午餐" target="_blank" class="text-sky-400 hover:text-sky-300 font-bold flex items-center gap-1">
                   放大開啟 Google Maps <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
                 </a>
               </div>
@@ -339,7 +339,9 @@
               <span id="currentBatchTag" class="px-2.5 py-1 rounded bg-sky-500/20 text-sky-300 text-xs font-mono font-bold border border-sky-500/30">
                 早午餐 • 第 1 批精選（4.5★+）
               </span>
-              <span class="text-xs text-slate-400">9:00 前營業 • 斗六站前商圈</span>
+              <span class="text-xs text-amber-300 font-medium bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
+                📍 起始點：斗六火車站 • 方圓 2 公里內精選（9:00 前營業）
+              </span>
             </div>
             
             <button onclick="rerollRestaurants()" class="rpg-btn px-4 py-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black font-pixel text-xs rounded-xl flex items-center gap-2 shadow">
@@ -367,11 +369,11 @@
                 <p id="lockedAddress" class="text-xs text-slate-300 mt-1">從斗六火車站後站出口出來，沿武昌路直行即可抵達</p>
               </div>
               <div class="flex items-center gap-2">
-                <a id="lockedGoogleNavBtn" href="#" target="_blank" class="rpg-btn px-4 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs rounded-xl flex items-center gap-2 whitespace-nowrap">
-                  <i class="fa-solid fa-diamond-turn-right"></i> 開啟 Google 步行導航
+                <a id="lockedGoogleNavBtn" href="#" target="_blank" class="rpg-btn px-4 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs rounded-xl flex items-center gap-2 whitespace-nowrap shadow">
+                  <i class="fa-solid fa-diamond-turn-right"></i> 開啟 Google 導航（起點：斗六火車站）
                 </a>
-                <a href="#stage-waihu-hiking" class="rpg-btn px-4 py-2.5 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs rounded-xl flex items-center gap-2 whitespace-nowrap">
-                  前往第二關：操控小人走步道 ➔
+                <a href="#stage-waihu-hiking" class="rpg-btn px-4 py-2.5 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs rounded-xl flex items-center gap-2 whitespace-nowrap shadow">
+                  前往第二關：搭草嶺線 ➔
                 </a>
               </div>
             </div>
@@ -420,9 +422,103 @@
                 <p class="text-[11px] text-sky-300">營運業者：臺西客運 • 斗六火車站 ⇄ 外湖 ⇄ 東璧山莊</p>
               </div>
             </div>
-            <a href="https://www.taiwantrip.com.tw/Frontend/Route/Select_p?RouteID=R0072" target="_blank" class="rpg-btn px-3 py-1.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 shadow">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i> 台灣好行官網時刻
-            </a>
+            <div class="flex items-center gap-2">
+              <a href="https://www.taiwantrip.com.tw/Frontend/Route/Select_p?RouteID=R0062" target="_blank" class="rpg-btn px-3 py-1.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 shadow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> 台灣好行草嶺線官網 (R0062)
+              </a>
+              <a href="https://www.taiwantrip.com.tw/Frontend/Bustime/TimeTable/R0062" target="_blank" class="rpg-btn px-3 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 shadow">
+                <i class="fa-solid fa-table"></i> 官網票價與時刻表
+              </a>
+            </div>
+          </div>
+
+          <!-- 週六/週日 官方最新正確時刻表 (官方台西客運 701) -->
+          <div class="p-4 rounded-xl bg-slate-950 border-2 border-amber-400/60 space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2">
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 rounded bg-amber-400 text-slate-950 font-black text-xs">週六・週日 假日專用</span>
+                <h4 class="text-sm font-bold text-white">台灣好行 701 雲林草嶺線 官方時刻表（臺西客運營運）</h4>
+              </div>
+              <span class="text-[11px] text-amber-300 font-mono">⚠️ 假日全天去程僅有 2 班車！</span>
+            </div>
+
+            <!-- 時刻表格 -->
+            <div class="overflow-x-auto">
+              <table class="w-full text-xs text-left text-slate-300">
+                <thead class="text-[11px] text-sky-300 bg-slate-900 border-b border-slate-700">
+                  <tr>
+                    <th class="py-2 px-3">方向</th>
+                    <th class="py-2 px-3">班次</th>
+                    <th class="py-2 px-3">斗六火車站(後站)發車</th>
+                    <th class="py-2 px-3 text-emerald-400">【外湖站】抵達 (萬年峽谷)</th>
+                    <th class="py-2 px-3">東碧山莊終點</th>
+                    <th class="py-2 px-3">備註</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800 font-mono">
+                  <tr class="hover:bg-slate-900/60">
+                    <td class="py-2 px-3 text-amber-300 font-bold">去程 (往山區)</td>
+                    <td class="py-2 px-3">第 1 班</td>
+                    <td class="py-2 px-3 font-bold text-white">08:00</td>
+                    <td class="py-2 px-3 text-emerald-400 font-bold">08:46</td>
+                    <td class="py-2 px-3">09:10</td>
+                    <td class="py-2 px-3 text-slate-400">9:00前已發車，此班無法搭乘</td>
+                  </tr>
+                  <tr class="hover:bg-slate-900/60 bg-sky-950/20">
+                    <td class="py-2 px-3 text-amber-300 font-bold">去程 (往山區)</td>
+                    <td class="py-2 px-3">第 2 班</td>
+                    <td class="py-2 px-3 font-bold text-white">13:30</td>
+                    <td class="py-2 px-3 text-emerald-400 font-bold">14:16</td>
+                    <td class="py-2 px-3">14:40</td>
+                    <td class="py-2 px-3 text-sky-300">下午唯一公車班次（車程約46分）</td>
+                  </tr>
+                  <tr class="hover:bg-slate-900/60">
+                    <td class="py-2 px-3 text-purple-300 font-bold">回程 (往斗六)</td>
+                    <td class="py-2 px-3">第 1 班</td>
+                    <td class="py-2 px-3">11:10 抵斗六</td>
+                    <td class="py-2 px-3 text-purple-300">10:24 外湖上車</td>
+                    <td class="py-2 px-3">10:00 發車</td>
+                    <td class="py-2 px-3 text-slate-400">東碧山莊 10:00 發車</td>
+                  </tr>
+                  <tr class="hover:bg-slate-900/60">
+                    <td class="py-2 px-3 text-purple-300 font-bold">回程 (往斗六)</td>
+                    <td class="py-2 px-3">第 2 班</td>
+                    <td class="py-2 px-3">16:10 抵斗六</td>
+                    <td class="py-2 px-3 text-purple-300">15:24 外湖上車</td>
+                    <td class="py-2 px-3">15:00 發車</td>
+                    <td class="py-2 px-3 text-slate-400">末班車，妳們約16:30下山故採預約叫車</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 行程時間精準剖析與真心建議 -->
+            <div class="p-3 rounded-lg bg-amber-500/10 border border-amber-400/40 text-xs space-y-1.5">
+              <div class="font-bold text-amber-300 flex items-center gap-1.5">
+                <i class="fa-solid fa-triangle-exclamation"></i> 9:00 抵達斗六吃早餐，該如何規劃上山？（兩大最佳方案）
+              </div>
+              <p class="text-slate-300 leading-relaxed">
+                因為週六公車 <strong>08:00 班次已開走</strong>，下一班公車要等至 <strong>下午 13:30</strong>。為了讓妳們能好好吃早午餐並順利在萬年峽谷遊玩至 16:30：
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pt-1">
+                <div class="p-2.5 rounded bg-slate-900 border border-emerald-500/40 space-y-1">
+                  <div class="font-bold text-emerald-400 flex items-center gap-1">
+                    <i class="fa-solid fa-crown"></i> 方案一（首推！時間最自由充裕）：
+                  </div>
+                  <p class="text-[11px] text-slate-300">
+                    <strong>09:00~10:15</strong> 悠閒吃斗六早午餐 ➔ <strong>10:15</strong> 在斗六火車站搭預約計程車/包車直達萬年峽谷停車場（車程約 50 分，11:05 抵達）➔ 漫步峽谷、拍美照 ➔ <strong>16:30</strong> 預約計程車下山。
+                  </p>
+                </div>
+                <div class="p-2.5 rounded bg-slate-900 border border-sky-500/40 space-y-1">
+                  <div class="font-bold text-sky-400 flex items-center gap-1">
+                    <i class="fa-solid fa-bus"></i> 方案二（搭乘下午 13:30 公車）：
+                  </div>
+                  <p class="text-[11px] text-slate-300">
+                    <strong>09:00~10:15</strong> 吃早午餐 ➔ <strong>10:15~13:15</strong> 逛斗六太平老街、雲中街文創聚落喝咖啡 ➔ <strong>13:30</strong> 斗六後站搭 701 公車 ➔ <strong>14:16</strong> 外湖站下車走入萬年峽谷 ➔ <strong>16:30</strong> 預約計程車下山。
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
@@ -440,12 +536,11 @@
             <!-- 發車時刻與車程 -->
             <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-1.5">
               <div class="text-emerald-400 font-bold flex items-center gap-1.5">
-                <i class="fa-solid fa-clock"></i> 建議搭乘時刻 ＆ 車資
+                <i class="fa-solid fa-clock"></i> 票價 ＆ 優惠提醒
               </div>
               <p class="text-slate-300 leading-relaxed">
-                <strong>建議搭乘上午 09:30 班次！</strong><br>
-                早上 09:00 吃完斗六早午餐後，散步至後站上車最順路。<br>
-                💡 <strong>票價提醒：</strong>刷悠遊卡/一卡通可享電子票證半價優惠（約 80~100 元以內）。車程約 75~80 分鐘直達山區！
+                💡 <strong>電子票證優惠：</strong>使用悠遊卡 / 一卡通可享電子票證搭乘優惠（半價折扣，單程約 80~100 元以內）。<br>
+                車程直達外湖站約需 46 分鐘（至終點東碧山莊約 70~80 分鐘）。
               </p>
             </div>
 
@@ -730,15 +825,41 @@
 
           </div>
 
-          <!-- Google Maps 步行實時導航按鈕 -->
-          <div class="p-4 rounded-xl bg-slate-900 border border-emerald-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
-            <div>
-              <span class="font-bold text-emerald-300 text-sm">📍 外湖公車站 ➔ 萬年峽谷步道（Google Maps 實時導航）</span>
-              <p class="text-slate-400 mt-0.5">點擊下方按鈕即可在手機 Google Maps APP 中開啟點對點步行路線</p>
+          <!-- Google Maps 路線導航按鈕 ＆ 步行 23 公里避坑指南 -->
+          <div class="p-4 rounded-xl bg-slate-900 border border-emerald-500/30 space-y-3 text-xs">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <span class="font-bold text-emerald-300 text-sm">📍 起點：雲林古坑【外湖公車站 (GPS: 23.6074, 120.6784)】➔ 終點：萬年峽谷</span>
+                <p class="text-slate-400 mt-0.5">已綁定雲林古坑 GPS 座標，絕對 100% 定位在雲林外湖，嚴禁跳轉新竹或外縣市！</p>
+              </div>
+              <div class="flex flex-wrap items-center gap-2">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=23.607406,120.678439&destination=23.6024363,120.6679185&travelmode=walking" target="_blank" class="rpg-btn px-3 py-2 bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 font-bold rounded-xl flex items-center justify-center gap-1.5 border border-rose-500/40 whitespace-nowrap">
+                  <i class="fa-solid fa-person-walking"></i> 雲林外湖步行導航 (走路模式)
+                </a>
+                <a href="https://www.google.com/maps/dir/?api=1&origin=23.607406,120.678439&destination=23.6024363,120.6679185" target="_blank" class="rpg-btn px-4 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black rounded-xl flex items-center justify-center gap-1.5 shadow whitespace-nowrap">
+                  <i class="fa-solid fa-diamond-turn-right"></i> 149甲直達導航 (3.3km・開車7分/現場走40分)
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=23.6024363,120.6679185" target="_blank" class="rpg-btn px-3 py-2.5 bg-slate-800 hover:bg-slate-700 text-sky-300 font-bold rounded-xl flex items-center justify-center gap-1.5 border border-slate-700 whitespace-nowrap">
+                  <i class="fa-solid fa-square-parking"></i> 萬年峽谷定位
+                </a>
+              </div>
             </div>
-            <a href="https://www.google.com/maps/dir/?api=1&origin=台灣好行外湖站&destination=萬年峽谷&travelmode=walking" target="_blank" class="rpg-btn px-4 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black rounded-xl flex items-center justify-center gap-1.5 shadow whitespace-nowrap">
-              <i class="fa-solid fa-diamond-turn-right"></i> 開啟外湖步行導航
-            </a>
+
+            <!-- 為什麼指定「走路模式」Google 地圖就會逼人走 6 小時？ -->
+            <div class="p-3.5 rounded-lg bg-amber-500/10 border border-amber-400/50 space-y-2 text-slate-200">
+              <div class="font-bold text-amber-300 flex items-center gap-1.5 text-xs">
+                <i class="fa-solid fa-triangle-exclamation"></i> ⚠️ 終極真相：為什麼要求用「走路模式」，Google 就一定會顯示 6 小時（23公里）？
+              </div>
+              <p class="leading-relaxed text-[11px] text-slate-300">
+                妳點擊上方紅色的「<strong>步行模式導航</strong>」，就會親眼看見 Google 地圖立刻跳出 <strong>6 小時（23 公里）</strong>！<br>
+                這就是我一直想提醒妳的關鍵：<strong>不是地址設錯，而是 Google 系統在搞鬼！</strong><br>
+                因為 <strong>149甲草嶺公路的明隧道在 Google 的資料庫裡被標註為『無獨立人行道』</strong>。Google 系統有條死規則：「只要是走路模式，嚴禁走沒有人行道的隧道」！因此只要給它 `travelmode=walking`，它就會<strong>強迫行人掉頭繞去南投竹山走 23 公里</strong>！
+              </p>
+              <div class="p-2.5 rounded bg-slate-950/80 border border-emerald-500/30 text-[11px] text-emerald-300 leading-relaxed">
+                ✅ <strong>真實走法看綠色按鈕：</strong><br>
+                綠色按鈕使用能通過隧道的模式，直接在 Google 地圖畫出 <strong>149甲草嶺公路（3.3 公里 / 27 分鐘）</strong>。現場完全就是照著這條綠色按鈕的路線，從「外湖站牌」順著柏油馬路下坡走 40 分鐘穿過明隧道，就能平安抵達萬年峽谷！
+              </div>
+            </div>
           </div>
 
         </div>
@@ -1526,78 +1647,86 @@
       brunch: [
         [
           {
-            name: "霍姆斯庫咖啡館 Homescrew Cafe",
-            rating: "4.6",
-            open: "09:00 營業",
-            dist: "步行約 6 分鐘（後站）",
-            desc: "英倫復古綠色調裝潢，超美拍照點！主打經典煙燻鮭魚班尼迪克蛋、可頌拼盤與香濃拿鐵。",
-            address: "雲林縣斗六市武昌路158號",
-            mapQuery: "Homescrew+Cafe+斗六"
-          },
-          {
             name: "日沐美式早午餐 Smooth B'fast",
             rating: "4.5",
             open: "07:30 營業",
-            dist: "步行約 3 分鐘（後站旁）",
-            desc: "超澎湃大份量！起司歐姆蛋捲、自製手打純牛漢堡、木盆鮮蔬沙拉，在地人氣第一名。",
+            dist: "距車站後站約 200m • 步行 3 分鐘",
+            desc: "斗六後站人氣第一名！手打純牛漢堡、起司歐姆蛋捲拼盤、木盆鮮蔬沙拉，餐前附贈開胃果醋。",
             address: "雲林縣斗六市武昌路151號",
-            mapQuery: "日沐美式早午餐+斗六"
+            img: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "日沐美式早午餐 雲林縣斗六市武昌路151號"
           },
           {
             name: "金字溫暖食堂",
             rating: "4.6",
             open: "09:00 營業",
-            dist: "步行約 3 分鐘（武昌路）",
-            desc: "日系溫馨木質早午餐，招牌照燒嫩煎雞腿排早午餐盤、滑蛋可頌與手作昭和焦糖布丁。",
-            address: "雲林縣斗六市武昌路220號",
-            mapQuery: "金字溫暖食堂+斗六"
+            dist: "距車站後站約 220m • 步行 3 分鐘",
+            desc: "溫馨日式木質早午餐，招牌照燒嫩煎雞腿排早午餐盤、滑蛋可頌與手作昭和焦糖布丁。",
+            address: "雲林縣斗六市武昌路157號",
+            img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "金字溫暖食堂 雲林縣斗六市武昌路157號"
           },
           {
-            name: "鬆鬆洋食 (複合式早午餐)",
+            name: "日耕早午餐 Rigeng",
             rating: "4.7",
-            open: "09:00 營業",
-            dist: "步行約 2 分鐘（前站）",
-            desc: "民生路質感老屋複合空間，二樓窗邊可直接眺望鐵道風景，早午餐沙拉拼盤與甜點極佳。",
-            address: "雲林縣斗六市民生路48-2號2樓",
-            mapQuery: "鬆鬆洋食+斗六"
+            open: "08:00 營業",
+            dist: "距車站前站約 150m • 步行 2 分鐘",
+            desc: "民生路質感老宅早午餐，手作法式吐司拼盤、日式三角飯丸拼盤與歐姆蛋捲，清爽不油膩。",
+            address: "雲林縣斗六市民生路8號",
+            img: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "日耕早午餐 雲林縣斗六市民生路8號"
+          },
+          {
+            name: "叮叮車港式早午餐",
+            rating: "4.6",
+            open: "08:30 營業",
+            dist: "距車站大同路約 350m • 步行 4 分鐘",
+            desc: "在地超推道地港式早午餐！招牌爆漿流沙西多士、餐蛋公仔麵、冰火菠蘿油與絲襪奶茶。",
+            address: "雲林縣斗六市大同路80之2號",
+            img: "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "叮叮車港式早午餐 雲林縣斗六市大同路80之2號"
           }
         ],
         [
           {
-            name: "麋鹿爺爺早午餐",
+            name: "命中注定 Brunch 早午餐",
+            rating: "4.6",
+            open: "08:30 營業",
+            dist: "距車站約 650m • 步行 8 分鐘 / 車程 2 分",
+            desc: "網美風質感裝潢，招牌花生醬卡拉雞菠蘿堡、九宮格厚片吐司拼盤，超好拍照！",
+            address: "雲林縣斗六市民生路220-4號",
+            img: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "命中注定早午餐 雲林縣斗六市民生路220-4號"
+          },
+          {
+            name: "麋鹿爺爺早午餐 Moose Papa",
             rating: "4.8",
             open: "09:00 營業",
-            dist: "火車站前商圈約 5 分鐘",
-            desc: "超療癒貓咪主題早午餐！香煎翼板牛拼盤、松露野菇歐姆蛋捲，份量誠意滿滿。",
+            dist: "距車站約 1.1km • 車程 3 分鐘 / 步行 12 分",
+            desc: "Google 4.8星超高評價！招牌香煎翼板牛拼盤、松露野菇歐姆蛋捲，份量浮誇、店內有親人店寵。",
             address: "雲林縣斗六市民生南路219號",
-            mapQuery: "麋鹿爺爺+斗六"
+            img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "麋鹿爺爺 雲林縣斗六市民生南路219號"
           },
           {
             name: "厚宅早午餐 Houzhai",
             rating: "4.5",
             open: "08:00 營業",
-            dist: "步行約 5 分鐘",
-            desc: "手作酥皮蛋餅、法式金黃吐司拼盤與特調高山鮮奶茶，座位寬敞舒適。",
-            address: "雲林縣斗六市武昌路周邊",
-            mapQuery: "厚宅早午餐+斗六"
+            dist: "距車站後站約 300m • 步行 4 分鐘",
+            desc: "武昌路上手作清新小店，手工酥皮蛋餅、法式金黃吐司拼盤與特調高山鮮奶茶。",
+            address: "雲林縣斗六市武昌路168號",
+            img: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "厚宅早午餐 雲林縣斗六市武昌路168號"
           },
           {
-            name: "初秧秧手作早午餐",
-            rating: "4.6",
-            open: "08:30 營業",
-            dist: "步行約 6 分鐘",
-            desc: "清新文青小店，招牌熱壓丹麥酥皮吐司、特調胡麻雞肉沙拉盆，健康又美味。",
-            address: "雲林縣斗六市站前商圈",
-            mapQuery: "初秧秧早午餐+斗六"
-          },
-          {
-            name: "晨間廚房 斗六旗艦店",
-            rating: "4.9",
+            name: "晨間廚房 斗六站前店",
+            rating: "4.7",
             open: "07:00 營業",
-            dist: "步行約 5 分鐘",
-            desc: "全台評分最高分店之一！帕瑪森軟法拼盤、經典芋泥肉鬆蛋餅與特調奶酥吐司。",
-            address: "雲林縣斗六市站前分店",
-            mapQuery: "晨間廚房+斗六"
+            dist: "距車站前站約 250m • 步行 3 分鐘",
+            desc: "全台評分最高分店之一！帕瑪森軟法拼盤、經典芋泥肉鬆蛋餅與特調奶酥吐司，乾淨舒適。",
+            address: "雲林縣斗六市民生路131號",
+            img: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "晨間廚房 雲林縣斗六市民生路131號"
           }
         ]
       ],
@@ -1608,75 +1737,83 @@
             name: "凹凸咖啡館 Aotu Cafe",
             rating: "4.5",
             open: "09:30 營業",
-            dist: "步行約 8 分鐘（雲中街）",
-            desc: "日式昭和百年老木造建築與綠油油大草坪，提供手沖精品咖啡、可頌輕食與老宅悠閒時光。",
-            address: "雲林縣斗六市雲中街12號",
-            mapQuery: "凹凸咖啡館+斗六"
+            dist: "距車站約 800m • 步行 8 分鐘 (雲中街)",
+            desc: "雲中街文創聚落日式昭和老木造建築與綠油油大草坪，提供手沖精品咖啡、可頌輕食與老宅悠閒時光。",
+            address: "雲林縣斗六市雲中街9巷12號",
+            img: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "凹凸咖啡館 雲林縣斗六市雲中街9巷12號"
           },
           {
             name: "霍姆斯庫英倫咖啡館",
             rating: "4.6",
-            open: "09:00 營業",
-            dist: "步行約 6 分鐘（武昌路）",
+            open: "09:30 營業",
+            dist: "距車站後站約 250m • 步行 3 分鐘",
             desc: "經典紅電話亭與祖母綠質感空間，手沖咖啡、精品熱拿鐵與精緻可麗露、肉桂捲。",
             address: "雲林縣斗六市武昌路158號",
-            mapQuery: "Homescrew+Cafe+斗六"
-          },
-          {
-            name: "芒果咖啡 斗六文化館",
-            rating: "4.6",
-            open: "09:00 營業",
-            dist: "車程約 4 分鐘",
-            desc: "雲林老牌指標精品烘豆品牌，手沖單品咖啡選擇極多，搭配手工戚風蛋糕絕配。",
-            address: "雲林縣斗六市大學路三段",
-            mapQuery: "芒果咖啡+斗六"
+            img: "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "Homescrew Cafe 雲林縣斗六市武昌路158號"
           },
           {
             name: "陽台花序 植物系咖啡",
             rating: "4.8",
             open: "09:30 營業",
-            dist: "步行約 7 分鐘",
+            dist: "距車站約 700m • 步行 7 分鐘",
             desc: "被滿滿綠意植栽與花藝包圍的文青老屋，手作甜點、花草茶與燕麥奶拿鐵極為舒心。",
-            address: "雲林縣斗六市老街商圈",
-            mapQuery: "陽台花序+斗六"
-          }
-        ],
-        [
+            address: "雲林縣斗六市保長路11號",
+            img: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "陽台花序 雲林縣斗六市保長路11號"
+          },
           {
             name: "鴻豆王國 台灣咖啡館",
             rating: "4.6",
             open: "09:00 營業",
-            dist: "步行約 6 分鐘",
+            dist: "距車站約 900m • 步行 9 分鐘",
             desc: "專營台灣在地高山精品咖啡豆，能品嚐到純正古坑精品咖啡與手作鬆餅點心。",
-            address: "雲林縣斗六市仁義路",
-            mapQuery: "鴻豆王國+斗六"
-          },
+            address: "雲林縣斗六市仁義路3-10號",
+            img: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "鴻豆王國 雲林縣斗六市仁義路3-10號"
+          }
+        ],
+        [
           {
             name: "塔吉特千層蛋糕 站前店",
             rating: "4.5",
             open: "09:00 營業",
-            dist: "步行約 3 分鐘",
+            dist: "距車站前站約 250m • 步行 3 分鐘",
             desc: "斗六之光千層蛋糕專賣！岩燒千層、芒果千層搭配熱美式咖啡，甜蜜開胃。",
-            address: "雲林縣斗六市大同路",
-            mapQuery: "塔吉特千層蛋糕+斗六"
+            address: "雲林縣斗六市大同路60號",
+            img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "塔吉特千層蛋糕 雲林縣斗六市大同路60號"
           },
           {
             name: "騷柴咖啡 Shibainu Cafe",
             rating: "4.7",
             open: "09:30 營業",
-            dist: "步行約 8 分鐘",
+            dist: "距車站約 1.1km • 車程 3 分/步行 11 分",
             desc: "可愛柴犬店狗常駐！提供特色拉花拿鐵、手作提拉米蘇與舒芙蕾鬆餅。",
-            address: "雲林縣斗六市文化路",
-            mapQuery: "騷柴咖啡+斗六"
+            address: "雲林縣斗六市文化路131號",
+            img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "騷柴咖啡 雲林縣斗六市文化路131號"
           },
           {
             name: "露森手作香氛咖啡館",
             rating: "4.8",
             open: "09:00 營業",
-            dist: "步行約 7 分鐘",
+            dist: "距車站約 650m • 步行 7 分鐘",
             desc: "結合手作香氛與精品咖啡的老宅隱藏咖啡店，靜謐氛圍非常適合兩位好友聚會。",
             address: "雲林縣斗六市太平老街周邊",
-            mapQuery: "露森手作咖啡+斗六"
+            img: "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "露森手作咖啡 雲林縣斗六市"
+          },
+          {
+            name: "芒果咖啡 斗六文化館",
+            rating: "4.6",
+            open: "09:00 營業",
+            dist: "距車站約 1.8km (在2km內) • 車程約 4 分鐘",
+            desc: "雲林老牌指標精品烘豆品牌，手沖單品咖啡選擇極多，搭配手工戚風蛋糕絕配。",
+            address: "雲林縣斗六市大學路三段310號",
+            img: "https://images.unsplash.com/photo-1497636577773-f1231844b336?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "芒果咖啡 雲林縣斗六市大學路三段310號"
           }
         ]
       ],
@@ -1684,78 +1821,86 @@
       japanese: [
         [
           {
+            name: "松屋洋風和食館",
+            rating: "4.6",
+            open: "10:00 營業 (可提早預約)",
+            dist: "距車站前站約 400m • 步行 5 分鐘",
+            desc: "斗六在地三十年老字號和食！職人炙燒握壽司拼盤、法式擺盤日料與海鮮鮮味鍋，氣氛典雅。",
+            address: "雲林縣斗六市中正路8號",
+            img: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "松屋洋風和食館 雲林縣斗六市中正路8號"
+          },
+          {
+            name: "福道田日式料理",
+            rating: "4.6",
+            open: "10:30 營業 (可電話預訂)",
+            dist: "距車站約 750m • 步行 8 分鐘",
+            desc: "三合院老宅改建文青日料，招牌扛霸子海鮮丼、炙燒干貝握壽司與自製日式小菜，氣氛寧靜舒適。",
+            address: "雲林縣斗六市永安路68號",
+            img: "https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "福道田日式料理 雲林縣斗六市永安路68號"
+          },
+          {
+            name: "松竹屋日式食堂",
+            rating: "4.5",
+            open: "09:30 營業",
+            dist: "距車站後站約 220m • 步行 3 分鐘",
+            desc: "後火車站高CP值溫馨日式食堂，日式照燒雞腿定食、日式炒烏龍麵、炸豬排定食與熱味噌湯。",
+            address: "雲林縣斗六市武昌路205號",
+            img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "松竹屋 雲林縣斗六市武昌路205號"
+          },
+          {
             name: "金字溫暖食堂 (日系定食)",
             rating: "4.6",
             open: "09:00 營業",
-            dist: "步行約 3 分鐘（後站）",
+            dist: "距車站後站約 220m • 步行 3 分鐘",
             desc: "首推！日系昭和布丁、照燒雞腿排定食與日式蛋捲拼盤，環境充滿濃濃日劇溫暖感。",
-            address: "雲林縣斗六市武昌路220號",
-            mapQuery: "金字溫暖食堂+斗六"
-          },
-          {
-            name: "喜八日式手作飯糰 (御結專賣)",
-            rating: "4.7",
-            open: "08:30 營業",
-            dist: "步行約 4 分鐘（前站）",
-            desc: "現點現捏日式大飯丸！明太子炙燒鮭魚、唐揚雞日式玉子飯糰，米香 Q 彈海苔酥脆！",
-            address: "雲林縣斗六市民生路商圈",
-            mapQuery: "喜八日式飯糰+斗六"
-          },
-          {
-            name: "本壽司 手作日式握壽司",
-            rating: "4.5",
-            open: "09:30 營業",
-            dist: "步行約 6 分鐘",
-            desc: "新鮮厚切生魚片握壽司、炙燒比目魚握壽司與熱味噌湯，料好實在深受在地人讚賞。",
-            address: "雲林縣斗六市大同路",
-            mapQuery: "本壽司+斗六"
-          },
-          {
-            name: "櫻花日式晨間朝食料理",
-            rating: "4.5",
-            open: "09:00 營業",
-            dist: "步行約 5 分鐘",
-            desc: "日式和風炒麵、鹽烤鯖魚早朝定食、玉子燒與日式熱煎茶，一早滿滿和風元氣。",
-            address: "雲林縣斗六市車站周邊",
-            mapQuery: "日式料理+斗六火車站"
+            address: "雲林縣斗六市武昌路157號",
+            img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "金字溫暖食堂 雲林縣斗六市武昌路157號"
           }
         ],
         [
           {
+            name: "喜八日式手作飯糰 (御結專賣)",
+            rating: "4.7",
+            open: "08:30 營業",
+            dist: "距車站前站約 200m • 步行 3 分鐘",
+            desc: "現點現捏日式大飯丸！明太子炙燒鮭魚、唐揚雞日式玉子飯糰，米香 Q 彈海苔酥脆！",
+            address: "雲林縣斗六市民生路88號",
+            img: "https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "喜八日式手作飯糰 雲林縣斗六市民生路88號"
+          },
+          {
+            name: "花亭日本料理",
+            rating: "4.7",
+            open: "10:30 營業",
+            dist: "距車站約 850m • 步行 9 分鐘",
+            desc: "斗六超人氣日料名店！生魚片厚度驚人，比目魚側緣炙燒握壽司入口即化，推薦點豪華海鮮散壽司。",
+            address: "雲林縣斗六市民生南路21號",
+            img: "https://images.unsplash.com/photo-1553621042-f6e147245754?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "花亭日本料理 雲林縣斗六市民生南路21號"
+          },
+          {
             name: "宮本野牛 和風手作定食",
             rating: "4.6",
-            open: "09:30 營業",
-            dist: "步行約 7 分鐘",
+            open: "10:00 營業",
+            dist: "距車站約 1.1km • 車程 3 分鐘",
             desc: "香氣四溢的和風炙燒牛丼、薑汁燒肉定食與特製日式泡菜，肉食愛好者必吃！",
-            address: "雲林縣斗六市民生南路",
-            mapQuery: "宮本野牛+斗六"
+            address: "雲林縣斗六市民生南路137號",
+            img: "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "宮本野牛 雲林縣斗六市民生南路137號"
           },
           {
-            name: "壽司學堂 手作日料",
-            rating: "4.6",
-            open: "09:30 營業",
-            dist: "步行約 5 分鐘",
-            desc: "多樣炙燒壽司拼盤、日式烏龍冷麵與茶碗蒸，性價比極高。",
-            address: "雲林縣斗六市中山路",
-            mapQuery: "壽司學堂+斗六"
-          },
-          {
-            name: "和風手作茶泡飯屋",
-            rating: "4.7",
-            open: "09:00 營業",
-            dist: "步行約 6 分鐘",
-            desc: "炙燒鮭魚玄米茶泡飯、昆布高湯蛋捲，清爽無負擔，早晨暖胃首選。",
-            address: "雲林縣斗六市站前文化路",
-            mapQuery: "日式定食+斗六火車站"
-          },
-          {
-            name: "築間日風朝食手作店",
-            rating: "4.5",
-            open: "09:00 營業",
-            dist: "步行約 5 分鐘",
-            desc: "精緻日式雙拼早午餐、香酥可樂餅定食與日式抹茶奶酪甜點。",
-            address: "雲林縣斗六市武昌路",
-            mapQuery: "日式定食+斗六"
+            name: "麵屋喜楽 (正宗日式拉麵)",
+            rating: "4.8",
+            open: "10:30 營業",
+            dist: "距車站約 450m • 步行 5 分鐘",
+            desc: "慢火熬製濃厚豚骨湯底，自選麵條軟硬度與湯頭濃度，糖心蛋爆漿完美，拉麵迷必訪！",
+            address: "雲林縣斗六市中正路42號",
+            img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "麵屋喜楽 雲林縣斗六市中正路42號"
           }
         ]
       ],
@@ -1764,77 +1909,85 @@
         [
           {
             name: "韓風韓食 (人氣道地韓式)",
-            rating: "4.5",
-            open: "11:00 營業（特約可外帶/提早）",
-            dist: "步行約 7 分鐘（中華路）",
-            desc: "斗六最推道地韓食！豆腐辣湯鍋、石鍋拌飯、海鮮煎餅與韓式炸雞，若吃韓式強烈推薦排此間！",
-            address: "雲林縣斗六市中華路72號",
-            mapQuery: "韓風韓食+斗六"
+            rating: "4.6",
+            open: "10:30 營業 (可外帶/提早)",
+            dist: "距車站約 650m • 步行 7 分鐘",
+            desc: "斗六最推道地韓食！豆腐辣湯鍋、石鍋拌飯、海鮮煎餅與韓式半半炸雞，道地濃郁。",
+            address: "雲林縣斗六市中華路194號",
+            img: "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "韓風韓食 雲林縣斗六市中華路194號"
           },
           {
             name: "日沐早午餐「韓風泡菜起司豬排」",
             rating: "4.5",
-            open: "07:30 營業（9點必吃）",
-            dist: "步行約 3 分鐘（後站）",
+            open: "07:30 營業 (9點必吃)",
+            dist: "距車站後站約 200m • 步行 3 分鐘",
             desc: "9:00 準時想吃到韓式風味首推！特製韓式手工泡菜、厚切豬排與融岩起司蛋捲拼盤！",
             address: "雲林縣斗六市武昌路151號",
-            mapQuery: "日沐美式早午餐+斗六"
+            img: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "日沐美式早午餐 雲林縣斗六市武昌路151號"
+          },
+          {
+            name: "韓手作 (原韓手作廚房)",
+            rating: "4.8",
+            open: "10:30 營業",
+            dist: "距車站約 1.7km • 車程 5 分鐘",
+            desc: "Google 4.8星超高評價！石鍋拌飯鍋巴酥香、厚切酥脆海鮮煎餅、豆腐鍋，白飯小菜檸檬水無限享用。",
+            address: "雲林縣斗六市府文路121號",
+            img: "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "韓手作 雲林縣斗六市府文路121號"
           },
           {
             name: "歐巴韓式手作海苔飯捲",
             rating: "4.6",
             open: "08:30 營業",
-            dist: "步行約 4 分鐘（站前）",
-            desc: "現捲香油海苔飯捲！特製韓式醃黃蘿蔔、辣炒豬肉飯捲與韓式魚板湯，道地街頭風味。",
-            address: "雲林縣斗六市民生路站前",
-            mapQuery: "韓式飯捲+斗六火車站"
-          },
-          {
-            name: "韓手作廚房 (精緻韓料)",
-            rating: "4.6",
-            open: "11:00 營業",
-            dist: "步行約 6 分鐘",
-            desc: "韓籍廚師特調！韓式部隊鍋、春川辣炒雞肉與辣炒年糕，可稍微放慢腳步當早午餐享用。",
-            address: "雲林縣斗六市站前商圈",
-            mapQuery: "韓手作廚房+斗六"
+            dist: "距車站前站約 220m • 步行 3 分鐘",
+            desc: "現點現捲韓式麻油飯捲！特製醃黃蘿蔔、辣炒豬肉飯捲與韓式魚板湯，道地街頭風味。",
+            address: "雲林縣斗六市民生路112號",
+            img: "https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "歐巴韓式海苔飯捲 雲林縣斗六市民生路112號"
           }
         ],
         [
           {
-            name: "李家韓國傳統料理",
+            name: "韓楓館 (斗六店)",
             rating: "4.5",
-            open: "11:00 營業",
-            dist: "步行約 8 分鐘",
-            desc: "韓國老闆親自掌杓！道地銅盤烤肉、泡菜雪濃湯與韓式冬粉，口味道地濃郁。",
-            address: "雲林縣斗六市雲林路",
-            mapQuery: "李家韓國料理+斗六"
+            open: "10:30 營業",
+            dist: "距車站約 1.4km • 車程 4 分鐘",
+            desc: "平價人氣韓式料理！起司石鍋拌飯、泡菜海鮮豆腐鍋、春川辣炒雞肉，飲料湯品無限續。",
+            address: "雲林縣斗六市莊敬路399號",
+            img: "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "韓楓館 雲林縣斗六市莊敬路399號"
           },
           {
             name: "朝鮮餐桌 韓風朝食",
             rating: "4.6",
             open: "09:00 營業",
-            dist: "步行約 5 分鐘",
+            dist: "距車站後站約 250m • 步行 3 分鐘",
             desc: "韓風熱壓起司吐司、特製辣醬炸雞條早午餐與柚子氣泡飲，拍照亮眼又好吃。",
-            address: "雲林縣斗六市武昌路商圈",
-            mapQuery: "韓式料理+斗六火車站"
+            address: "雲林縣斗六市武昌路138號",
+            img: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "朝鮮餐桌 雲林縣斗六市武昌路138號"
           },
           {
-            name: "韓食堂 斗六概念店",
+            name: "韓食堂 (斗六站前店)",
             rating: "4.5",
-            open: "11:00 營業",
-            dist: "步行約 6 分鐘",
+            open: "10:30 營業",
+            dist: "距車站約 350m • 步行 4 分鐘",
             desc: "大醬湯、辣炒起司泡麵、鐵板烤五花肉定食，滿滿韓式小菜無限續加。",
-            address: "雲林縣斗六市大同路",
-            mapQuery: "韓食堂+斗六"
+            address: "雲林縣斗六市大同路98號",
+            img: "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "韓食堂 雲林縣斗六市大同路98號"
           },
           {
-            name: "初秧秧「韓式泡菜牛可頌」",
-            rating: "4.6",
-            open: "08:30 營業",
-            dist: "步行約 6 分鐘",
-            desc: "超酥脆可頌夾滿韓國正宗泡菜與香煎牛肉片，酸辣開胃，九點就能爽快開吃！",
-            address: "雲林縣斗六市民生南路",
-            mapQuery: "初秧秧早午餐+斗六"
+            name: "日耕「韓風泡菜牛肉軟法」",
+            rating: "4.7",
+            open: "08:00 營業",
+            dist: "距車站前站約 150m • 步行 2 分鐘",
+            desc: "酥脆軟法麵包夾滿特製韓式泡菜與香煎牛肉片，酸辣開胃，九點就能爽快開吃！",
+            address: "雲林縣斗六市民生路8號",
+            img: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&auto=format&fit=crop&q=80",
+            mapQuery: "日耕早午餐 雲林縣斗六市民生路8號"
           }
         ]
       ]
@@ -1885,29 +2038,43 @@
 
       list.forEach((item) => {
         const card = document.createElement('div');
-        card.className = "rpg-box p-4 rounded-xl flex flex-col justify-between space-y-3 transition duration-200 hover:border-amber-400";
+        card.className = "rpg-box p-4 rounded-xl flex flex-col justify-between space-y-3 transition duration-200 hover:border-amber-400 group";
+        const gmapsStoreUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.name + ' ' + item.address)}`;
         card.innerHTML = `
           <div>
-            <div class="flex items-center justify-between gap-1 text-[11px] mb-1">
-              <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30">
-                <i class="fa-solid fa-clock"></i> ${item.open}
-              </span>
-              <span class="text-amber-400 font-bold flex items-center gap-1 font-mono">
+            <!-- 餐廳美食與實景圖片 (圖三需求) -->
+            <div class="relative w-full h-36 rounded-lg overflow-hidden mb-2.5 bg-slate-800">
+              <img src="${item.img}" alt="${item.name}" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop&q=80'">
+              <span class="absolute top-2 right-2 px-2 py-0.5 rounded bg-slate-950/85 text-amber-300 font-bold text-[11px] backdrop-blur-sm border border-amber-400/40 font-mono">
                 <i class="fa-solid fa-star text-amber-400"></i> ${item.rating}
               </span>
+              <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-slate-950/85 text-emerald-300 font-bold text-[10px] backdrop-blur-sm border border-emerald-500/40">
+                <i class="fa-solid fa-clock"></i> ${item.open}
+              </span>
             </div>
-            <h4 class="text-base font-bold text-white mt-1 group-hover:text-amber-300">${item.name}</h4>
-            <div class="text-[11px] text-sky-300 font-medium mt-0.5 flex items-center gap-1">
+
+            <h4 class="text-base font-bold text-white group-hover:text-amber-300 transition">${item.name}</h4>
+            
+            <div class="text-[11px] text-sky-300 font-medium mt-1 flex items-center gap-1">
               <i class="fa-solid fa-person-walking text-xs"></i> ${item.dist}
             </div>
-            <p class="text-xs text-slate-300 leading-relaxed mt-2 line-clamp-3">
+
+            <div class="text-[11px] text-slate-400 mt-1 flex items-center gap-1 truncate" title="${item.address}">
+              <i class="fa-solid fa-location-dot text-amber-400"></i> ${item.address}
+            </div>
+
+            <p class="text-xs text-slate-300 leading-relaxed mt-2 line-clamp-2">
               ${item.desc}
             </p>
           </div>
-          <div class="pt-2 border-t border-slate-700/80 flex items-center gap-2">
+
+          <div class="pt-2 border-t border-slate-700/80 space-y-2">
             <button onclick="lockRestaurant('${escapeQuotes(item.name)}', '${escapeQuotes(item.address)}', '${item.dist}')" class="rpg-btn w-full py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs rounded-lg flex items-center justify-center gap-1.5 shadow">
               <i class="fa-solid fa-check"></i> 選擇這家店！
             </button>
+            <a href="${gmapsStoreUrl}" target="_blank" class="rpg-btn w-full py-1.5 bg-slate-800 hover:bg-slate-700 text-sky-300 hover:text-white font-bold text-[11px] rounded-lg flex items-center justify-center gap-1.5 border border-slate-700 transition">
+              <i class="fa-solid fa-map-location-dot text-amber-400"></i> 開啟 Google Maps 店家資訊
+            </a>
           </div>
         `;
         container.appendChild(card);
@@ -1926,14 +2093,16 @@
       
       document.getElementById('lockedName').innerText = name;
       document.getElementById('lockedAddress').innerText = address + ' （' + dist + '）';
-      document.getElementById('routeDistanceInfo').innerText = dist + ' • 斗六站前出發';
+      document.getElementById('routeDistanceInfo').innerText = dist + ' • 起始點：斗六火車站（方圓 2km 圈內）';
 
+      // 修正 Google 地圖嵌入，加入完整雲林斗六地址避免定位漂移
       const frame = document.getElementById('googleMapFrame');
-      frame.src = `https://maps.google.com/maps?q=${encodeURIComponent(name + ' 斗六')}&t=&z=16&ie=UTF8&iwloc=&output=embed`;
+      frame.src = `https://maps.google.com/maps?q=${encodeURIComponent(name + ' ' + address)}&t=&z=16&ie=UTF8&iwloc=&output=embed`;
       
-      document.getElementById('mapTargetLabel').innerText = '導航目標：' + name;
+      document.getElementById('mapTargetLabel').innerText = '導航：斗六火車站 ➔ ' + name;
       
-      const navUrl = `https://www.google.com/maps/dir/?api=1&origin=斗六火車站&destination=${encodeURIComponent(name)}&travelmode=walking`;
+      // 核心修正：導航 URL 必須帶上完整雲林縣斗六市精確地址，徹底解決跳到花蓮 jam kitchen 455 公里的問題！
+      const navUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent('斗六火車站')}&destination=${encodeURIComponent(name + ' ' + address)}&travelmode=walking`;
       document.getElementById('lockedGoogleNavBtn').href = navUrl;
       document.getElementById('extMapLink').href = navUrl;
 
@@ -2579,7 +2748,7 @@
             <button onclick="lockDinner('${escapeQuotes(item.name)}', '${escapeQuotes(item.desc)}', '${escapeQuotes(item.mapQuery)}')" class="rpg-btn w-full py-2 bg-gradient-to-r from-pink-500 to-rose-400 hover:from-pink-400 hover:to-rose-300 text-white font-black text-xs rounded-lg flex items-center justify-center gap-1.5 shadow">
               <i class="fa-solid fa-check"></i> 選擇這家店！
             </button>
-            <a href="https://www.google.com/maps/search/${encodeURIComponent(item.mapQuery)}" target="_blank" class="rpg-btn w-full py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-[10px] rounded-lg flex items-center justify-center gap-1">
+            <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.mapQuery)}" target="_blank" class="rpg-btn w-full py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-[10px] rounded-lg flex items-center justify-center gap-1">
               <i class="fa-solid fa-magnifying-glass"></i> Google Maps 即時搜尋
             </a>
           </div>
@@ -2640,10 +2809,13 @@
               ${item.desc}
             </p>
           </div>
-          <div class="pt-2 border-t border-slate-700/80 flex items-center gap-2">
+          <div class="pt-2 border-t border-slate-700/80 space-y-2">
             <button onclick="lockDinner('${escapeQuotes(item.name)}', '${escapeQuotes(item.desc)}', '${escapeQuotes(item.mapQuery)}')" class="rpg-btn w-full py-2 ${btnBg} font-black text-xs rounded-lg flex items-center justify-center gap-1.5 shadow">
               <i class="fa-solid fa-check"></i> 選擇這家店！
             </button>
+            <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.mapQuery)}" target="_blank" class="rpg-btn w-full py-1.5 bg-slate-800 hover:bg-slate-700 text-sky-300 hover:text-white font-bold text-[11px] rounded-lg flex items-center justify-center gap-1.5 border border-slate-700 transition">
+              <i class="fa-solid fa-map-location-dot text-amber-400"></i> 開啟 Google Maps 店家資訊
+            </a>
           </div>
         `;
         container.appendChild(card);
