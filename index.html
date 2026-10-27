@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎮 雲林漫旅大冒險｜斗六早午餐 ➔ 台灣好行萬年峽谷 ➔ 斗六晚餐 ➔ 虎尾泡泡貓做臉</title>
+  <title>🎮 雲林漫旅大冒險｜斗六早午餐 ➔ 台灣好行草嶺線慢遊 ➔ 斗六晚餐 ➔ 虎尾泡泡貓做臉</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome 6 CDN -->
@@ -157,7 +157,7 @@
           雲林漫旅大冒險
         </h1>
         <p class="font-dot text-lg sm:text-xl text-slate-300">
-          ── 秘境萬年峽谷 ＆ 虎尾泡泡貓美顏之行 ──
+          ── 荷苞山桐花咖啡原鄉 ＆ 虎尾泡泡貓美顏之行 ──
         </p>
       </div>
 
@@ -167,9 +167,9 @@
           <i class="fa-solid fa-gamepad"></i> QUEST BRIEFING (冒險簡報)：
         </div>
         <ul class="space-y-1.5 text-slate-300 font-medium">
-          <li class="flex items-center gap-2"><span class="text-sky-400">▶</span> 起點：斗六車站 09:00 AM 早午餐雷達（4.5★+ 名店）</li>
-          <li class="flex items-center gap-2"><span class="text-emerald-400">▶</span> 主線：【外湖站】下車 ➔ <strong>步行 40~45 分走進萬年峽谷秘境</strong></li>
-          <li class="flex items-center gap-2"><span class="text-amber-400">▶</span> 返程：16:10 步回停車場 ➔ 16:30 專車載回斗六車站 ➔ <strong>超充裕 1.5h 晚餐</strong></li>
+          <li class="flex items-center gap-2"><span class="text-sky-400">▶</span> 起點：斗六車站 09:00 AM 早午餐雷達（4.5★+ 在地名店）</li>
+          <li class="flex items-center gap-2"><span class="text-emerald-400">▶</span> 主線：【荷苞山站】下車 ➔ <strong>桐花林蔭漫步 ＆ 巴登咖啡下午茶</strong></li>
+          <li class="flex items-center gap-2"><span class="text-amber-400">▶</span> 返程：16:25 搭 701 公車 ➔ 16:50 返抵斗六 ➔ <strong>超充裕 2h 晚餐</strong></li>
           <li class="flex items-center gap-2"><span class="text-pink-400">▶</span> 終點：18:55 騎機車往虎尾 ➔ 晚上 19:30 <strong>泡泡貓</strong> 水嫩做臉！</li>
         </ul>
       </div>
@@ -277,7 +277,7 @@
               <span>晨光能量補給：早午餐搜尋雷達</span>
             </h2>
             <p class="text-slate-300 text-sm leading-relaxed">
-              早上 09:00 抵達斗六火車站！以<strong>【斗六火車站】為起始點，鎖定方圓 2 公里生活圈</strong>，雷達為妳精選<strong>9:00 前營業、Google 評價 4.5 星以上、步行或短程即可抵達</strong>的在地名店！吃飽後可選搭預約計程車/包車直達萬年峽谷，或搭下午 13:30 台灣好行草嶺線！
+              早上 09:00 抵達斗六火車站！以<strong>【斗六火車站】為起始點，鎖定方圓 2 公里生活圈</strong>，雷達為妳精選<strong>9:00 前營業、Google 評價 4.5 星以上、步行或短程即可抵達</strong>的在地名店！吃飽後悠閒漫步太平老街、雲中街文創聚落，接著搭下午 13:30 台灣好行草嶺線出發！
             </p>
 
             <!-- 四大選項按鈕群 (早午餐、咖啡廳、日式、韓式) -->
@@ -383,31 +383,241 @@
       </section>
 
       <!-- ========================================================
-           第二站：【外湖站】100% 沿著地圖真正道路走的小人健行模擬器 (STAGE 2)
+           第二站：台灣好行 701 雲林草嶺線「免爬山、下車即玩」各站景點雷達 (STAGE 2)
            ======================================================== -->
-      <section id="stage-waihu-hiking" class="space-y-6 pt-8 border-t border-slate-800">
+      <section id="stage-bus-tour" class="space-y-6 pt-8 border-t border-slate-800">
         
         <div class="flex flex-wrap items-center justify-between gap-3">
           <div>
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-pixel">
-              <i class="fa-solid fa-gamepad"></i> LEVEL 2: 黑色小人健行模擬器 (真實彎道修正版)
+              <i class="fa-solid fa-bus"></i> LEVEL 2: 台灣好行 701 雲林草嶺線 • 各站好到達景點 ＆ 公車時刻完全對應
             </div>
             <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">
-              斗六後站搭草嶺線 ➔ 外湖站下車 ➔ 沿 149甲蜿蜒山路走入萬年峽谷
+              不去萬年峽谷！公車站周邊好逛好拍景點 ＆ 100% 對得上回程公車
             </h2>
           </div>
-          <div class="flex items-center gap-2">
-            <button onclick="autoWalkRoute()" class="rpg-btn px-3 py-1.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 text-xs font-bold transition flex items-center gap-1.5 shadow">
-              <i class="fa-solid fa-play"></i> 🤖 自動沿彎道走一次
-            </button>
-            <button onclick="resetCharacter()" class="rpg-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold transition flex items-center gap-1 border border-slate-700">
-              <i class="fa-solid fa-rotate-left"></i> 重設回起點
-            </button>
-          </div>
+          <span class="text-xs font-bold px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-lg border border-emerald-500/30">
+            🌿 免爬深山 • 0 步行負擔 • 免花 1000 元叫車
+          </span>
         </div>
 
         <!-- ==========================================
-             台灣好行 701 雲林草嶺線搭乘指南 ＆ 路線站點圖
+             台灣好行 701 雲林草嶺線 13:30 班次 • 小人公車路線互動導航系統
+             ========================================== -->
+        <div class="p-5 sm:p-6 rounded-3xl bg-slate-900/95 border-2 border-emerald-400/60 shadow-2xl space-y-6">
+          
+          <!-- 頂部標題與說明 -->
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-400 text-slate-950 font-black text-xs">
+                  🚌 13:30 發車班次專屬
+                </span>
+                <span class="text-xs text-emerald-300 font-bold">小人路線互動導航 ＆ 景點雷達</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-black text-white mt-1">
+                移動路線小人挑選站點 ➔ 點擊確定立即展開周邊名店與咖啡廳！
+              </h3>
+              <p class="text-xs text-slate-400 mt-1 max-w-3xl leading-relaxed">
+                全線 22 站公車站點皆精算下午到站時刻！左右移動小人選擇站點，點擊「確定選擇此站」，下方立即延伸出站點周邊知名名店、打卡咖啡廳、真實 Google 地圖地址與回程末班車銜接！
+              </p>
+            </div>
+
+            <!-- 控制小人左右移動快捷按鈕 (D-Pad) -->
+            <div class="flex items-center gap-2 bg-slate-950/90 p-1.5 rounded-2xl border border-slate-800 shadow-inner">
+              <button onclick="moveBusStation(-1)" class="rpg-btn px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs flex items-center gap-1.5 border border-slate-700 active:scale-95 transition cursor-pointer">
+                <i class="fa-solid fa-arrow-left"></i> 上一站
+              </button>
+              <div class="px-3 text-center">
+                <span id="busStationIndexIndicator" class="font-mono text-sm font-black text-amber-400 block">10 / 22</span>
+                <span class="text-[9px] text-slate-400 block whitespace-nowrap">站點序號</span>
+              </div>
+              <button onclick="moveBusStation(1)" class="rpg-btn px-3 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs flex items-center gap-1.5 border border-emerald-400 active:scale-95 transition cursor-pointer">
+                下一站 <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- 視覺化公車道路軌道與小人 (RPG TRACK) -->
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="flex items-center gap-1.5 text-sky-300 font-bold">
+                <i class="fa-solid fa-route"></i> 701 雲林草嶺線 13:30 發車全線 22 站即時軌道：
+              </span>
+              <!-- 點擊/手按左右移動按鈕 (替代原本靜態鍵盤提示) -->
+              <div class="flex items-center gap-1.5 shrink-0">
+                <span class="text-[11px] text-slate-400 font-bold hidden sm:inline">
+                  點擊移動：
+                </span>
+                <div class="flex items-center gap-1 bg-slate-900/90 p-1 rounded-xl border border-slate-700 shadow-md">
+                  <button onclick="moveBusStation(-1)" title="按此向左移動（上一站）" aria-label="上一站" class="rpg-btn px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-300 hover:text-white font-black text-xs flex items-center justify-center border border-slate-600 active:scale-90 transition cursor-pointer shadow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button onclick="moveBusStation(1)" title="按此向右移動（下一站）" aria-label="下一站" class="rpg-btn px-2.5 py-1 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs flex items-center justify-center border border-emerald-400 active:scale-90 transition cursor-pointer shadow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 橫向滾動道路軌道容器 -->
+            <div id="busTrackScrollContainer" class="p-4 sm:p-6 rounded-2xl bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 border border-slate-800 overflow-x-auto relative shadow-inner select-none">
+              
+              <!-- 軌道主體（寬度 2400px 確保全線 22 站點展示寬敞舒適） -->
+              <div class="min-w-[2400px] relative pt-28 pb-14 px-8">
+                
+                <!-- 道路背景與道路中線 (穿過站點圓圈中心) -->
+                <div class="absolute left-8 right-8 top-[162px] h-4 bg-slate-800/90 rounded-full border border-slate-700 shadow-inner"></div>
+                <div class="absolute left-10 right-10 top-[169px] h-0.5 border-t-2 border-dashed border-emerald-400/50"></div>
+
+                <!-- 移動的小人 (RPG AVATAR - 白色小人，兩點黑點眼睛) -->
+                <div id="rpgBusAvatar" style="position: absolute; top: 10px; left: 45%; transform: translateX(-50%); transition: left 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); z-index: 30; pointer-events: none;">
+                  <div class="flex flex-col items-center">
+                    <!-- 頭頂對話框 (充足頂部空間，絕不被邊緣截斷) -->
+                    <div id="avatarSpeechBubble" class="px-3 py-1 rounded-full bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-400 text-slate-950 font-black text-[11px] shadow-2xl border-2 border-white whitespace-nowrap animate-bounce flex items-center gap-1.5 ring-2 ring-amber-400/50">
+                      <span class="text-xs">📍</span>
+                      <span id="avatarSpeechTime">⭐ 荷苞山桐花公園 • 約 13:50 抵達！</span>
+                    </div>
+                    
+                    <!-- 極簡白色小人角色本體 (兩點黑點當眼睛) -->
+                    <div class="relative mt-1 filter drop-shadow-[0_6px_14px_rgba(0,0,0,0.6)] transform hover:scale-110 transition duration-150">
+                      <svg class="w-12 h-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 地面投影 -->
+                        <ellipse cx="32" cy="58" rx="11" ry="3" fill="#000000" opacity="0.45"/>
+                        
+                        <!-- 白色小腿 -->
+                        <path d="M27 44 L27 54" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+                        <path d="M37 44 L37 54" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+                        
+                        <!-- 白色雙手 -->
+                        <path d="M22 33 C18 37 18 42 20 44" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+                        <path d="M42 33 C46 37 46 42 44 44" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+
+                        <!-- 白色圓潤身軀 -->
+                        <rect x="23" y="29" width="18" height="17" rx="8" fill="#ffffff"/>
+
+                        <!-- 白色圓形頭部 -->
+                        <circle cx="32" cy="18" r="11" fill="#ffffff"/>
+
+                        <!-- 兩點黑色圓點當眼睛 -->
+                        <circle cx="28" cy="18" r="1.8" fill="#000000"/>
+                        <circle cx="36" cy="18" r="1.8" fill="#000000"/>
+                      </svg>
+                    </div>
+
+                    <!-- 倒三角指標指示當前站點節點 -->
+                    <div class="w-3 h-3 bg-amber-400 rotate-45 -mt-0.5 shadow-lg border-b border-r border-amber-600"></div>
+                  </div>
+                </div>
+
+                <!-- 22 大站點節點清單 (由 JS 動態生成並計算精確定位) -->
+                <div id="busStationsTrackNodes" class="relative z-10 flex justify-between items-center">
+                  <!-- JS 會填入 22 個站點圓圈節點 -->
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 當前鎖定站點資訊橫條 ＆「確定選擇此站」大按鈕 -->
+          <div class="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border border-slate-700/80 flex flex-col md:flex-row items-center justify-between gap-4 shadow-xl">
+            <div class="space-y-1.5 text-center md:text-left">
+              <div class="flex flex-wrap items-center justify-center md:justify-start gap-2">
+                <span id="currentStationBadge" class="px-2.5 py-0.5 rounded-full bg-amber-400 text-slate-950 font-black text-xs">
+                  ⭐ 全線最推薦首選
+                </span>
+                <span id="currentStationTimeTag" class="px-2.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-xs font-bold border border-emerald-500/30">
+                  <i class="fa-solid fa-clock"></i> 下午約 13:50 抵達
+                </span>
+                <span id="currentStationTypeTag" class="text-xs text-slate-400">
+                  古坑咖啡原鄉 • 林蔭步道
+                </span>
+              </div>
+              <h4 id="currentStationTitle" class="text-xl sm:text-2xl font-black text-white">
+                第 10 站：⭐ 荷苞山桐花公園站（古坑咖啡發源地）
+              </h4>
+              <p id="currentStationQuickDesc" class="text-xs text-slate-300 max-w-2xl leading-relaxed">
+                下車 0 公尺即抵達公園大門與巴登咖啡總店！完全免走陡峭山路，在清涼林蔭步道漫步、喝手沖在地古坑咖啡，回程 16:25 站牌對面上車。
+              </p>
+            </div>
+
+            <!-- 確定按鈕 -->
+            <button onclick="confirmBusStation()" class="rpg-btn w-full md:w-auto px-7 py-3.5 bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 hover:from-amber-300 hover:to-orange-300 text-slate-950 font-black text-sm sm:text-base rounded-2xl flex items-center justify-center gap-2.5 shadow-2xl hover:shadow-amber-500/30 transform active:scale-95 transition shrink-0 cursor-pointer">
+              <i class="fa-solid fa-circle-check text-lg"></i>
+              <span>確定選擇此站！展開站點名店與咖啡廳</span>
+              <i class="fa-solid fa-chevron-down animate-bounce ml-1"></i>
+            </button>
+          </div>
+
+          <!-- ==========================================
+               點擊「確定」後延伸出的站點名店與咖啡廳抽屜窗格
+               (BUS STATION DETAIL PANEL)
+               ========================================== -->
+          <div id="busStationDetailPanel" class="p-5 sm:p-6 rounded-2xl bg-slate-950 border-2 border-amber-400/80 space-y-6 shadow-2xl transition-all duration-300">
+            
+            <!-- 窗格頂部：站點名稱與公車精準時刻銜接 -->
+            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-ping"></span>
+                  <span id="detailPanelStationTag" class="text-xs font-bold text-amber-300">
+                    已選定站點 • 周邊深度探訪指南
+                  </span>
+                </div>
+                <h4 id="detailPanelStationName" class="text-xl sm:text-2xl font-black text-white mt-1">
+                  荷苞山桐花公園站 周邊必訪名店 ＆ 知名咖啡廳
+                </h4>
+                <p id="detailPanelStationSummary" class="text-xs text-slate-300 mt-1">
+                  精選下車步行好到達之在地口碑店家，附上完整 Google Maps 地址與一鍵導航。
+                </p>
+              </div>
+
+              <!-- 公車時刻對應膠囊 -->
+              <div class="p-3 rounded-xl bg-slate-900 border border-emerald-500/40 text-xs font-mono space-y-1">
+                <div class="flex items-center justify-between gap-4">
+                  <span class="text-slate-400">去程抵達：</span>
+                  <span id="detailGoingTime" class="text-emerald-400 font-bold">13:30 斗六後站 ➔ 13:50 抵達</span>
+                </div>
+                <div class="flex items-center justify-between gap-4">
+                  <span class="text-slate-400">回程上車：</span>
+                  <span id="detailReturnTime" class="text-amber-300 font-bold">16:25 對面上車 ➔ 16:50 返抵斗六</span>
+                </div>
+                <div class="flex items-center justify-between gap-4 pt-1 border-t border-slate-800 text-[10px]">
+                  <span class="text-slate-400">停留遊玩：</span>
+                  <span id="detailStayDuration" class="text-sky-300 font-bold">停留 2 小時 35 分鐘（超充裕）</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 周邊名店與咖啡廳卡片容器 (Cards Grid) -->
+            <div class="space-y-3">
+              <h5 class="text-sm font-bold text-amber-300 flex items-center gap-2">
+                <i class="fa-solid fa-mug-saucer text-amber-400"></i>
+                站牌周邊知名景點 ＆ 人氣咖啡館（下車好到達、不踩雷）：
+              </h5>
+              
+              <div id="stationPlacesCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- 由 JS 動態生成站點對應的 3~4 張名店卡片 -->
+              </div>
+            </div>
+
+            <!-- 交通乘車安心須知 -->
+            <div id="stationBusNoticeBox" class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-xs space-y-2">
+              <div class="text-sky-300 font-bold flex items-center gap-1.5">
+                <i class="fa-solid fa-circle-info"></i> 701 公車站牌搭乘注意事項：
+              </div>
+              <p id="stationBusNoticeText" class="text-[11px] text-slate-300 leading-relaxed">
+                上下車請皆刷悠遊卡/一卡通感應。回程請提早 5 分鐘於原下車站牌「對面候車處」等候 16:25 回程末班公車。
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ==========================================
+             台灣好行 701 雲林草嶺線 官方時刻表 (全站點停靠時間核對)
              ========================================== -->
         <div class="rpg-box-sky p-5 rounded-2xl space-y-4">
           <div class="flex flex-wrap items-center justify-between gap-2 border-b border-sky-500/30 pb-3">
@@ -417,14 +627,14 @@
               </span>
               <div>
                 <h3 class="text-base sm:text-lg font-black text-white">
-                  台灣好行 701 雲林草嶺線｜乘車點 ＆ 路線站點圖
+                  台灣好行 701 雲林草嶺線｜官方最新發車與各站時刻表
                 </h3>
-                <p class="text-[11px] text-sky-300">營運業者：臺西客運 • 斗六火車站 ⇄ 外湖 ⇄ 東璧山莊</p>
+                <p class="text-[11px] text-sky-300">臺西客運營運 • 週三至週日行駛（週一、週二停駛）• 適用悠遊卡/一卡通與 TPASS</p>
               </div>
             </div>
             <div class="flex items-center gap-2">
               <a href="https://www.taiwantrip.com.tw/Frontend/Route/Select_p?RouteID=R0062" target="_blank" class="rpg-btn px-3 py-1.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 shadow">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> 台灣好行草嶺線官網 (R0062)
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> 台灣好行草嶺線官網
               </a>
               <a href="https://www.taiwantrip.com.tw/Frontend/Bustime/TimeTable/R0062" target="_blank" class="rpg-btn px-3 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 shadow">
                 <i class="fa-solid fa-table"></i> 官網票價與時刻表
@@ -432,456 +642,99 @@
             </div>
           </div>
 
-          <!-- 週六/週日 官方最新正確時刻表 (官方台西客運 701) -->
-          <div class="p-4 rounded-xl bg-slate-950 border-2 border-amber-400/60 space-y-3">
-            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2">
-              <div class="flex items-center gap-2">
-                <span class="px-2 py-0.5 rounded bg-amber-400 text-slate-950 font-black text-xs">週六・週日 假日專用</span>
-                <h4 class="text-sm font-bold text-white">台灣好行 701 雲林草嶺線 官方時刻表（臺西客運營運）</h4>
-              </div>
-              <span class="text-[11px] text-amber-300 font-mono">⚠️ 假日全天去程僅有 2 班車！</span>
-            </div>
-
-            <!-- 時刻表格 -->
-            <div class="overflow-x-auto">
-              <table class="w-full text-xs text-left text-slate-300">
-                <thead class="text-[11px] text-sky-300 bg-slate-900 border-b border-slate-700">
-                  <tr>
-                    <th class="py-2 px-3">方向</th>
-                    <th class="py-2 px-3">班次</th>
-                    <th class="py-2 px-3">斗六火車站(後站)發車</th>
-                    <th class="py-2 px-3 text-emerald-400">【外湖站】抵達 (萬年峽谷)</th>
-                    <th class="py-2 px-3">東碧山莊終點</th>
-                    <th class="py-2 px-3">備註</th>
-                  </tr>
-                </thead>
-                <tbody class="divide-y divide-slate-800 font-mono">
-                  <tr class="hover:bg-slate-900/60">
-                    <td class="py-2 px-3 text-amber-300 font-bold">去程 (往山區)</td>
-                    <td class="py-2 px-3">第 1 班</td>
-                    <td class="py-2 px-3 font-bold text-white">08:00</td>
-                    <td class="py-2 px-3 text-emerald-400 font-bold">08:46</td>
-                    <td class="py-2 px-3">09:10</td>
-                    <td class="py-2 px-3 text-slate-400">9:00前已發車，此班無法搭乘</td>
-                  </tr>
-                  <tr class="hover:bg-slate-900/60 bg-sky-950/20">
-                    <td class="py-2 px-3 text-amber-300 font-bold">去程 (往山區)</td>
-                    <td class="py-2 px-3">第 2 班</td>
-                    <td class="py-2 px-3 font-bold text-white">13:30</td>
-                    <td class="py-2 px-3 text-emerald-400 font-bold">14:16</td>
-                    <td class="py-2 px-3">14:40</td>
-                    <td class="py-2 px-3 text-sky-300">下午唯一公車班次（車程約46分）</td>
-                  </tr>
-                  <tr class="hover:bg-slate-900/60">
-                    <td class="py-2 px-3 text-purple-300 font-bold">回程 (往斗六)</td>
-                    <td class="py-2 px-3">第 1 班</td>
-                    <td class="py-2 px-3">11:10 抵斗六</td>
-                    <td class="py-2 px-3 text-purple-300">10:24 外湖上車</td>
-                    <td class="py-2 px-3">10:00 發車</td>
-                    <td class="py-2 px-3 text-slate-400">東碧山莊 10:00 發車</td>
-                  </tr>
-                  <tr class="hover:bg-slate-900/60">
-                    <td class="py-2 px-3 text-purple-300 font-bold">回程 (往斗六)</td>
-                    <td class="py-2 px-3">第 2 班</td>
-                    <td class="py-2 px-3">16:10 抵斗六</td>
-                    <td class="py-2 px-3 text-purple-300">15:24 外湖上車</td>
-                    <td class="py-2 px-3">15:00 發車</td>
-                    <td class="py-2 px-3 text-slate-400">末班車，妳們約16:30下山故採預約叫車</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <!-- 行程時間精準剖析與真心建議 -->
-            <div class="p-3 rounded-lg bg-amber-500/10 border border-amber-400/40 text-xs space-y-1.5">
-              <div class="font-bold text-amber-300 flex items-center gap-1.5">
-                <i class="fa-solid fa-triangle-exclamation"></i> 9:00 抵達斗六吃早餐，該如何規劃上山？（兩大最佳方案）
-              </div>
-              <p class="text-slate-300 leading-relaxed">
-                因為週六公車 <strong>08:00 班次已開走</strong>，下一班公車要等至 <strong>下午 13:30</strong>。為了讓妳們能好好吃早午餐並順利在萬年峽谷遊玩至 16:30：
-              </p>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pt-1">
-                <div class="p-2.5 rounded bg-slate-900 border border-emerald-500/40 space-y-1">
-                  <div class="font-bold text-emerald-400 flex items-center gap-1">
-                    <i class="fa-solid fa-crown"></i> 方案一（首推！時間最自由充裕）：
-                  </div>
-                  <p class="text-[11px] text-slate-300">
-                    <strong>09:00~10:15</strong> 悠閒吃斗六早午餐 ➔ <strong>10:15</strong> 在斗六火車站搭預約計程車/包車直達萬年峽谷停車場（車程約 50 分，11:05 抵達）➔ 漫步峽谷、拍美照 ➔ <strong>16:30</strong> 預約計程車下山。
-                  </p>
-                </div>
-                <div class="p-2.5 rounded bg-slate-900 border border-sky-500/40 space-y-1">
-                  <div class="font-bold text-sky-400 flex items-center gap-1">
-                    <i class="fa-solid fa-bus"></i> 方案二（搭乘下午 13:30 公車）：
-                  </div>
-                  <p class="text-[11px] text-slate-300">
-                    <strong>09:00~10:15</strong> 吃早午餐 ➔ <strong>10:15~13:15</strong> 逛斗六太平老街、雲中街文創聚落喝咖啡 ➔ <strong>13:30</strong> 斗六後站搭 701 公車 ➔ <strong>14:16</strong> 外湖站下車走入萬年峽谷 ➔ <strong>16:30</strong> 預約計程車下山。
-                  </p>
-                </div>
-              </div>
-            </div>
+          <!-- 時刻表格 -->
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs text-left text-slate-300">
+              <thead class="text-[11px] text-sky-300 bg-slate-900 border-b border-slate-700">
+                <tr>
+                  <th class="py-2.5 px-3">方向</th>
+                  <th class="py-2.5 px-3">班次</th>
+                  <th class="py-2.5 px-3">斗六火車站(後站)</th>
+                  <th class="py-2.5 px-3 text-sky-300">勞工育樂中心(鵝童樂園)</th>
+                  <th class="py-2.5 px-3 text-amber-400 font-bold">⭐ 荷苞山桐花公園</th>
+                  <th class="py-2.5 px-3 text-emerald-400">草嶺站(老街)</th>
+                  <th class="py-2.5 px-3 text-slate-400">東碧山莊(終點)</th>
+                  <th class="py-2.5 px-3">搭乘建議</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800 font-mono text-[11px]">
+                <tr class="hover:bg-slate-900/60 bg-amber-500/10 border-l-4 border-amber-400">
+                  <td class="py-2 px-3 text-amber-300 font-bold">去程 (往山區)</td>
+                  <td class="py-2 px-3">下午唯一班次</td>
+                  <td class="py-2 px-3 font-black text-white">13:30 發車</td>
+                  <td class="py-2 px-3 text-sky-300">約 13:42</td>
+                  <td class="py-2 px-3 text-amber-300 font-black">約 13:50 到達</td>
+                  <td class="py-2 px-3 text-emerald-400">約 14:25</td>
+                  <td class="py-2 px-3 text-slate-500">14:40 (太趕不建議)</td>
+                  <td class="py-2 px-3 text-emerald-300 font-bold">✅ 建議在荷苞山下車玩！</td>
+                </tr>
+                <tr class="hover:bg-slate-900/60 bg-emerald-500/10 border-l-4 border-emerald-400">
+                  <td class="py-2 px-3 text-emerald-300 font-bold">回程 (往斗六)</td>
+                  <td class="py-2 px-3">回程末班車</td>
+                  <td class="py-2 px-3 font-black text-white">約 16:50 抵達</td>
+                  <td class="py-2 px-3 text-sky-300">約 16:35</td>
+                  <td class="py-2 px-3 text-amber-300 font-black">約 16:25 上車</td>
+                  <td class="py-2 px-3 text-emerald-400">15:45 上車</td>
+                  <td class="py-2 px-3 text-slate-500">15:30 發車</td>
+                  <td class="py-2 px-3 text-emerald-300 font-bold">✅ 荷苞山對面上車直達斗六！</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
-            <!-- 乘車地點 -->
+          <!-- 乘車地點三欄提示 -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs pt-2">
             <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-1.5">
               <div class="text-amber-400 font-bold flex items-center gap-1.5">
                 <i class="fa-solid fa-location-dot"></i> 斗六火車站哪裡上車？
               </div>
-              <p class="text-slate-300 leading-relaxed">
+              <p class="text-slate-300 leading-relaxed text-[11px]">
                 <strong>務必從【斗六火車站後站（武昌路）】出站！</strong><br>
-                切勿走去前站大同路。出後站剪票口後，走往<strong>後站出口右前方約 100 公尺處</strong>，即可看到「臺西客運斗六後站候車站牌」，此處即為 701 專屬乘車站！
+                出後站剪票口後，走往<strong>後站出口右前方約 100 公尺處</strong>，即可看到「臺西客運斗六後站候車站牌」，此處即為 701 專屬乘車站！
               </p>
             </div>
 
-            <!-- 發車時刻與車程 -->
             <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-1.5">
               <div class="text-emerald-400 font-bold flex items-center gap-1.5">
-                <i class="fa-solid fa-clock"></i> 票價 ＆ 優惠提醒
+                <i class="fa-solid fa-ticket"></i> 票價超便宜 ＆ 刷卡指南
               </div>
-              <p class="text-slate-300 leading-relaxed">
-                💡 <strong>電子票證優惠：</strong>使用悠遊卡 / 一卡通可享電子票證搭乘優惠（半價折扣，單程約 80~100 元以內）。<br>
-                車程直達外湖站約需 46 分鐘（至終點東碧山莊約 70~80 分鐘）。
+              <p class="text-slate-300 leading-relaxed text-[11px]">
+                💡 <strong>電子票證（悠遊卡/一卡通/icash）：</strong>上下車皆需感應刷卡。斗六到荷苞山單程僅約 <strong>$30 元</strong>，兩人來回只要約 $120 元，比叫計程車省下將近 $1,000 元！
               </p>
             </div>
 
-            <!-- 下車站點 -->
             <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-1.5">
               <div class="text-rose-400 font-bold flex items-center gap-1.5">
-                <i class="fa-solid fa-flag-checkered"></i> 在哪一站下車？
+                <i class="fa-solid fa-ban"></i> 避坑提醒：不去萬年峽谷與東碧
               </div>
-              <p class="text-slate-300 leading-relaxed">
-                <strong>第 16 站【外湖站】準時下車！</strong><br>
-                不要坐到終點草嶺喔！「外湖站」是距離萬年峽谷最近的站牌，下車處就是 149甲 公路起步點（對照下方黑色小人初始位置）。
+              <p class="text-slate-300 leading-relaxed text-[11px]">
+                <strong>萬年峽谷需走山路隧道已取消不去！</strong><br>
+                終點「東碧山莊」下午 14:40 才抵達、15:30 就要回程，僅停留 50 分鐘且五元兩角需轉車，下午班次請勿搭到東碧山莊。
               </p>
             </div>
           </div>
 
-          <!-- 台灣好行 701 雲林草嶺線 官方站點路線圖 (視覺化階梯站點圖) -->
-          <div class="p-4 rounded-xl bg-slate-950 border border-sky-500/20 space-y-2.5">
-            <div class="flex items-center justify-between text-xs">
-              <span class="font-bold text-sky-300 flex items-center gap-1.5">
-                <i class="fa-solid fa-route"></i> 台灣好行 701 雲林草嶺線 完整站牌路線圖（23 站）
-              </span>
-              <span class="text-[10px] text-slate-400 font-mono">斗六後站 ➔ 外湖 (第16站) ➔ 東璧山莊</span>
-            </div>
-
-            <!-- 橫向/多行自適應站點流水圖 -->
-            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 overflow-x-auto">
-              <div class="flex items-center gap-1 min-w-[760px] text-[11px] font-mono py-1">
-                <!-- 斗六站 (起點高亮) -->
-                <div class="px-2.5 py-1 rounded-md bg-amber-500 text-slate-950 font-black flex items-center gap-1 shrink-0 shadow">
-                  <i class="fa-solid fa-bus-simple"></i> ① 斗六火車站(後站)
-                </div>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 shrink-0">鎮西國小</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 shrink-0">水岸公園</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 shrink-0">成大醫院</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 shrink-0">受天宮</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 shrink-0">勞工育樂中心</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 shrink-0">環球科大</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 shrink-0">東和</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 shrink-0">荷苞厝</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 shrink-0">桐花公園</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 shrink-0">早寮</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 shrink-0">二坪仔</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 shrink-0">小旗仔</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 shrink-0">檳榔宅</span>
-                <span class="text-slate-600">➔</span>
-                <!-- 外湖站 (下車目標高亮) -->
-                <div class="px-3 py-1 rounded-md bg-emerald-400 text-slate-950 font-black flex items-center gap-1 shrink-0 shadow-lg animate-pulse">
-                  <i class="fa-solid fa-person-walking"></i> ⑯ 外湖站(下車點！)
-                </div>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 shrink-0">內湖</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 shrink-0">新草嶺國小</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 shrink-0">草嶺公園</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 shrink-0">草嶺</span>
-                <span class="text-slate-600">➔</span>
-                <span class="px-2 py-1 rounded-md bg-slate-800 text-slate-400 shrink-0">㉓ 東璧山莊(終點)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 遊戲互動式地圖畫布區 -->
-        <div class="rpg-box-emerald p-4 sm:p-6 rounded-3xl space-y-4">
-          
-          <!-- 上方狀態對話框 (HUD Notification) -->
-          <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900 border border-emerald-500/40 text-xs">
-            <div class="flex items-center gap-2">
-              <span class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></span>
-              <span id="playerStatusMessage" class="text-emerald-300 font-bold">
-                【外湖站】公車站牌下車！黑色小人已在起點待命，請使用右下角鍵盤操控小人！
-              </span>
-            </div>
-            <span id="playerCoordLabel" class="text-[11px] text-slate-400 font-mono hidden sm:inline">POS: 外湖站</span>
-          </div>
-
-          <!-- 地圖舞台容器 -->
-          <div id="mapStageContainer" class="relative rounded-2xl overflow-hidden border-2 border-emerald-400/80 shadow-2xl bg-slate-950 select-none">
-            
-            <!-- 底圖：草嶺導覽圖 -->
-            <img id="hikingMapImg" src="caoling_map.jpg" alt="草嶺導覽圖" class="w-full h-auto object-cover max-h-[620px] block pointer-events-none opacity-95">
-
-            <!-- SVG 真實道路光暈引導線（100% 依循地圖 149甲公路蜿蜒彎道 ＆ 萬年峽谷步道繪製） -->
-            <svg class="absolute inset-0 w-full h-full pointer-events-none z-10" viewBox="0 0 100 100" preserveAspectRatio="none">
-              <!-- 外湖站 (44.1, 43.2) -> 149甲蜿蜒山路 -> 彎道明隧道 (38.3, 44.3) -> 景觀段 -> 步道岔路口 (35.0, 46.1) -> 棕色虛線階梯 -> 萬年峽谷觀景台 (32.2, 50.7) -->
-              <path d="M 44.1 43.2 
-                       C 43.4 43.1, 42.4 42.9, 41.8 42.9 
-                       C 41.2 42.9, 40.2 43.0, 39.8 43.5 
-                       C 39.5 43.9, 39.4 44.3, 38.8 44.3 
-                       C 38.2 44.3, 37.8 44.0, 37.3 43.9 
-                       C 36.8 43.8, 36.5 43.6, 36.0 43.9 
-                       C 35.5 44.2, 35.3 45.2, 35.0 46.1 
-                       C 34.6 47.0, 34.4 47.3, 34.2 47.5 
-                       C 33.8 48.2, 33.5 48.6, 33.4 48.8 
-                       C 33.0 49.4, 32.8 49.8, 32.6 50.0 
-                       C 32.4 50.3, 32.3 50.6, 32.2 50.7" 
-                    fill="none" 
-                    stroke="#38bdf8" 
-                    stroke-width="1.2" 
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="route-glow-line filter drop-shadow-[0_0_5px_#0284c7]" />
-            </svg>
-
-            <!-- 標籤全部整理至「左側透明懸浮面板」，完全不擋地圖路徑 -->
-            <div class="absolute left-2 sm:left-4 top-3 bottom-3 w-44 sm:w-60 z-20 flex flex-col justify-between pointer-events-none">
-              <div class="p-2.5 sm:p-3.5 rounded-xl bg-slate-950/90 backdrop-blur-md border border-emerald-500/50 text-[10px] sm:text-xs space-y-2 shadow-2xl pointer-events-auto">
-                <div class="text-emerald-300 font-pixel text-[9px] sm:text-[10px] border-b border-emerald-500/30 pb-1 flex items-center gap-1">
-                  <i class="fa-solid fa-route"></i> 真實道路步行路線
-                </div>
-                <div class="space-y-2 text-slate-200">
-                  <div onclick="moveCharacterTo(44.1, 43.2)" class="p-1.5 rounded hover:bg-slate-800 cursor-pointer flex items-center gap-1.5 text-emerald-400 font-bold border border-transparent hover:border-emerald-500/40">
-                    <span class="w-4 h-4 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center text-[10px]">①</span>
-                    外湖公車站（下車點）
-                  </div>
-                  <div onclick="moveCharacterTo(38.3, 44.3)" class="p-1.5 rounded hover:bg-slate-800 cursor-pointer flex items-center gap-1.5 text-sky-400 font-bold border border-transparent hover:border-sky-500/40">
-                    <span class="w-4 h-4 rounded-full bg-sky-500 text-slate-950 flex items-center justify-center text-[10px]">②</span>
-                    149甲明隧道公路
-                  </div>
-                  <div onclick="moveCharacterTo(35.0, 46.1)" class="p-1.5 rounded hover:bg-slate-800 cursor-pointer flex items-center gap-1.5 text-amber-400 font-bold border border-transparent hover:border-amber-500/40">
-                    <span class="w-4 h-4 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center text-[10px]">③</span>
-                    步道入口（棕色虛線起點）
-                  </div>
-                  <div onclick="moveCharacterTo(32.2, 50.7)" class="p-1.5 rounded hover:bg-slate-800 cursor-pointer flex items-center gap-1.5 text-rose-400 font-bold border border-transparent hover:border-rose-500/40">
-                    <span class="w-4 h-4 rounded-full bg-rose-500 text-white flex items-center justify-center text-[10px]">④</span>
-                    萬年峽谷觀景台（終點）
-                  </div>
-                </div>
-                <div class="text-[9px] text-slate-400 pt-1 border-t border-slate-800">
-                  💡 點擊站名可快速傳送
-                </div>
-              </div>
-            </div>
-
-            <!-- 地圖上的極簡真實位置標點（精確定位在橙色公路與棕色步道上） -->
-            <!-- 標點 ①：外湖站下車處 (44.1%, 43.2%) -->
-            <div class="absolute left-[44.1%] top-[43.2%] -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none">
-              <span class="w-5 h-5 rounded-full bg-emerald-500 text-slate-950 font-black text-[10px] flex items-center justify-center border-2 border-white shadow-lg animate-pulse">①</span>
-            </div>
-            <!-- 標點 ②：149甲明隧道公路 (38.3%, 44.3%) -->
-            <div class="absolute left-[38.3%] top-[44.3%] -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none">
-              <span class="w-4 h-4 rounded-full bg-sky-500 text-slate-950 font-black text-[9px] flex items-center justify-center border border-white shadow">②</span>
-            </div>
-            <!-- 標點 ③：步道岔路口 (棕色虛線起點) (35.0%, 46.1%) -->
-            <div class="absolute left-[35.0%] top-[46.1%] -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none">
-              <span class="w-4 h-4 rounded-full bg-amber-500 text-slate-950 font-black text-[9px] flex items-center justify-center border border-white shadow">③</span>
-            </div>
-            <!-- 標點 ④：萬年峽谷景點深藍色圓圈終點 (32.2%, 50.7%) -->
-            <div class="absolute left-[32.2%] top-[50.7%] -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none">
-              <span class="w-5 h-5 rounded-full bg-rose-500 text-white font-black text-[10px] flex items-center justify-center border-2 border-white shadow-lg animate-bounce">④</span>
-            </div>
-
-            <!-- 右上角原本紅色標記的提示 -->
-            <div class="absolute right-3 top-3 z-10 pointer-events-none bg-slate-950/80 p-1.5 rounded border border-rose-500/60 text-[9px] text-rose-300 max-w-[140px] text-center">
-              ✕ 原圖紅標是雲嶺之丘(18km遠)，千萬別去！
-            </div>
-
-            <!-- ==========================================
-                 黑色小人 (可操控的角色 RPG AVATAR)
-                 ========================================== -->
-            <div id="gamePlayer" class="absolute left-[44.1%] top-[43.2%] -translate-x-1/2 -translate-y-1/2 z-30 transition-all duration-150 flex flex-col items-center cursor-pointer pointer-events-none">
-              <span class="px-1.5 py-0.5 rounded bg-slate-950 text-emerald-400 font-bold text-[9px] border border-emerald-400 shadow-md whitespace-nowrap mb-0.5">
-                🚶‍♀️ 妳們在此
-              </span>
-              <div id="characterSprite" class="w-7 h-7 sm:w-8 sm:h-8 filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="5" y="11" width="5" height="9" rx="2" fill="#334155" />
-                  <circle cx="16" cy="7" r="5" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" />
-                  <rect x="11" y="12" width="10" height="11" rx="3" fill="#020617" stroke="#38bdf8" stroke-width="1" />
-                  <rect x="12" y="23" width="3" height="6" rx="1" fill="#020617" />
-                  <rect x="17" y="23" width="3" height="6" rx="1" fill="#020617" />
-                  <line x1="22" y1="13" x2="23" y2="29" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round" />
-                </svg>
-              </div>
-            </div>
-
-            <!-- ==========================================
-                 右下角虛擬方向鍵盤 (RETRO D-PAD CONTROLLER)
-                 ========================================== -->
-            <div class="absolute right-3 bottom-3 z-30 p-2 rounded-2xl bg-slate-950/90 backdrop-blur-md border-2 border-sky-400/80 shadow-2xl flex flex-col items-center pointer-events-auto">
-              <div class="text-[9px] text-sky-300 font-pixel mb-1 tracking-wider">D-PAD 操控</div>
-              
-              <!-- 上 -->
-              <div class="flex justify-center mb-1">
-                <button onmousedown="startMoving(0, -1.2)" onmouseup="stopMoving()" ontouchstart="startMoving(0, -1.2)" ontouchend="stopMoving()" class="d-btn" title="向上走">
-                  <i class="fa-solid fa-caret-up"></i>
-                </button>
-              </div>
-              <!-- 左 中 右 -->
-              <div class="flex items-center gap-1">
-                <button onmousedown="startMoving(-1.2, 0)" onmouseup="stopMoving()" ontouchstart="startMoving(-1.2, 0)" ontouchend="stopMoving()" class="d-btn" title="向左走">
-                  <i class="fa-solid fa-caret-left"></i>
-                </button>
-                <button onclick="interactAtCurrentPos()" class="d-btn bg-amber-500/20 text-amber-400 border-amber-400 font-bold text-xs" title="互動查看">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <button onmousedown="startMoving(1.2, 0)" onmouseup="stopMoving()" ontouchstart="startMoving(1.2, 0)" ontouchend="stopMoving()" class="d-btn" title="向右走">
-                  <i class="fa-solid fa-caret-right"></i>
-                </button>
-              </div>
-              <!-- 下 -->
-              <div class="flex justify-center mt-1">
-                <button onmousedown="startMoving(0, 1.2)" onmouseup="stopMoving()" ontouchstart="startMoving(0, 1.2)" ontouchend="stopMoving()" class="d-btn" title="向下走">
-                  <i class="fa-solid fa-caret-down"></i>
-                </button>
-              </div>
-
-              <div class="text-[8px] text-slate-400 mt-1 font-mono">支援鍵盤方向鍵 ⬆️⬇️⬅️➡️</div>
-            </div>
-
-          </div>
-
-          <!-- 逐步步行闖關路線詳細指引 (Step-by-Step 4 階段) -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 pt-2">
-            
-            <div id="step-card-1" class="p-3.5 rounded-xl bg-slate-900 border-2 border-emerald-400/70 space-y-1.5 transition">
-              <div class="flex items-center justify-between">
-                <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold text-xs flex items-center gap-1.5">
-                  <span class="w-4 h-4 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center text-[10px]">1</span>
-                  下車點：台灣好行「外湖站」
-                </span>
-                <span class="text-[11px] text-slate-400">起點 (海拔約 650m)</span>
-              </div>
-              <p class="text-xs text-slate-300 leading-relaxed">
-                在「外湖站」下車後，順著 <strong>149甲草嶺公路</strong> 向西沿著公路平坦柏油路直行。
-              </p>
-            </div>
-
-            <div id="step-card-2" class="p-3.5 rounded-xl bg-slate-900 border border-slate-700 space-y-1.5 transition">
-              <div class="flex items-center justify-between">
-                <span class="px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center gap-1.5">
-                  <span class="w-4 h-4 rounded-full bg-sky-500 text-slate-950 flex items-center justify-center text-[10px]">2</span>
-                  穿過 149甲 明隧道群
-                </span>
-                <span class="text-[11px] text-slate-400">約 1.2 公里</span>
-              </div>
-              <p class="text-xs text-slate-300 leading-relaxed">
-                沿公路前行會經過 <strong>4號、3號、2號明隧道</strong>。通風遮陽、視野極佳，靠邊走非常安全。
-              </p>
-            </div>
-
-            <div id="step-card-3" class="p-3.5 rounded-xl bg-slate-900 border border-slate-700 space-y-1.5 transition">
-              <div class="flex items-center justify-between">
-                <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold text-xs flex items-center gap-1.5">
-                  <span class="w-4 h-4 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center text-[10px]">3</span>
-                  關鍵岔路：轉入萬年峽谷步道
-                </span>
-                <span class="text-[11px] text-slate-400">銜接棕色虛線步道</span>
-              </div>
-              <p class="text-xs text-slate-300 leading-relaxed">
-                順著 149甲下切，在棕色指標處轉入<strong>「萬年峽谷專用聯絡步道」</strong>（對照地圖上的棕色虛線）。
-              </p>
-            </div>
-
-            <div id="step-card-4" class="p-3.5 rounded-xl bg-slate-900 border border-slate-700 space-y-1.5 transition">
-              <div class="flex items-center justify-between">
-                <span class="px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 font-bold text-xs flex items-center gap-1.5">
-                  <span class="w-4 h-4 rounded-full bg-rose-500 text-white flex items-center justify-center text-[10px]">4</span>
-                  萬年峽谷觀景台（藍色地標終點）
-                </span>
-                <span class="text-[11px] text-slate-400">大自然壺穴奇景</span>
-              </div>
-              <p class="text-xs text-slate-300 leading-relaxed">
-                步道終點即為地圖上深藍色景點圓圈！走入高架木棧道，俯瞰鬼斧神工的峽谷岩壁與碧綠深潭！
-              </p>
-            </div>
-
-          </div>
-
-          <!-- Google Maps 路線導航按鈕 ＆ 步行 23 公里避坑指南 -->
-          <div class="p-4 rounded-xl bg-slate-900 border border-emerald-500/30 space-y-3 text-xs">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div>
-                <span class="font-bold text-emerald-300 text-sm">📍 起點：雲林古坑【外湖公車站 (GPS: 23.6074, 120.6784)】➔ 終點：萬年峽谷</span>
-                <p class="text-slate-400 mt-0.5">已綁定雲林古坑 GPS 座標，絕對 100% 定位在雲林外湖，嚴禁跳轉新竹或外縣市！</p>
-              </div>
-              <div class="flex flex-wrap items-center gap-2">
-                <a href="https://www.google.com/maps/dir/?api=1&origin=23.607406,120.678439&destination=23.6024363,120.6679185&travelmode=walking" target="_blank" class="rpg-btn px-3 py-2 bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 font-bold rounded-xl flex items-center justify-center gap-1.5 border border-rose-500/40 whitespace-nowrap">
-                  <i class="fa-solid fa-person-walking"></i> 雲林外湖步行導航 (走路模式)
-                </a>
-                <a href="https://www.google.com/maps/dir/?api=1&origin=23.607406,120.678439&destination=23.6024363,120.6679185" target="_blank" class="rpg-btn px-4 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black rounded-xl flex items-center justify-center gap-1.5 shadow whitespace-nowrap">
-                  <i class="fa-solid fa-diamond-turn-right"></i> 149甲直達導航 (3.3km・開車7分/現場走40分)
-                </a>
-                <a href="https://www.google.com/maps/search/?api=1&query=23.6024363,120.6679185" target="_blank" class="rpg-btn px-3 py-2.5 bg-slate-800 hover:bg-slate-700 text-sky-300 font-bold rounded-xl flex items-center justify-center gap-1.5 border border-slate-700 whitespace-nowrap">
-                  <i class="fa-solid fa-square-parking"></i> 萬年峽谷定位
-                </a>
-              </div>
-            </div>
-
-            <!-- 為什麼指定「走路模式」Google 地圖就會逼人走 6 小時？ -->
-            <div class="p-3.5 rounded-lg bg-amber-500/10 border border-amber-400/50 space-y-2 text-slate-200">
-              <div class="font-bold text-amber-300 flex items-center gap-1.5 text-xs">
-                <i class="fa-solid fa-triangle-exclamation"></i> ⚠️ 終極真相：為什麼要求用「走路模式」，Google 就一定會顯示 6 小時（23公里）？
-              </div>
-              <p class="leading-relaxed text-[11px] text-slate-300">
-                妳點擊上方紅色的「<strong>步行模式導航</strong>」，就會親眼看見 Google 地圖立刻跳出 <strong>6 小時（23 公里）</strong>！<br>
-                這就是我一直想提醒妳的關鍵：<strong>不是地址設錯，而是 Google 系統在搞鬼！</strong><br>
-                因為 <strong>149甲草嶺公路的明隧道在 Google 的資料庫裡被標註為『無獨立人行道』</strong>。Google 系統有條死規則：「只要是走路模式，嚴禁走沒有人行道的隧道」！因此只要給它 `travelmode=walking`，它就會<strong>強迫行人掉頭繞去南投竹山走 23 公里</strong>！
-              </p>
-              <div class="p-2.5 rounded bg-slate-950/80 border border-emerald-500/30 text-[11px] text-emerald-300 leading-relaxed">
-                ✅ <strong>真實走法看綠色按鈕：</strong><br>
-                綠色按鈕使用能通過隧道的模式，直接在 Google 地圖畫出 <strong>149甲草嶺公路（3.3 公里 / 27 分鐘）</strong>。現場完全就是照著這條綠色按鈕的路線，從「外湖站牌」順著柏油馬路下坡走 40 分鐘穿過明隧道，就能平安抵達萬年峽谷！
-              </div>
-            </div>
-          </div>
 
         </div>
 
       </section>
 
       <!-- ========================================================
-           第三站：下午 16:30 準時下山叫車攻略 (STAGE 3)
+           第三站：下午 16:25 搭 701 公車下山 ➔ 悠閒晚餐 ➔ 虎尾做臉 (STAGE 3)
            ======================================================== -->
       <section id="stage-taxi" class="space-y-6 pt-8 border-t border-slate-800">
         
         <div class="flex flex-wrap items-center justify-between gap-3">
           <div>
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-pixel">
-              <i class="fa-solid fa-taxi"></i> LEVEL 3: 16:30 預約叫車下山 ➔ 斗六火車站 ➔ 悠閒晚餐 ➔ 機車往虎尾
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-pixel">
+              <i class="fa-solid fa-bus"></i> LEVEL 3: 16:25 搭 701 公車下山（省 1,000 元！）➔ 16:50 抵斗六 ➔ 充裕晚餐 ➔ 機車往虎尾
             </div>
             <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">
-              下山預約叫車、晚餐精算時間軸 ＆ 虎尾機車路線
+              免包車免花千元！搭 701 回程公車、晚餐 2 小時 ＆ 虎尾機車路線
             </h2>
           </div>
-          <span class="text-xs font-bold px-3 py-1 bg-rose-500/20 text-rose-300 rounded-lg border border-rose-500/30">
-            ⚠️ 務必提早 1~2 天預約包車！
+          <span class="text-xs font-bold px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-lg border border-emerald-500/30">
+            🎉 公車一人只要 $30 元 • 兩人現省 $1,000！
           </span>
         </div>
 
@@ -890,32 +743,31 @@
              ========================================== -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           
-          <!-- Q1: 外湖站走到萬年峽谷要多久？ -->
+          <!-- Q1: 荷苞山公車站牌好找嗎？走多久？ -->
           <div class="rpg-box p-4 rounded-2xl space-y-2 border-emerald-500/40">
             <div class="flex items-center justify-between">
               <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold text-xs flex items-center gap-1.5">
-                <i class="fa-solid fa-person-walking"></i> 問題一：外湖站走到萬年峽谷多久？
+                <i class="fa-solid fa-location-dot"></i> 問題一：公車站好找嗎？走多久？
               </span>
-              <span class="font-mono text-emerald-400 font-bold text-xs">約 40 ~ 45 分鐘</span>
+              <span class="font-mono text-emerald-400 font-bold text-xs">下車即達 0 距離！</span>
             </div>
             <p class="text-xs text-slate-300 leading-relaxed">
-              <strong>全程約 3.3 公里，以「下坡」為主！</strong><br>
-              從台灣好行外湖站下車後，沿 149甲草嶺公路經過 4, 3, 2號明隧道（約 1.8km / 25分），再接專用步道聯絡道（約 800m / 10分）至入口，最後走景觀木棧道（約 750m / 10分）即達深潭壺穴觀景台。下坡走起來輕鬆愜意。
+              <strong>完全不用走山路或隧道，下車就是公園大門！</strong><br>
+              站牌正前方即是荷苞山桐花公園入口與林蔭步道，右手邊步行 1 分鐘就是「巴登咖啡總店」。無論散步或喝咖啡，全程都在站牌旁，完全沒有找路或迷路的困擾！
             </p>
           </div>
 
-          <!-- Q2: 要跟司機約哪裡？走回約定點要多久？ -->
+          <!-- Q2: 回程公車幾點搭？費用多少？ -->
           <div class="rpg-box-gold p-4 rounded-2xl space-y-2 border-amber-400/50">
             <div class="flex items-center justify-between">
               <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold text-xs flex items-center gap-1.5">
-                <i class="fa-solid fa-location-dot"></i> 問題二：要跟司機約哪？走回要多久？
+                <i class="fa-solid fa-clock"></i> 問題二：回程公車幾點搭？多少錢？
               </span>
-              <span class="font-mono text-amber-400 font-bold text-xs">走回約 15 ~ 20 分鐘</span>
+              <span class="font-mono text-amber-400 font-bold text-xs">16:25 上車 • 單程約 $30</span>
             </div>
             <p class="text-xs text-slate-300 leading-relaxed">
-              <strong>約定地點：【萬年峽谷停車場（公廁與地標巨石處）】</strong><br>
-              峽谷觀景台在溪谷底，車輛絕對開不進去，停車場是車輛唯一能抵達的接送終點。<br>
-              <strong class="text-rose-400">⚠️ 關鍵提醒：</strong>從觀景台走回停車場是「<strong>上坡階梯步道</strong>」，腳程約 15~20 分鐘。若約 <strong>16:30</strong> 停車場發車，<strong>最晚 16:05 ~ 16:10 就要動身往上走</strong>！
+              <strong>16:25 在原下車站牌「對面候車處」搭乘 701 回程末班公車！</strong><br>
+              車程僅約 20~25 分鐘，<strong>約 16:50 就平安抵達斗六火車站後站</strong>！刷悠遊卡一人只要約 30 元，兩人只要 60 元，<strong>徹底省下 1,000 元的包車計程車花費</strong>！
             </p>
           </div>
 
@@ -925,13 +777,12 @@
               <span class="px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 font-bold text-xs flex items-center gap-1.5">
                 <i class="fa-solid fa-utensils"></i> 問題三：有時間吃晚餐嗎？
               </span>
-              <span class="font-mono text-sky-400 font-bold text-xs">超充裕 1 小時 30 分鐘！</span>
+              <span class="font-mono text-sky-400 font-bold text-xs">超充裕 2 小時黃金時間！</span>
             </div>
             <p class="text-xs text-slate-300 leading-relaxed">
-              <strong>答案：絕對有時間，而且非常悠閒！</strong><br>
-              16:30 包車從峽谷出發 ➔ 17:25 抵達斗六火車站（車程 50~55 分）。<br>
-              斗六騎機車至虎尾做臉只需 22~25 分鐘（18:55 出發即可）。<br>
-              因此 <strong>17:25 ～ 18:55 足足有 90 分鐘黃金晚餐時間</strong>，可以好好坐下來享用雲林美食！
+              <strong>答案：時間比原本更充裕悠閒！足足有 2 小時！</strong><br>
+              16:50 回到斗六火車站，騎車去虎尾只需 22~25 分鐘（18:55 出發即可）。<br>
+              因此 <strong>16:50 ～ 18:55 有整整 125 分鐘黃金晚餐時間</strong>，可以在斗六車站前站悠閒吃魷魚嘴羹、逛老街，或提早騎去虎尾吃當歸鴨，完全無時間壓力！
             </p>
           </div>
 
@@ -957,28 +808,22 @@
         <div class="p-5 rounded-2xl bg-slate-900 border border-slate-700 space-y-3">
           <div class="flex items-center justify-between border-b border-slate-800 pb-2">
             <h3 class="text-sm font-bold text-amber-300 flex items-center gap-2">
-              <i class="fa-solid fa-clock"></i> 下午返程精密時間表（分秒不差，完美銜接）
+              <i class="fa-solid fa-clock"></i> 下午返程精密時間表（免花大錢，完美銜接）
             </h3>
-            <span class="text-[11px] text-slate-400 font-mono">16:10 ➔ 19:30</span>
+            <span class="text-[11px] text-emerald-400 font-mono font-bold">16:25 ➔ 19:30</span>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-5 gap-3 text-xs">
+          <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs">
             
-            <div class="p-3 rounded-xl bg-slate-950/70 border border-slate-800 space-y-1">
-              <div class="font-bold text-rose-400 font-mono text-sm">16:10 - 16:30</div>
-              <div class="font-bold text-white">🚶‍♀️ 步回停車場</div>
-              <p class="text-[11px] text-slate-400">從峽谷底爬上坡階梯回萬年峽谷停車場與司機會合。</p>
-            </div>
-
-            <div class="p-3 rounded-xl bg-slate-950/70 border border-amber-400/40 space-y-1">
-              <div class="font-bold text-amber-300 font-mono text-sm">16:30 - 17:25</div>
-              <div class="font-bold text-white">🚕 包車回斗六車站</div>
-              <p class="text-[11px] text-slate-400">走149甲接台3線下山，車程約50~55分鐘直達斗六車站前站。</p>
+            <div class="p-3 rounded-xl bg-slate-950/70 border border-emerald-400/40 space-y-1">
+              <div class="font-bold text-emerald-400 font-mono text-sm">16:25 - 16:50</div>
+              <div class="font-bold text-white">🚌 搭 701 公車回斗六</div>
+              <p class="text-[11px] text-slate-400">荷苞山站對面上車，車程約20~25分直達斗六火車站後站，免包車費！</p>
             </div>
 
             <div class="p-3 rounded-xl bg-emerald-500/10 border border-emerald-400/50 space-y-1 sm:col-span-2">
               <div class="font-bold text-emerald-300 font-mono text-sm flex items-center justify-between">
-                <span>17:25 - 18:55 (足足 90 分鐘)</span>
+                <span>16:50 - 18:55 (整整 125 分鐘)</span>
                 <span class="px-1.5 py-0.5 rounded bg-emerald-500 text-slate-950 text-[10px] font-black">超充裕</span>
               </div>
               <div class="font-bold text-white">🍽️ 雲林道地美食晚餐時光！</div>
@@ -997,29 +842,29 @@
         </div>
 
         <!-- ==========================================
-             兩條路線規劃卡片 (萬年峽谷 ➔ 斗六車站 ＆ 斗六 ➔ 虎尾泡泡貓)
+             兩條路線規劃卡片 (荷苞山 ➔ 斗六車站 ＆ 斗六 ➔ 虎尾泡泡貓)
              ========================================== -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           
-          <!-- 路線卡片 1：萬年峽谷 ➔ 斗六火車站（開車/包車） -->
-          <div class="rpg-box p-5 rounded-2xl space-y-3 flex flex-col justify-between">
+          <!-- 路線卡片 1：荷苞山桐花公園 ➔ 斗六火車站（701 公車直達） -->
+          <div class="rpg-box p-5 rounded-2xl space-y-3 flex flex-col justify-between border-emerald-500/40">
             <div class="space-y-2">
               <div class="flex items-center justify-between">
-                <span class="px-2 py-0.5 rounded bg-amber-400 text-slate-950 font-bold text-[10px]">返程階段一 • 包車計程車</span>
-                <span class="text-xs text-amber-400 font-mono">約 36 km • 50~55 分鐘</span>
+                <span class="px-2 py-0.5 rounded bg-emerald-400 text-slate-950 font-bold text-[10px]">返程階段一 • 台灣好行 701 公車</span>
+                <span class="text-xs text-emerald-400 font-mono font-bold">約 12 km • 20~25 分鐘</span>
               </div>
               <h3 class="text-base font-bold text-white flex items-center gap-2">
-                <i class="fa-solid fa-taxi text-amber-400"></i>
-                萬年峽谷停車場 ➔ 斗六火車站
+                <i class="fa-solid fa-bus text-emerald-400"></i>
+                荷苞山桐花公園 ➔ 斗六火車站(後站)
               </h3>
               <p class="text-xs text-slate-300 leading-relaxed">
-                <strong>行駛動線：</strong>萬年峽谷停車場出發 ➔ 149甲 ➔ 149乙 ➔ 桶頭 ➔ 接台3線直行進入斗六市區 ➔ 抵達斗六火車站前站。避開繞路，是下山接回市區最短、最快、最好走的路線！
+                <strong>乘車方式：</strong>於荷苞山桐花公園入口對面站牌候車，搭乘 16:25 抵達之 701 回程末班公車，走縣道 149 直行進入斗六市區，直達斗六火車站後站。單程刷悠遊卡僅約 $30 元！
               </p>
             </div>
             <div class="pt-2 border-t border-slate-700 flex flex-wrap items-center justify-between gap-2 text-xs">
-              <span class="text-slate-400">16:30 上車 ➔ 17:25 抵達車站</span>
-              <a href="https://www.google.com/maps/dir/?api=1&origin=萬年峽谷停車場&destination=斗六火車站&travelmode=driving" target="_blank" class="rpg-btn px-3.5 py-2 bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold rounded-xl flex items-center gap-1.5 shadow">
-                <i class="fa-brands fa-google"></i> 車行開車路線導航
+              <span class="text-slate-400">16:25 上車 ➔ 16:50 抵達車站</span>
+              <a href="https://www.google.com/maps/dir/?api=1&origin=荷苞山桐花公園&destination=斗六火車站&travelmode=transit" target="_blank" class="rpg-btn px-3.5 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl flex items-center gap-1.5 shadow">
+                <i class="fa-solid fa-route"></i> 查看大眾運輸路線
               </a>
             </div>
           </div>
@@ -1051,115 +896,25 @@
 
 
 
-        <!-- 評價好的車行名單（點擊即可撥打電話） -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          
-          <div class="rpg-box-gold p-5 rounded-2xl flex flex-col justify-between space-y-4">
-            <div>
-              <div class="flex items-center justify-between">
-                <span class="px-2 py-0.5 rounded bg-amber-400 text-slate-950 font-bold text-[10px]">在地首選 • 跑山老手</span>
-                <span class="text-amber-400 text-xs"><i class="fa-solid fa-star"></i> 5.0 在地口碑</span>
-              </div>
-              <h3 class="text-lg font-black text-white mt-2">草嶺一心導覽車隊（楊經理 / 楊媽媽）</h3>
-              <p class="text-xs text-slate-300 leading-relaxed mt-1">
-                草嶺在地深耕數十年的專屬導覽與接駁車隊，司機對萬年峽谷與草嶺路況最熟悉。可約定下午 16:30 在萬年峽谷停車場等候接送，專車安全送回<strong>斗六火車站前站</strong>。
-              </p>
-            </div>
-            <div class="pt-2 border-t border-slate-700 flex items-center justify-between">
-              <span class="text-xs text-slate-400 font-mono">0921-665-119</span>
-              <a href="tel:0921665119" class="rpg-btn px-4 py-2 bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs rounded-xl flex items-center gap-1.5">
-                <i class="fa-solid fa-phone"></i> 撥打預約專線
-              </a>
-            </div>
-          </div>
-
-          <div class="rpg-box p-5 rounded-2xl flex flex-col justify-between space-y-4">
-            <div>
-              <div class="flex items-center justify-between">
-                <span class="px-2 py-0.5 rounded bg-sky-400 text-slate-950 font-bold text-[10px]">線上透明一口價</span>
-                <span class="text-amber-400 text-xs"><i class="fa-solid fa-star"></i> 4.8 旅客評分</span>
-              </div>
-              <h3 class="text-lg font-black text-white mt-2">tripool 旅步（長程專車接送）</h3>
-              <p class="text-xs text-slate-300 leading-relaxed mt-1">
-                支援全台山區點對點接送。出發前透過官網輸入「萬年峽谷停車場 ➔ 斗六火車站」，即可線上試算一口價，司機 16:30 會準時在停車場等候。
-              </p>
-            </div>
-            <div class="pt-2 border-t border-slate-700 flex items-center justify-between">
-              <span class="text-xs text-slate-400">線上預約免打電話</span>
-              <a href="https://www.tripool.app" target="_blank" class="rpg-btn px-4 py-2 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs rounded-xl flex items-center gap-1.5">
-                <i class="fa-solid fa-globe"></i> 前往 tripool 官網
-              </a>
-            </div>
-          </div>
-
-          <div class="rpg-box p-5 rounded-2xl flex flex-col justify-between space-y-4">
-            <div>
-              <div class="flex items-center justify-between">
-                <span class="px-2 py-0.5 rounded bg-emerald-400 text-slate-950 font-bold text-[10px]">斗六在地老字號</span>
-                <span class="text-amber-400 text-xs"><i class="fa-solid fa-star"></i> 4.7 在地信任</span>
-              </div>
-              <h3 class="text-lg font-black text-white mt-2">斗六金興計程車行</h3>
-              <p class="text-xs text-slate-300 leading-relaxed mt-1">
-                斗六火車站前站老字號車行，常年承接草嶺、古坑山區旅遊包車與返程接駁，可事前電話約定接送時間與車資。
-              </p>
-            </div>
-            <div class="pt-2 border-t border-slate-700 flex items-center justify-between">
-              <span class="text-xs text-slate-400 font-mono">05-532-2525</span>
-              <a href="tel:055322525" class="rpg-btn px-4 py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs rounded-xl flex items-center gap-1.5">
-                <i class="fa-solid fa-phone"></i> 撥打預約電話
-              </a>
-            </div>
-          </div>
-
-          <div class="rpg-box p-5 rounded-2xl flex flex-col justify-between space-y-4">
-            <div>
-              <div class="flex items-center justify-between">
-                <span class="px-2 py-0.5 rounded bg-yellow-400 text-slate-950 font-bold text-[10px]">全台最大車隊</span>
-                <span class="text-amber-400 text-xs"><i class="fa-solid fa-star"></i> 4.8 品牌保障</span>
-              </div>
-              <h3 class="text-lg font-black text-white mt-2">台灣大車隊 55688（雲林預約特約車）</h3>
-              <p class="text-xs text-slate-300 leading-relaxed mt-1">
-                可使用 55688 APP 預約專線或手機直撥，說明「預約山區包車接駁：古坑萬年峽谷停車場至斗六火車站」，派車系統透明有保障。
-              </p>
-            </div>
-            <div class="pt-2 border-t border-slate-700 flex items-center justify-between">
-              <span class="text-xs text-slate-400 font-mono">手機直撥 55688</span>
-              <a href="tel:55688" class="rpg-btn px-4 py-2 bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-bold text-xs rounded-xl flex items-center gap-1.5">
-                <i class="fa-solid fa-phone"></i> 直撥 55688 預約
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- 預約電話對話小抄 (SOP) -->
-        <div class="bg-slate-900/90 border border-slate-700 p-4 rounded-xl text-xs space-y-2">
-          <div class="text-amber-300 font-bold flex items-center gap-2">
-            <i class="fa-solid fa-comments"></i> 預約叫車「通話小抄」（直接照念即可）：
-          </div>
-          <div class="p-3 bg-slate-950 rounded-lg text-slate-300 font-mono border-l-2 border-amber-400 leading-relaxed">
-            「司機大哥/老闆您好！我想預約 <strong>X 月 X 日下午 16:30</strong>，在<strong>古坑草嶺『萬年峽谷停車場』</strong>上車，載我們 2 位乘客下山直達<strong>【斗六火車站前站】</strong>，請問車資費用多少？可以幫我們安排一輛車嗎？」
-          </div>
-        </div>
 
       </section>
 
       <!-- ========================================================
-           第三點五站：晚餐吃什麼？兩大方案互動雷達窗格 (STAGE 3.5 - 放最後一格的上面)
+           第四站：晚餐時間 (STAGE 4 - 放最後一格的上面)
            ======================================================== -->
       <section id="stage-dinner" class="space-y-6 pt-8 border-t border-slate-800">
         
         <div class="flex flex-wrap items-center justify-between gap-3">
           <div>
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-pixel">
-              <i class="fa-solid fa-utensils"></i> LEVEL 3.5: 晚餐吃什麼？兩大方案美食互動雷達
+              <i class="fa-solid fa-utensils"></i> LEVEL 4: 晚餐時間（兩大方案美食互動雷達）
             </div>
             <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">
-              下山後的 90 分鐘黃金晚餐！選擇方案探索在地必吃
+              晚餐時間
             </h2>
           </div>
           <span class="text-xs font-mono px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-lg border border-emerald-500/30">
-            ⏰ 17:25 ~ 18:55 充裕 1.5 小時
+            ⏰ 預計 17:00 吃晚餐
           </span>
         </div>
 
@@ -1171,13 +926,13 @@
             <div>
               <div class="flex items-center justify-between">
                 <span class="px-2.5 py-0.5 rounded bg-amber-400 text-slate-950 font-black text-xs">方案 A</span>
-                <span class="text-[11px] text-amber-300 font-bold">17:25 抵達斗六直接開吃</span>
+                <span class="text-[11px] text-amber-300 font-bold">預計 17:00 抵達斗六直接開吃</span>
               </div>
               <h3 class="text-lg font-black text-white mt-2 flex items-center gap-2">
                 <span>🍜 斗六火車站站前美食</span>
               </h3>
               <p class="text-xs text-slate-300 leading-relaxed mt-1">
-                包車 17:25 送到斗六車站前站，牽完機車先在斗六大吃一頓！魷魚嘴羹、太平老街傳統小吃、暖心鍋物，吃到 18:55 再騎車去虎尾做臉。
+                16:50 返抵斗六火車站，預計 17:00 準時在斗六站前大吃一頓！魷魚嘴羹、太平老街傳統小吃、暖心鍋物，吃飽再騎車去虎尾做臉。
               </p>
             </div>
             <div class="pt-2 border-t border-slate-700/60 flex items-center justify-between text-xs">
@@ -1193,13 +948,13 @@
             <div>
               <div class="flex items-center justify-between">
                 <span class="px-2.5 py-0.5 rounded bg-slate-800 text-slate-300 font-black text-xs" id="dinnerPlanHuweiBadge">方案 B</span>
-                <span class="text-[11px] text-slate-400 font-bold" id="dinnerPlanHuweiTime">先騎去虎尾，泡泡貓旁吃</span>
+                <span class="text-[11px] text-slate-400 font-bold" id="dinnerPlanHuweiTime">先騎去虎尾，預計 17:30 泡泡貓旁吃</span>
               </div>
               <h3 class="text-lg font-black text-white mt-2 flex items-center gap-2">
                 <span>🦆 虎尾泡泡貓周邊美食</span>
               </h3>
               <p class="text-xs text-slate-300 leading-relaxed mt-1">
-                17:25 抵達斗六牽車，趁天色微亮先騎去虎尾（17:55抵達），在泡泡貓仁愛路旁慢慢吃當歸鴨麵線、神級肯得利香雞排，吃飽走路進店！
+                下山後先騎車前往虎尾（約 17:25 抵達），預計 17:30 在泡泡貓仁愛路旁慢慢吃當歸鴨麵線、神級肯得利香雞排，吃飽散步進店做臉！
               </p>
             </div>
             <div class="pt-2 border-t border-slate-700/60 flex items-center justify-between text-xs">
@@ -1270,6 +1025,9 @@
                 <i class="fa-solid fa-circle-check"></i> 今晚晚餐已鎖定！
               </div>
               <div id="lockedDinnerName" class="text-sm font-black text-white">店名</div>
+              <div id="lockedDinnerAddress" class="text-amber-300 font-medium text-[11px] flex items-center gap-1">
+                <i class="fa-solid fa-location-dot"></i> <span>地址</span>
+              </div>
               <div id="lockedDinnerDesc" class="text-slate-300 text-[11px]">特色</div>
             </div>
             <a id="lockedDinnerNavBtn" href="#" target="_blank" class="rpg-btn px-4 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 shadow whitespace-nowrap">
@@ -1301,7 +1059,7 @@
             <strong>地址：</strong>雲林縣虎尾鎮仁愛路26號（近林森路二段，周邊好停機車）
           </p>
           <p class="text-slate-300 leading-relaxed">
-            享受完斗六的早午餐、萬年峽谷的壯麗自然壺穴與舒心健行，下午 17:25 回到斗六享用美味晚餐，19:20 悠閒騎到虎尾仁愛路，躺下來享受專業深層清潔與水光保養，為這趟雲林大冒險劃下最完美的句點！
+            享受完斗六的在地早午餐、荷苞山桐花公園悠閒林蔭步道與正宗古坑手沖咖啡下午茶，傍晚 16:50 輕鬆回到斗六享用美味晚餐，19:20 悠閒騎到虎尾仁愛路，躺下來享受專業深層清潔與水光保養，為這趟雲林大冒險劃下最完美的句點！
           </p>
         </div>
 
@@ -1316,7 +1074,7 @@
 
     <!-- 頁尾 -->
     <footer class="bg-slate-950 border-t border-slate-800 text-slate-500 text-xs py-6 px-4 text-center mt-12 space-y-2">
-      <div class="font-pixel text-[11px] text-slate-400">YUNLIN QUEST • 斗六 ➔ 萬年峽谷 ➔ 斗六晚餐 ➔ 虎尾泡泡貓</div>
+      <div class="font-pixel text-[11px] text-slate-400">YUNLIN QUEST • 斗六 ➔ 荷苞山桐花咖啡 ➔ 斗六晚餐 ➔ 虎尾泡泡貓</div>
       <p>祝妳與好友出遊平安愉快，拍滿美照，做臉放鬆享受！🌿✨</p>
     </footer>
 
@@ -1451,178 +1209,989 @@
     }
 
     // ==========================================
-    // 3. 黑色小人健行模擬器 (100% 沿著地圖真正彎曲道路走)
+    // 3. 台灣好行 701 雲林草嶺線 13:30 班次 • 小人路線互動導航系統 (全線 22 站)
     // ==========================================
-    // 精確座標：沿著 149甲蜿蜒山路到棕色虛線步道，直通萬年峽谷景點
-    let playerX = 44.1; // 起點：外湖公車站牌 (精準落在 149甲 橙色公路上)
-    let playerY = 43.2;
-    let moveTimer = null;
-    let isAutoWalking = false;
-
-    const checkpoints = [
-      { id: 1, name: "外湖站下車點", x: 44.1, y: 43.2, msg: "🚏 抵達【外湖站】！台灣好行公車站牌下車，準備走入草嶺秘境！" },
-      { id: 2, name: "明隧道群", x: 38.3, y: 44.3, msg: "🚇 沿 149甲公路蜿蜒山道經過明隧道群！通風遮陽、視野遼闊！" },
-      { id: 3, name: "步道入口岔路", x: 35.0, y: 46.1, msg: "🔀 注意！在此轉入【萬年峽谷步道】（即地圖上的棕色虛線路線）！" },
-      { id: 4, name: "萬年峽谷觀景台", x: 32.2, y: 50.7, msg: "🎉 抵達終點！萬年峽谷深藍色地標觀景台，俯瞰神級壺穴奇景！" }
+    const bus701Stations = [
+      {
+        id: "douliu",
+        name: "斗六火車站(後站)",
+        shortName: "斗六火車站",
+        num: "①",
+        time: "13:30",
+        timeLabel: "13:30 發車",
+        isMajor: true,
+        typeTag: "🏛️ 百年巴洛克老街 • ☕ 昭和文青老屋咖啡",
+        badge: "起點站 • 步行輕鬆逛",
+        summary: "13:30 專屬發車站！出火車站前站走路 5~10 分鐘即可探訪百年巴洛克太平老街與昭和警察宿舍日式木屋生活聚落。",
+        goingInfo: "13:30 於斗六火車站後站（武昌路出口右前方約 100m）專屬站牌準時發車",
+        returnInfo: "16:50 返抵斗六火車站後站！足足有 2 小時悠閒晚餐時光",
+        stayDuration: "上午 09:00 ~ 13:15（約 4 小時悠閒散步與早午餐）",
+        notice: "701 乘車站牌位於【斗六火車站後站（武昌路出口右前方約 100 公尺處）】，請提早 10 分鐘至站牌候車刷卡上車！",
+        places: [
+          {
+            name: "凹凸咖啡館 Aotu Cafe",
+            category: "☕ 日式昭和老屋手沖咖啡",
+            rating: "4.5★",
+            dist: "出站步行約 8 分鐘（雲中街聚落內）",
+            desc: "雲中街日式警察宿舍木造建築，被大片綠意草坪與老樹環繞。在木棧庭園喝手沖精品咖啡、吃現烤可頌與輕食早午餐，氣氛極度悠閒！",
+            address: "雲林縣斗六市雲中街9巷12號",
+            mapQuery: "凹凸咖啡館 雲林縣斗六市雲中街9巷12號"
+          },
+          {
+            name: "雲中街生活聚落",
+            category: "🏡 歷史建築 • 文創生活聚落",
+            rating: "4.6★",
+            dist: "出站步行約 7 分鐘",
+            desc: "建於日治昭和十二年的警察宿舍群，保留完整黑瓦與檜木屋舍，常設文創選物、日式茶席與植栽手作店，超好拍照打卡！",
+            address: "雲林縣斗六市雲中街16號",
+            mapQuery: "雲中街生活聚落 雲林縣斗六市雲中街16號"
+          },
+          {
+            name: "斗六太平老街",
+            category: "🏛️ 百年巴洛克洋樓 • 必吃古早味",
+            rating: "4.5★",
+            dist: "火車站前站步行 5 分鐘",
+            desc: "全長600公尺完整保留明治大正時期巴洛克山牆與紅磚街屋。必吃八十年老街純米手作碗粿、古早味蛋飯與炊仔飯！",
+            address: "雲林縣斗六市太平路",
+            mapQuery: "斗六太平老街"
+          },
+          {
+            name: "霍姆斯庫英倫咖啡 Homescrew Cafe",
+            category: "☕ 站旁英倫風精品咖啡館",
+            rating: "4.6★",
+            dist: "斗六火車站後站步行僅 3 分鐘",
+            desc: "門口醒目的經典英倫紅電話亭與復古祖母綠裝潢，主打手沖單品咖啡、熱拿鐵與現烤脆皮可麗露、肉桂捲。",
+            address: "雲林縣斗六市武昌路158號",
+            mapQuery: "Homescrew Cafe 雲林縣斗六市武昌路158號"
+          }
+        ]
+      },
+      {
+        id: "zhenxi",
+        name: "鎮西國小",
+        shortName: "鎮西國小",
+        num: "②",
+        time: "13:33",
+        timeLabel: "約 13:33 抵達",
+        isMajor: false,
+        typeTag: "🏫 斗六歷史老校 • 🍜 文化路生活小吃",
+        badge: "市區招呼站",
+        summary: "創校逾百年的歷史小學，鄰近文化路生活圈，周邊為在地學區美食與生活小吃攤。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 13:33 抵達鎮西國小",
+        returnInfo: "可搭 701 回程班次或市區公車/步行回斗六車站（約 1.2km）",
+        stayDuration: "一般招呼站，出遊建議搭至第 6 站鵝童樂園或第 10 站荷苞山",
+        notice: "此站為市區沿途學生與在地居民站點，非主要觀光景點，觀光出遊推薦繼續搭乘往古坑方向！",
+        places: [
+          {
+            name: "鎮西國小歷史校園周邊",
+            category: "🏫 斗六百年名校 • 綠意操場",
+            rating: "4.4★",
+            dist: "下車即達校門旁",
+            desc: "雲林歷史悠久的小學之一，校園綠樹成蔭，周邊有許多在地平價早午餐與古早味小吃。",
+            address: "雲林縣斗六市西平路3號",
+            mapQuery: "斗六市鎮西國小"
+          },
+          {
+            name: "推薦搭乘至：第 10 站 荷苞山桐花公園",
+            category: "⭐ 701 最推薦景點首選",
+            rating: "4.7★ 首選推薦",
+            dist: "搭乘 701 繼續坐約 17 分鐘",
+            desc: "林蔭木棧步道平緩好走，下車即是台灣傳奇巴登咖啡總店，喝在地手沖古坑咖啡配現烤蜂蜜鬆餅！",
+            address: "雲林縣古坑鄉荷苞村荷苞34號",
+            mapQuery: "荷苞山桐花公園"
+          }
+        ]
+      },
+      {
+        id: "shuian",
+        name: "水岸藝術公園",
+        shortName: "水岸公園",
+        num: "③",
+        time: "13:35",
+        timeLabel: "約 13:35 抵達",
+        isMajor: false,
+        typeTag: "🌿 雲林溪水岸綠廊 • 🎨 戶外公共藝術裝置",
+        badge: "水岸休閒綠廊",
+        summary: "斗六市區整治完成的雲林溪水岸休閒步道，沿岸有親水景觀、綠意草坪與公共藝術造景。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 13:35 抵達水岸公園",
+        returnInfo: "距斗六車站約 1.5 公里，市區搭車或散步皆方便",
+        stayDuration: "約 30~45 分鐘散步綠帶",
+        notice: "沿岸為露天溪畔步道，下午陽光較烈時遮蔭較少，出遊建議直達綠意林蔭茂密的荷苞山！",
+        places: [
+          {
+            name: "雲林溪水岸藝術步道",
+            category: "🌿 親水生態綠廊 • 親子休閒散步",
+            rating: "4.3★",
+            dist: "下車即達水岸入口",
+            desc: "沿著雲林溪畔規劃的長條狀景觀休閒綠帶，兩側設有人行步道與景觀植栽，散步視野開闊。",
+            address: "雲林縣斗六市府前街雲林溪畔",
+            mapQuery: "雲林溪水岸藝術公園"
+          }
+        ]
+      },
+      {
+        id: "chengda",
+        name: "成大醫院",
+        shortName: "成大醫院",
+        num: "④",
+        time: "13:37",
+        timeLabel: "約 13:37 抵達",
+        isMajor: false,
+        typeTag: "🏥 斗六醫療重鎮 • 🚌 市區轉運樞紐",
+        badge: "市區轉運站點",
+        summary: "成大醫院斗六分院，為市區就醫與生活交通重要節點，生活機能完備。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 13:37 抵達",
+        returnInfo: "市區多線公車密集往返斗六車站",
+        stayDuration: "交通樞紐站，純觀光請繼續乘車",
+        notice: "此為主要就醫招呼站，出遊建議繼續搭乘至觀光遊憩站點！",
+        places: [
+          {
+            name: "成大醫院斗六分院周邊商圈",
+            category: "🏪 生活機能站 • 藥妝便利商店",
+            rating: "4.2★",
+            dist: "下車即達院區大門",
+            desc: "周邊有超商、藥妝店與水果店，為市區生活補給點。",
+            address: "雲林縣斗六市莊敬路345號",
+            mapQuery: "成大醫院斗六分院"
+          }
+        ]
+      },
+      {
+        id: "shoutian",
+        name: "受天宮",
+        shortName: "受天宮",
+        num: "⑤",
+        time: "13:39",
+        timeLabel: "約 13:39 抵達",
+        isMajor: false,
+        typeTag: "⛩️ 在地信仰宮廟 • 🌾 田園鄉村風光",
+        badge: "庄頭信仰中心",
+        summary: "保佑地方鄉親的傳統宮廟，廟埕開闊，鄰近純樸農村田野與庄頭老樹。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 13:39 抵達",
+        returnInfo: "701 回程班次或市區接駁",
+        stayDuration: "庄頭小站，建議繼續搭乘",
+        notice: "下車為一般鄉村庄頭，觀光景點建議下一站鵝童樂園（13:42）下車！",
+        places: [
+          {
+            name: "古坑受天宮廟埕",
+            category: "⛩️ 地方信仰中心 • 庄頭老樹休憩",
+            rating: "4.3★",
+            dist: "下車步行 1 分鐘",
+            desc: "香火鼎盛的在地宮廟，廟埕寬廣，供奉玄天上帝，為在地長者聚會聊天下棋的好去處。",
+            address: "雲林縣斗六市保長路",
+            mapQuery: "受天宮 雲林"
+          }
+        ]
+      },
+      {
+        id: "laogong",
+        name: "勞工育樂中心 (鵝童樂園)",
+        shortName: "鵝童樂園",
+        num: "⑥",
+        time: "13:42",
+        timeLabel: "約 13:42 抵達",
+        isMajor: true,
+        typeTag: "🦆 超萌夢幻白鵝 • 🍦 義式手作冰淇淋",
+        badge: "主要景點 • 下車即達 0 公尺",
+        summary: "站牌就在樂園正門口！免門票入園，擁有超夢幻白色旋轉天鵝木馬、綠油油生態草坪、天鵝溜滑梯與義式手作冰淇淋！",
+        goingInfo: "13:30 斗六後站搭車 ➔ 13:42 抵達（車程僅 12 分鐘）",
+        returnInfo: "16:35 於正門口對面搭 701 回程末班車直達斗六（16:50 抵達）",
+        stayDuration: "停留 2 小時 50 分鐘（拍照、吃冰淇淋超充裕）",
+        notice: "公車站牌就在樂園大門口！若玩得盡興想提早回斗六，用手機叫車回斗六火車站車程才 10 分鐘（車資約 $130 元）！",
+        places: [
+          {
+            name: "鵝媽媽鵝童樂園",
+            category: "🎠 夢幻旋轉天鵝 • 生態餵鵝草坪",
+            rating: "4.6★",
+            dist: "下車即達！公車站牌就在正門口！",
+            desc: "古坑最受歡迎的免費打卡樂園！巨大優雅的白天鵝旋轉木馬拍照超仙，大片草地可以近距離餵可愛白鵝、溜滑梯、玩泡泡，完全無步道攀爬負擔！",
+            address: "雲林縣古坑鄉嘉興路22號",
+            mapQuery: "鵝媽媽鵝童樂園 雲林縣古坑鄉嘉興路22號"
+          },
+          {
+            name: "鵝媽媽義式冰淇淋 ＆ 輕食咖啡館",
+            category: "🍦 當季水果手工義式冰淇淋 • 咖啡",
+            rating: "4.5★",
+            dist: "樂園園區內室內咖啡廳",
+            desc: "嚴選在地新鮮水果與香濃乳源製作的義式手工冰淇淋，口感綿密低脂清爽。店內亦提供手沖咖啡與現烤披薩輕食，冷氣涼爽適合小憩。",
+            address: "雲林縣古坑鄉嘉興路22號",
+            mapQuery: "鵝媽媽鵝童樂園 雲林縣古坑鄉嘉興路22號"
+          },
+          {
+            name: "愛鵝生活生態館 & 文創手作館",
+            category: "🎁 綠意植栽文創 • 在地特色伴手禮",
+            rating: "4.5★",
+            dist: "園區主建築一樓",
+            desc: "販售古坑在地特產、鵝蛋手工皂、文創設計小物與特選蛋捲，逛完草皮來吹冷氣挑選伴手禮非常輕鬆。",
+            address: "雲林縣古坑鄉嘉興路22號",
+            mapQuery: "鵝媽媽鵝童樂園 雲林縣古坑鄉嘉興路22號"
+          }
+        ]
+      },
+      {
+        id: "transworld",
+        name: "環球科技大學側門",
+        shortName: "環球科大",
+        num: "⑦",
+        time: "13:44",
+        timeLabel: "約 13:44 抵達",
+        isMajor: false,
+        typeTag: "🎓 大學校園綠意 • 🌿 田園大道",
+        badge: "校園招呼站",
+        summary: "鄰近環球科技大學校區，沿途為平坦的林蔭大道與古坑田園景致。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 13:44 抵達",
+        returnInfo: "701 回程末班車約 16:33 經過此站",
+        stayDuration: "校園周邊站點，建議乘車往荷苞山",
+        notice: "若非參訪校園，建議繼續乘坐 6 分鐘直達第 10 站荷苞山桐花公園！",
+        places: [
+          {
+            name: "環球科技大學校園綠蔭步道",
+            category: "🎓 開闊校園草坪 • 林蔭大道",
+            rating: "4.3★",
+            dist: "下車即達校園側門",
+            desc: "佔地寬廣的綠意校園，校內樹木扶疏、生態池景觀幽靜，適合午後散步。",
+            address: "雲林縣斗六市鎮南路1221號",
+            mapQuery: "環球科技大學"
+          }
+        ]
+      },
+      {
+        id: "donghe",
+        name: "東和",
+        shortName: "東和",
+        num: "⑧",
+        time: "13:46",
+        timeLabel: "約 13:46 抵達",
+        isMajor: false,
+        typeTag: "🎋 竹筍之鄉聚落 • 🍊 茂谷柑果園鄉村",
+        badge: "古坑農業聚落",
+        summary: "古坑重要農村聚落，盛產黃金竹筍、茂谷柑與柳丁，充滿純樸的人情味與果香。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 13:46 抵達",
+        returnInfo: "701 回程末班車約 16:30 經過",
+        stayDuration: "農村招呼站，建議乘車往荷苞山",
+        notice: "純樸農業生活聚落，景點推薦繼續往第 10 站荷苞山桐花公園享受咖啡時光！",
+        places: [
+          {
+            name: "古坑東和老街聚落",
+            category: "🎋 在地農特產市集 • 傳統雜貨小吃",
+            rating: "4.2★",
+            dist: "下車步行 2 分鐘",
+            desc: "在地農民販售當季現採竹筍、柳丁與農特產的小聚落，充滿傳統台灣農村的生活氣息。",
+            address: "雲林縣古坑鄉東和村文化路",
+            mapQuery: "古坑東和"
+          }
+        ]
+      },
+      {
+        id: "hebaocuo",
+        name: "荷苞厝",
+        shortName: "荷苞厝",
+        num: "⑨",
+        time: "13:48",
+        timeLabel: "約 13:48 抵達",
+        isMajor: false,
+        typeTag: "🌱 荷苞山腳聚落 • ☕ 原生咖啡樹苗園",
+        badge: "荷苞山腳前哨站",
+        summary: "荷苞山腳下的傳統聚落，農家門前常可見自種老咖啡樹與果樹，空氣中已有淡淡山野香氣。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 13:48 抵達",
+        returnInfo: "建議往前搭 2 分鐘到荷苞山桐花公園站，回程車亭更完善",
+        stayDuration: "建議下一站下車",
+        notice: "請不要在此站提早下車！再過 2 分鐘就是核心景點【第 10 站 荷苞山桐花公園(巴登咖啡)】！",
+        places: [
+          {
+            name: "荷苞厝農村田園",
+            category: "🏡 咖啡田園風貌 • 綠意村落",
+            rating: "4.2★",
+            dist: "下車即達村落路口",
+            desc: "純樸寧靜的山腳聚落，建議搭至下一站荷苞山桐花公園，設施與咖啡廳更集中豐富！",
+            address: "雲林縣古坑鄉荷苞村荷苞厝",
+            mapQuery: "古坑鄉荷苞厝"
+          }
+        ]
+      },
+      {
+        id: "hebao",
+        name: "荷苞山桐花公園 (巴登咖啡)",
+        shortName: "荷苞山公園",
+        num: "⑩",
+        time: "13:50",
+        timeLabel: "約 13:50 抵達",
+        isMajor: true,
+        typeTag: "⭐ 全線推薦第一名 • ☕ 台灣咖啡發源傳奇",
+        badge: "⭐ 全線推薦首選 • 0 爬山負擔",
+        summary: "下車站牌就在公園入口與傳奇咖啡館旁！完全不需爬陡峭山路，在綠樹成蔭的平緩原木步道漫步，並在台灣老字號巴登咖啡總店品嚐手沖古坑咖啡與現烤蜂蜜鬆餅！",
+        goingInfo: "13:30 斗六後站搭車 ➔ 13:50 悠閒抵達（車程僅 20 分鐘）",
+        returnInfo: "16:25 於下車處正對面搭乘 701 回程末班公車 ➔ 16:50 返抵斗六後站",
+        stayDuration: "停留 2 小時 35 分鐘（黃金下午茶放鬆時光）",
+        notice: "刷悠遊卡單程僅約 $30 元，兩人來回只要約 $120 元！下車處正對面即有清楚的候車亭，請提早至 16:20 於對面候車！",
+        places: [
+          {
+            name: "巴登咖啡總店 Baden Coffee",
+            category: "☕ 台灣古坑咖啡傳奇發源地老店",
+            rating: "4.7★ 在地口碑第一名",
+            dist: "出站牌步行僅 1 分鐘（約 60 公尺）",
+            desc: "台灣古坑咖啡歷史上最具代表性的傳奇老店！日式典雅庭院古意盎然，必點純台灣古坑單品手沖咖啡、香醇冰拿鐵，搭配熱騰騰現烤蜂蜜厚鬆餅與肉桂吐司，香氣濃郁！",
+            address: "雲林縣古坑鄉荷苞村荷苞34號",
+            mapQuery: "巴登咖啡總店 雲林縣古坑鄉荷苞村荷苞34號"
+          },
+          {
+            name: "荷苞山桐花公園林蔭步道",
+            category: "🌲 芬多精原木步道 • 微風平緩清涼",
+            rating: "4.6★",
+            dist: "下車即達 0 公尺（站牌就在公園入口旁）",
+            desc: "木棧步道平緩寬敞好走，完全不用走陡坡或狹窄山路！高聳的油桐樹與咖啡樹林遮蔽艷陽，山林微風徐徐，芬多精滿溢，拍照散步極度放鬆。",
+            address: "雲林縣古坑鄉荷苞村高厝林子頭",
+            mapQuery: "荷苞山桐花公園 雲林縣古坑鄉"
+          },
+          {
+            name: "荷苞山咖啡莊園 (百年歷史原生咖啡園)",
+            category: "🌱 日治時期引進阿拉比卡咖啡豆之原鄉",
+            rating: "4.5★",
+            dist: "巴登咖啡旁步行 2 分鐘",
+            desc: "日治時期官方選定荷苞山作為栽培世界頂級阿拉比卡咖啡樹的歷史原生地，至今仍保有許多原生老咖啡樹，漫步其中充滿歷史人文底蘊。",
+            address: "雲林縣古坑鄉荷苞村荷苞32號",
+            mapQuery: "荷苞山咖啡 雲林縣古坑鄉"
+          }
+        ]
+      },
+      {
+        id: "zaoliao",
+        name: "早寮",
+        shortName: "早寮",
+        num: "⑪",
+        time: "13:54",
+        timeLabel: "約 13:54 抵達",
+        isMajor: false,
+        typeTag: "⛰️ 山區爬坡起點 • 🌴 檳榔綠竹山丘",
+        badge: "公路入山口招呼站",
+        summary: "進入草嶺公路山區的前哨站，山勢逐漸開展，兩旁為山丘竹林與梯田果園。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 13:54 抵達早寮",
+        returnInfo: "701 回程末班車約 16:20 經過",
+        stayDuration: "山區招呼站，建議留在荷苞山或直達草嶺",
+        notice: "山區路段沿途坡度起伏較大，非登山健行者不建議在此下車！",
+        places: [
+          {
+            name: "草嶺公路早寮觀景坡道",
+            category: "⛰️ 遠眺斗六丘陵 • 山道林相",
+            rating: "4.1★",
+            dist: "站牌旁道路",
+            desc: "山區公路旁的小聚落，可眺望下方平原，無大型商圈或餐飲設施。",
+            address: "雲林縣古坑鄉早寮",
+            mapQuery: "古坑早寮"
+          }
+        ]
+      },
+      {
+        id: "erpingzai",
+        name: "二坪仔",
+        shortName: "二坪仔",
+        num: "⑫",
+        time: "13:57",
+        timeLabel: "約 13:57 抵達",
+        isMajor: false,
+        typeTag: "🌄 丘陵山道景致 • 🍃 靜謐山居聚落",
+        badge: "山區招呼站",
+        summary: "古坑半山腰的靜謐小聚落，可遠眺嘉南平原綠意丘陵，視野遼闊。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 13:57 抵達",
+        returnInfo: "701 回程末班車約 16:15 經過",
+        stayDuration: "純交通站點",
+        notice: "山路會車不易，站牌旁無店家，純觀光客請勿在此下車。",
+        places: [
+          {
+            name: "二坪仔山巒景觀點",
+            category: "🌄 遠眺平原山嵐 • 公路山景",
+            rating: "4.2★",
+            dist: "站牌旁開闊處",
+            desc: "地勢漸高，天氣晴朗時可遠眺整片嘉南平原的遼闊山景。",
+            address: "雲林縣古坑鄉二坪仔",
+            mapQuery: "古坑二坪仔"
+          }
+        ]
+      },
+      {
+        id: "dongneiliao",
+        name: "東內寮",
+        shortName: "東內寮",
+        num: "⑬",
+        time: "14:01",
+        timeLabel: "約 14:01 抵達",
+        isMajor: false,
+        typeTag: "🌲 深山林道蜿蜒 • ⛰️ 清水溪上游山巒",
+        badge: "深山公路小站",
+        summary: "公車持續深入草嶺山區，周遭林木蔥蘢，山嵐雲霧開始聚集。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 14:01 抵達",
+        returnInfo: "701 回程末班車約 16:10 經過",
+        stayDuration: "純交通招呼站",
+        notice: "深山無路燈與補給，純搭車路過即可。",
+        places: [
+          {
+            name: "東內寮林道風光",
+            category: "🌲 原始山林綠意 • 雲霧山嵐",
+            rating: "4.2★",
+            dist: "站牌周邊",
+            desc: "山林深處的林相茂密，空氣清新宜人。",
+            address: "雲林縣古坑鄉東內寮",
+            mapQuery: "古坑東內寮"
+          }
+        ]
+      },
+      {
+        id: "xiaoqizai",
+        name: "小旗仔",
+        shortName: "小旗仔",
+        num: "⑭",
+        time: "14:05",
+        timeLabel: "約 14:05 抵達",
+        isMajor: false,
+        typeTag: "🏞️ 清水溪峽谷遠眺 • 🪨 奇岩山壁斷層",
+        badge: "峽谷山徑前哨站",
+        summary: "公路沿著清水溪谷延伸，遠處可隱約看見草嶺著名的石壁斷層與峽谷岩壁。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 14:05 抵達",
+        returnInfo: "701 回程末班車約 16:05 經過",
+        stayDuration: "純交通招呼站",
+        notice: "山區路段沿途無超商，請自備飲水。",
+        places: [
+          {
+            name: "小旗仔溪谷景觀",
+            category: "🏞️ 溪谷奇岩遠眺 • 自然地質",
+            rating: "4.3★",
+            dist: "站牌公路旁",
+            desc: "可俯瞰清水溪上游溪床與壯觀的山壁褶皺地質。",
+            address: "雲林縣古坑鄉小旗仔",
+            mapQuery: "古坑小旗仔"
+          }
+        ]
+      },
+      {
+        id: "binlangzhai",
+        name: "檳榔宅",
+        shortName: "檳榔宅",
+        num: "⑮",
+        time: "14:09",
+        timeLabel: "約 14:09 抵達",
+        isMajor: false,
+        typeTag: "🏡 深山傳統農舍 • 🎋 野生苦茶樹林",
+        badge: "深山聚落招呼站",
+        summary: "深山裡的古老聚落名稱，山坡上可見在地農家栽種的高山苦茶樹與原生咖啡樹。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 14:09 抵達",
+        returnInfo: "701 回程末班車約 16:00 經過",
+        stayDuration: "純交通招呼站",
+        notice: "深山聚落站牌，觀光建議至草嶺老街（14:25）下車！",
+        places: [
+          {
+            name: "高山苦茶樹園風光",
+            category: "🎋 草嶺特產苦茶油原料林",
+            rating: "4.3★",
+            dist: "山坡步道旁",
+            desc: "生長在純淨山區的高山苦茶樹，是草嶺名產苦茶油的珍貴原料原產地。",
+            address: "雲林縣古坑鄉檳榔宅",
+            mapQuery: "古坑檳榔宅"
+          }
+        ]
+      },
+      {
+        id: "waihu",
+        name: "外湖 (萬年峽谷入口・已取消)",
+        shortName: "外湖",
+        num: "⑯",
+        time: "14:16",
+        timeLabel: "約 14:16 抵達",
+        isMajor: false,
+        isWarning: true,
+        typeTag: "⚠️ 原萬年峽谷步道 • 目前行程已取消",
+        badge: "⚠️ 已取消前往 • 避坑提醒",
+        summary: "原訂萬年峽谷站點，但因需單程步行 1.5 公里長陡坡山路及穿過黑暗隧道，回程公車銜接短且費體力，目前行程已主動調整取消，不建議在此下車！",
+        goingInfo: "13:30 斗六後站搭車 ➔ 14:16 抵達外湖站牌",
+        returnInfo: "⚠️ 行程已取消！請勿在此站下車，建議選擇第 10 站荷苞山桐花公園",
+        stayDuration: "無（取消前往）",
+        notice: "⚠️ 萬年峽谷步道目前部分施工整修且坡度陡峭，若在此下車回程極難趕上 15:54 末班車，請安心在荷苞山或鵝童樂園下車玩耍！",
+        places: [
+          {
+            name: "萬年峽谷步道入口 (已取消不去)",
+            category: "⚠️ 陡坡山路長達1.5km • 隧道昏暗",
+            rating: "4.3★ (已取消)",
+            dist: "站牌需徒步下坡 25~30 分鐘",
+            desc: "雖具壯麗岩壁地形，但因回程公車僅間隔1小時且需爬坡爬回站牌，為維護出遊品質與安全，本次出遊決定放棄萬年峽谷，改為輕鬆愜意的下午茶散步行程！",
+            address: "雲林縣古坑鄉草嶺村外湖",
+            mapQuery: "萬年峽谷 雲林縣古坑鄉"
+          }
+        ]
+      },
+      {
+        id: "neihu",
+        name: "內湖",
+        shortName: "內湖",
+        num: "⑰",
+        time: "14:19",
+        timeLabel: "約 14:19 抵達",
+        isMajor: false,
+        typeTag: "🌲 草嶺高山盆地 • ⛰️ 涼爽高山微風",
+        badge: "草嶺前緣聚落",
+        summary: "進入草嶺盆地前緣，海拔已近 800 公尺，氣候明顯比平地涼爽許多。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 14:19 抵達",
+        returnInfo: "701 回程末班車約 15:50 經過",
+        stayDuration: "純交通招呼站",
+        notice: "距離草嶺老街僅剩 6 分鐘車程，建議坐到草嶺老街商圈再下車！",
+        places: [
+          {
+            name: "草嶺內湖高山茶園",
+            category: "🍵 高山烏龍茶梯田 • 山嵐美景",
+            rating: "4.4★",
+            dist: "站牌旁山坡",
+            desc: "雲霧環繞的高山茶園景致，層層疊疊的翠綠茶樹生長在肥沃山坡上。",
+            address: "雲林縣古坑鄉草嶺村內湖",
+            mapQuery: "古坑草嶺內湖"
+          }
+        ]
+      },
+      {
+        id: "xincaoling",
+        name: "新草嶺國小",
+        shortName: "新草嶺國小",
+        num: "⑱",
+        time: "14:21",
+        timeLabel: "約 14:21 抵達",
+        isMajor: false,
+        typeTag: "🏫 全台最美森林小學 • 🌲 綠建築木構造校舍",
+        badge: "高山森林小學校園",
+        summary: "全台著名的森林小學，坐落於壯闊群山之間，校舍採用原木與環保綠建築工法，遠眺山嵐視野絕佳。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 14:21 抵達新草嶺國小",
+        returnInfo: "701 回程末班車約 15:48 經過",
+        stayDuration: "約 30 分鐘拍照參觀（假日開放校園）",
+        notice: "校園平日上課期間不對外開放，假日方可進入參觀校園景觀！",
+        places: [
+          {
+            name: "新草嶺國民小學景觀校園",
+            category: "🏫 原木森林綠建築 • 360度環山大景",
+            rating: "4.7★ 拍照熱點",
+            dist: "下車即達校門口",
+            desc: "被譽為台灣最美高山小學！木造屋舍與大自然山林融為一體，站在校園操場即可遠眺雄偉的山巒岩壁與雲海。",
+            address: "雲林縣古坑鄉草嶺村56-8號",
+            mapQuery: "新草嶺國小"
+          }
+        ]
+      },
+      {
+        id: "caolingshanzhuang",
+        name: "草嶺山莊",
+        shortName: "草嶺山莊",
+        num: "⑲",
+        time: "14:23",
+        timeLabel: "約 14:23 抵達",
+        isMajor: false,
+        typeTag: "🏨 草嶺老牌山莊 • ☕ 庭園山景咖啡",
+        badge: "老牌渡假聚落",
+        summary: "草嶺在地老字號渡假山莊前招呼站，環境清幽，遠離塵囂。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 14:23 抵達",
+        returnInfo: "701 回程末班車約 15:46 經過",
+        stayDuration: "建議下一站老街商圈下車",
+        notice: "距離草嶺老街步行約 5 分鐘，可直接搭至老街站牌下車更方便！",
+        places: [
+          {
+            name: "草嶺山莊庭園景觀",
+            category: "🏨 老字號高山住宿 • 山林庭院",
+            rating: "4.3★",
+            dist: "下車即達山莊入口",
+            desc: "群山環繞的渡假山莊，擁有開闊的戶外木棧平台，提供高山茶飲與小憩空間。",
+            address: "雲林縣古坑鄉草嶺村54-1號",
+            mapQuery: "草嶺山莊 雲林"
+          }
+        ]
+      },
+      {
+        id: "caolingpark",
+        name: "草嶺公園",
+        shortName: "草嶺公園",
+        num: "⑳",
+        time: "14:24",
+        timeLabel: "約 14:24 抵達",
+        isMajor: false,
+        typeTag: "🌲 地質公園前哨 • 🚶‍♂️ 老街步道入口",
+        badge: "老街入口招呼站",
+        summary: "緊鄰草嶺形象商圈的綠意公園，設有涼亭與地質步道解說立牌。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 14:24 抵達",
+        returnInfo: "下車往前走 1 分鐘即是草嶺老街站牌",
+        stayDuration: "可與草嶺老街合併遊玩",
+        notice: "往前走 100 公尺就是草嶺老街站牌，公車停靠時間僅相差 1 分鐘！",
+        places: [
+          {
+            name: "草嶺休閒步道與觀景涼亭",
+            category: "🌲 綠意休閒公園 • 俯瞰溪谷",
+            rating: "4.4★",
+            dist: "下車即達公園",
+            desc: "公園內設有平緩木棧步道與解說牌，能近距離欣賞高山原生植物與壯觀斷崖地質。",
+            address: "雲林縣古坑鄉草嶺村形象商圈旁",
+            mapQuery: "草嶺形象商圈"
+          }
+        ]
+      },
+      {
+        id: "caoling",
+        name: "草嶺 (老街形象商圈)",
+        shortName: "草嶺老街",
+        num: "㉑",
+        time: "14:25",
+        timeLabel: "約 14:25 抵達",
+        isMajor: true,
+        typeTag: "🍲 正宗苦茶油雞 • 🍋 現搓野生天然愛玉",
+        badge: "主要景點 • 深山美食老街商圈",
+        summary: "下車即為草嶺形象商圈老街！能品嚐草嶺最知名的正宗苦茶油雞、苦茶油手工乾拌麵線與高山現搓野生愛玉，平坦好走、遠眺峽谷奇岩。",
+        goingInfo: "13:30 斗六後站搭車 ➔ 14:25 抵達草嶺站",
+        returnInfo: "15:45 於草嶺站原處上車 ➔ 約 17:00 平安抵達斗六火車站！",
+        stayDuration: "停留 1 小時 20 分鐘（吃苦茶油雞午點剛好）",
+        notice: "⚠️ 關鍵提醒：下午班次在草嶺停留 1 小時 20 分鐘，請在老街品嚐美食即可，切勿前往峭壁雄風等長途攀岩步道以免錯過 15:45 末班公車！",
+        places: [
+          {
+            name: "正宗草嶺苦茶油雞風味館",
+            category: "🍗 草嶺四十載傳奇手路菜 • 必吃招牌",
+            rating: "4.7★ 饕客狂推",
+            dist: "下車即達草嶺形象商圈內",
+            desc: "草嶺老街最負盛名招牌！選用高山放山烏骨雞，以金黃純苦茶油大火爆炒，老薑片炸得像薄脆洋芋片般酥香，雞肉肉質外脆內嫩多汁，配手工麵線堪稱人間絕品！",
+            address: "雲林縣古坑鄉草嶺路形象商圈",
+            mapQuery: "草嶺苦茶油雞"
+          },
+          {
+            name: "草嶺天然野生愛玉小站",
+            category: "🍋 高山純手搓天然愛玉 • 蜂蜜檸檬",
+            rating: "4.6★",
+            dist: "老街步行 1 分鐘",
+            desc: "產自草嶺深山野生愛玉子手工搓揉，天然結晶滑順Q彈，淋上現壓新鮮檸檬汁與慢熬黑糖蜜，甘甜微酸清涼生津，爬山散步後必吃消暑甜品！",
+            address: "雲林縣古坑鄉草嶺街老街",
+            mapQuery: "草嶺野生愛玉"
+          },
+          {
+            name: "草嶺地質奇景遠眺觀景台",
+            category: "🌄 免爬長途步道 • 5分鐘俯瞰岩壁地質",
+            rating: "4.5★",
+            dist: "老街商圈旁步行 5 分鐘",
+            desc: "不用深入峭壁雄風險峻攀岩步道，在老街旁的木造觀景平台即可輕鬆遠眺草嶺受地震與河川雕刻出的雄偉岩層斷崖與溪谷全景，拍照非常壯麗上相！",
+            address: "雲林縣古坑鄉草嶺村觀景台",
+            mapQuery: "草嶺地質公園"
+          }
+        ]
+      },
+      {
+        id: "dongbi",
+        name: "東璧山莊 (701 終點站)",
+        shortName: "東璧山莊",
+        num: "㉒",
+        time: "14:40",
+        timeLabel: "約 14:40 抵達",
+        isMajor: true,
+        isWarning: true,
+        typeTag: "⚠️ 下午班次停留僅50分 • 不建議搭到終點",
+        badge: "⚠️ 終點站警示 • 容易錯過公車",
+        summary: "海拔約1100公尺，群山雲霧繚繞。但公車 14:40 抵達後，回程末班車 15:30 就必須發車下山，僅能停留 50 分鐘，且往五元兩角需轉接駁車（單程20分），時間絕對不夠，請勿下午搭乘至此站！",
+        goingInfo: "13:30 斗六後站搭車 ➔ 14:40 抵達東璧終點",
+        returnInfo: "⚠️ 15:30 末班車準時發車（僅停留 50 分鐘！極度緊迫）",
+        stayDuration: "僅 50 分鐘（不建議下午前往）",
+        notice: "⚠️ 強烈不建議下午搭到東璧山莊！五元兩角竹林需另叫接駁車單程20分鐘，時間絕對不夠，會錯過末班車回不了斗六！",
+        places: [
+          {
+            name: "東璧山莊景觀咖啡 (警示提醒)",
+            category: "☕ 高山雲霧景觀 • ⚠️ 下午停留時間過短",
+            rating: "4.5★ (時間過短不建議)",
+            dist: "公車終點站下車處",
+            desc: "雖有美麗山嵐與高山咖啡，但下午班次停留時間僅50分鐘，扣除等車拍幾張照就要衝上車回程，且五元兩角竹林需另叫接駁車無法到達，因此強烈建議將時間留給荷苞山或草嶺老街！",
+            address: "雲林縣古坑鄉草嶺村草嶺75號",
+            mapQuery: "東璧山莊 雲林縣古坑鄉"
+          }
+        ]
+      }
     ];
 
-    function updatePlayerDOM() {
-      const p = document.getElementById('gamePlayer');
-      if (!p) return;
-      p.style.left = playerX + '%';
-      p.style.top = playerY + '%';
-      document.getElementById('playerCoordLabel').innerText = `POS: X:${playerX.toFixed(1)}% Y:${playerY.toFixed(1)}%`;
+    let currentBusStationIndex = 9; // 預設停在 ⭐ 荷苞山桐花公園 (第 10 站，index 9)
 
-      checkProximity();
+    function renderBusTrackNodes() {
+      const container = document.getElementById('busStationsTrackNodes');
+      if (!container) return;
+      container.innerHTML = '';
+
+      bus701Stations.forEach((st, idx) => {
+        const isCurrent = (idx === currentBusStationIndex);
+        const isMajor = st.isMajor;
+        const isWarning = st.isWarning;
+
+        const node = document.createElement('div');
+        node.id = `bus-station-node-${idx}`;
+        node.className = `station-node flex flex-col items-center cursor-pointer transition-all duration-200 group relative ${isCurrent ? 'scale-110 z-20' : 'hover:scale-105 z-10'}`;
+        node.onclick = () => selectBusStation(idx);
+
+        // 1. 時間標籤 (上方固定高度)
+        let timeBubbleHtml = '';
+        if (isMajor) {
+          timeBubbleHtml = `
+            <div class="h-6 flex items-end mb-1">
+              <span class="text-[10px] sm:text-[11px] font-mono px-2 py-0.5 rounded-full whitespace-nowrap shadow-md transition ${
+                isCurrent
+                  ? 'bg-amber-400 text-slate-950 font-black ring-2 ring-amber-300'
+                  : 'bg-slate-900/90 text-amber-300 border border-amber-400/50 font-bold'
+              }">
+                ${st.timeLabel}
+              </span>
+            </div>
+          `;
+        } else {
+          timeBubbleHtml = `
+            <div class="h-6 flex items-end mb-1">
+              <span class="text-[9px] font-mono px-1.5 py-0.2 rounded-full whitespace-nowrap transition ${
+                isCurrent
+                  ? 'bg-amber-400 text-slate-950 font-black'
+                  : 'bg-slate-950/70 text-slate-400 border border-slate-800'
+              }">
+                ${st.time}
+              </span>
+            </div>
+          `;
+        }
+
+        // 2. 站點圓形按鈕 (中間 44px 高度容器，使中心點精確穿過道路線)
+        let circleHtml = '';
+        if (isMajor) {
+          const circleBg = isCurrent
+            ? 'bg-gradient-to-tr from-amber-400 via-yellow-300 to-amber-500 text-slate-950 ring-4 ring-amber-400/80 shadow-xl'
+            : isWarning
+              ? 'bg-slate-900 text-amber-400 border-2 border-amber-400/70 shadow-lg'
+              : (st.id === 'hebao')
+                ? 'bg-amber-500/30 text-amber-300 border-2 border-amber-400 ring-2 ring-amber-400/40 shadow-lg'
+                : 'bg-slate-900 text-emerald-300 border-2 border-emerald-400 shadow-md group-hover:border-amber-400';
+
+          circleHtml = `
+            <div class="h-11 flex items-center justify-center">
+              <div class="w-10 h-10 rounded-full flex items-center justify-center font-black text-xs sm:text-sm transition duration-200 ${circleBg}">
+                ${st.num}
+              </div>
+            </div>
+          `;
+        } else {
+          const circleBg = isCurrent
+            ? 'bg-amber-400 text-slate-950 ring-4 ring-amber-400/70 shadow-md font-bold'
+            : isWarning
+              ? 'bg-rose-950/60 text-rose-400 border border-rose-500/50'
+              : 'bg-slate-800/90 text-slate-400 border border-slate-700 group-hover:border-emerald-400 group-hover:text-emerald-300';
+
+          circleHtml = `
+            <div class="h-11 flex items-center justify-center">
+              <div class="w-6 h-6 rounded-full flex items-center justify-center font-bold text-[10px] transition duration-200 ${circleBg}">
+                ${st.num}
+              </div>
+            </div>
+          `;
+        }
+
+        // 3. 站點名稱 (主要景點大字、次要站點小字)
+        let nameHtml = '';
+        if (isMajor) {
+          nameHtml = `
+            <div class="mt-2 text-center">
+              <span class="text-xs sm:text-sm font-black transition tracking-wide whitespace-nowrap block ${
+                isCurrent ? 'text-amber-300 scale-105 drop-shadow' : 'text-amber-200/90 group-hover:text-amber-300'
+              }">
+                ${st.shortName}
+              </span>
+              <span class="text-[9px] px-1.5 py-0.2 rounded-full bg-amber-400/10 text-amber-400 border border-amber-400/30 whitespace-nowrap inline-block mt-0.5 font-bold">
+                ${st.id === 'hebao' ? '⭐ 首選景點' : '主要站點'}
+              </span>
+            </div>
+          `;
+        } else {
+          nameHtml = `
+            <div class="mt-2 text-center">
+              <span class="text-[10px] sm:text-[11px] font-medium transition whitespace-nowrap block ${
+                isCurrent ? 'text-amber-300 font-bold scale-105' : 'text-slate-400 group-hover:text-slate-200'
+              } ${isWarning ? 'line-through text-rose-400/70' : ''}">
+                ${st.shortName}
+              </span>
+              ${isWarning ? '<span class="text-[8px] text-rose-400 block whitespace-nowrap">取消</span>' : ''}
+            </div>
+          `;
+        }
+
+        node.innerHTML = timeBubbleHtml + circleHtml + nameHtml;
+        container.appendChild(node);
+      });
+
+      updateAvatarPosition(false);
     }
 
-    function checkProximity() {
-      checkpoints.forEach(cp => {
-        const dist = Math.hypot(playerX - cp.x, playerY - cp.y);
-        if (dist < 2.2) {
-          triggerCheckpoint(cp);
+    function updateAvatarPosition(shouldScroll = true) {
+      const avatar = document.getElementById('rpgBusAvatar');
+      const targetNode = document.getElementById(`bus-station-node-${currentBusStationIndex}`);
+      const scrollContainer = document.getElementById('busTrackScrollContainer');
+      const st = bus701Stations[currentBusStationIndex];
+
+      if (avatar && targetNode) {
+        const offsetLeft = targetNode.offsetLeft;
+        const offsetWidth = targetNode.offsetWidth;
+        const centerPos = offsetLeft + (offsetWidth / 2);
+        avatar.style.left = `${centerPos}px`;
+      }
+
+      // 更新頭頂小人對話框
+      const speechTime = document.getElementById('avatarSpeechTime');
+      if (speechTime) {
+        speechTime.innerText = `${st.shortName} • ${st.timeLabel}`;
+      }
+
+      // 更新進度計數器
+      const indicator = document.getElementById('busStationIndexIndicator');
+      if (indicator) {
+        indicator.innerText = `${currentBusStationIndex + 1} / ${bus701Stations.length}`;
+      }
+
+      // 更新當前站點卡片
+      const badge = document.getElementById('currentStationBadge');
+      if (badge) badge.innerText = st.badge;
+      const timeTag = document.getElementById('currentStationTimeTag');
+      if (timeTag) timeTag.innerHTML = `<i class="fa-solid fa-clock"></i> ${st.timeLabel}`;
+      const typeTag = document.getElementById('currentStationTypeTag');
+      if (typeTag) typeTag.innerText = st.typeTag;
+      const title = document.getElementById('currentStationTitle');
+      if (title) title.innerText = `第 ${currentBusStationIndex + 1} 站：${st.name}`;
+      const desc = document.getElementById('currentStationQuickDesc');
+      if (desc) desc.innerText = st.summary;
+
+      // 更新軌道節點視覺 active 狀態
+      bus701Stations.forEach((_, idx) => {
+        const node = document.getElementById(`bus-station-node-${idx}`);
+        if (node) {
+          if (idx === currentBusStationIndex) {
+            node.classList.add('scale-110', 'z-20');
+            node.classList.remove('z-10');
+          } else {
+            node.classList.remove('scale-110', 'z-20');
+            node.classList.add('z-10');
+          }
         }
       });
+
+      // 自動水平捲動讓小人保持在畫面視野
+      if (shouldScroll && scrollContainer && targetNode) {
+        const containerWidth = scrollContainer.clientWidth;
+        const targetCenter = targetNode.offsetLeft + (targetNode.offsetWidth / 2);
+        const scrollTarget = targetCenter - (containerWidth / 2);
+        scrollContainer.scrollTo({
+          left: Math.max(0, scrollTarget),
+          behavior: 'smooth'
+        });
+      }
     }
 
-    let lastTriggeredId = 0;
-    function triggerCheckpoint(cp) {
-      if (lastTriggeredId === cp.id) return;
-      lastTriggeredId = cp.id;
+    function moveBusStation(delta) {
+      if (typeof playClickSound === 'function') {
+        playClickSound(580);
+      }
+      currentBusStationIndex = Math.max(0, Math.min(bus701Stations.length - 1, currentBusStationIndex + delta));
+      updateAvatarPosition(true);
+    }
 
-      document.getElementById('playerStatusMessage').innerText = cp.msg;
-      
-      for (let i = 1; i <= 4; i++) {
-        const card = document.getElementById(`step-card-${i}`);
-        if (card) {
-          card.classList.remove('border-emerald-400', 'bg-slate-800');
-          card.classList.add('border-slate-700', 'bg-slate-900');
+    function selectBusStation(index) {
+      if (typeof playClickSound === 'function') {
+        playClickSound(620);
+      }
+      currentBusStationIndex = index;
+      updateAvatarPosition(true);
+    }
+
+    function confirmBusStation(shouldScroll = true) {
+      if (shouldScroll) {
+        if (typeof playVictoryChime === 'function') {
+          playVictoryChime();
+        }
+        if (typeof triggerVictoryConfetti === 'function') {
+          triggerVictoryConfetti();
         }
       }
-      const activeCard = document.getElementById(`step-card-${cp.id}`);
-      if (activeCard) {
-        activeCard.classList.remove('border-slate-700', 'bg-slate-900');
-        activeCard.classList.add('border-emerald-400', 'bg-slate-800');
+
+      const st = bus701Stations[currentBusStationIndex];
+      const panel = document.getElementById('busStationDetailPanel');
+      if (!panel) return;
+      panel.classList.remove('hidden');
+
+      // 更新延伸窗格內容
+      document.getElementById('detailPanelStationTag').innerText = `已選定站點（第 ${currentBusStationIndex + 1} / ${bus701Stations.length} 站）• 周邊深度探訪指南`;
+      document.getElementById('detailPanelStationName').innerText = `${st.name} 周邊必訪景點 ＆ 知名咖啡廳`;
+      document.getElementById('detailPanelStationSummary').innerText = `${st.summary}`;
+
+      document.getElementById('detailGoingTime').innerText = st.goingInfo;
+      document.getElementById('detailReturnTime').innerText = st.returnInfo;
+      document.getElementById('detailStayDuration').innerText = st.stayDuration;
+      document.getElementById('stationBusNoticeText').innerText = st.notice;
+
+      // 渲染景點與咖啡廳卡片
+      const grid = document.getElementById('stationPlacesCardsGrid');
+      grid.innerHTML = '';
+
+      st.places.forEach((p) => {
+        const card = document.createElement('div');
+        card.className = "rpg-box p-4 rounded-xl flex flex-col justify-between space-y-3 transition duration-200 hover:border-amber-400 group";
+        const gmapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.mapQuery)}`;
+        const gmapsDirUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(st.name)}&destination=${encodeURIComponent(p.name + ' ' + p.address)}&travelmode=walking`;
+
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between gap-1 text-[11px] mb-1">
+              <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold border border-amber-500/30">
+                ${p.category}
+              </span>
+              <span class="text-amber-400 font-bold font-mono">
+                <i class="fa-solid fa-star text-amber-400"></i> ${p.rating}
+              </span>
+            </div>
+
+            <h5 class="text-base font-bold text-white group-hover:text-amber-300 transition mt-1.5 flex items-center gap-1.5">
+              ${p.name}
+            </h5>
+
+            <div class="text-[11px] text-emerald-400 font-medium mt-1 flex items-center gap-1">
+              <i class="fa-solid fa-person-walking text-xs"></i> ${p.dist}
+            </div>
+
+            <div class="text-[11px] text-slate-400 mt-1 flex items-center gap-1" title="${p.address}">
+              <i class="fa-solid fa-location-dot text-amber-400 shrink-0"></i>
+              <span class="truncate">${p.address}</span>
+            </div>
+
+            <p class="text-xs text-slate-300 leading-relaxed mt-2.5">
+              ${p.desc}
+            </p>
+          </div>
+
+          <div class="pt-3 border-t border-slate-700/80 space-y-2">
+            <a href="${gmapsSearchUrl}" target="_blank" class="rpg-btn w-full py-2 bg-gradient-to-r from-amber-400 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 text-slate-950 font-black text-xs rounded-lg flex items-center justify-center gap-1.5 shadow">
+              <i class="fa-solid fa-map-location-dot"></i> Google Maps 店家定位與評價
+            </a>
+            <a href="${gmapsDirUrl}" target="_blank" class="rpg-btn w-full py-1.5 bg-slate-900 hover:bg-slate-800 text-sky-300 hover:text-white font-bold text-[11px] rounded-lg flex items-center justify-center gap-1.5 border border-slate-700 transition">
+              <i class="fa-solid fa-route text-emerald-400"></i> 站牌步行路線導航
+            </a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      // 順滑滾動至窗格
+      if (shouldScroll) {
+        panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
-
-      if (cp.id === 4) {
-        triggerVictoryConfetti();
-      } else {
-        playClickSound(650);
-      }
     }
 
-    function movePlayer(dx, dy) {
-      playerX = Math.max(5, Math.min(95, playerX + dx));
-      playerY = Math.max(5, Math.min(95, playerY + dy));
-      
-      const sprite = document.getElementById('characterSprite');
-      sprite.classList.add('walking-anim');
-      setTimeout(() => sprite.classList.remove('walking-anim'), 200);
-
-      playClickSound(380);
-      updatePlayerDOM();
-    }
-
-    function startMoving(dx, dy) {
-      movePlayer(dx, dy);
-      if (moveTimer) clearInterval(moveTimer);
-      moveTimer = setInterval(() => movePlayer(dx, dy), 120);
-    }
-
-    function stopMoving() {
-      if (moveTimer) {
-        clearInterval(moveTimer);
-        moveTimer = null;
-      }
-    }
-
-    function moveCharacterTo(x, y) {
-      playClickSound(580);
-      playerX = x;
-      playerY = y;
-      updatePlayerDOM();
-    }
-
-    function resetCharacter() {
-      playClickSound(500);
-      moveCharacterTo(44.1, 43.2);
-      document.getElementById('playerStatusMessage').innerText = "小人已回到起點【外湖站】！";
-      lastTriggeredId = 1;
-    }
-
-    function interactAtCurrentPos() {
-      playClickSound(620);
-      checkProximity();
-    }
-
-    // 真正沿著地圖 149甲 彎曲山路與棕色虛線步道行走的 15 個連續真實節點
-    const pathNodes = [
-      { x: 44.1, y: 43.2 }, // ① 外湖站起點 (橙色公路上)
-      { x: 43.0, y: 43.0 },
-      { x: 41.8, y: 42.9 },
-      { x: 40.6, y: 42.9 },
-      { x: 39.8, y: 43.5 }, // 進入明隧道山壁彎道
-      { x: 39.3, y: 44.3 },
-      { x: 38.3, y: 44.3 }, // ② 明隧道公路中段
-      { x: 37.3, y: 43.9 },
-      { x: 36.3, y: 43.6 }, // 景觀彎道高點
-      { x: 35.5, y: 44.5 },
-      { x: 35.0, y: 46.1 }, // ③ 步道入口岔路 (棕色虛線起點)
-      { x: 34.2, y: 47.5 },
-      { x: 33.4, y: 48.8 }, // 高架木棧道與石階步道
-      { x: 32.6, y: 50.0 },
-      { x: 32.2, y: 50.7 }  // ④ 萬年峽谷深藍色圓圈終點！
-    ];
-
-    function autoWalkRoute() {
-      playClickSound(600);
-      resetCharacter();
-      isAutoWalking = true;
-      document.getElementById('playerStatusMessage').innerText = "🚀 正在沿著 149甲 公路蜿蜒彎道與步道導覽漫步中...";
-
-      let i = 0;
-      const stepInterval = setInterval(() => {
-        if (i >= pathNodes.length || !isAutoWalking) {
-          clearInterval(stepInterval);
-          isAutoWalking = false;
-          return;
-        }
-        playerX = pathNodes[i].x;
-        playerY = pathNodes[i].y;
-        updatePlayerDOM();
-        i++;
-      }, 500);
-    }
-
-    // 鍵盤監聽
+    // 鍵盤左右鍵移動小人監聽器
     window.addEventListener('keydown', (e) => {
-      if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', ' '].includes(e.key)) {
-        e.preventDefault();
-      }
-      switch (e.key) {
-        case 'ArrowUp':
-        case 'w':
-        case 'W':
-          movePlayer(0, -1.0);
-          break;
-        case 'ArrowDown':
-        case 's':
-        case 'S':
-          movePlayer(0, 1.0);
-          break;
-        case 'ArrowLeft':
-        case 'a':
-        case 'A':
-          movePlayer(-1.0, 0);
-          break;
-        case 'ArrowRight':
-        case 'd':
-        case 'D':
-          movePlayer(1.0, 0);
-          break;
+      const activeTagName = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
+      if (activeTagName === 'input' || activeTagName === 'textarea') return;
+      if (e.key === 'ArrowLeft') {
+        moveBusStation(-1);
+      } else if (e.key === 'ArrowRight') {
+        moveBusStation(1);
       }
     });
+
+    window.addEventListener('resize', () => {
+      updateAvatarPosition(false);
+    });
+
+    function resetCharacter() {}
+    function updatePlayerDOM() {}
 
     function startGame() {
       playVictoryChime();
@@ -2138,33 +2707,41 @@
             {
               name: "阿國獅魷魚嘴羹",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "火車站前步行 3 分鐘",
               desc: "斗六最富盛名八十年地標名產！獨家香酥滷製魷魚嘴羹、肉羹麵與特製魷魚飯，外地人來斗六必吃第一名。",
               address: "雲林縣斗六市大同路112號",
+              img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&auto=format&fit=crop&q=80",
               mapQuery: "阿國獅魷魚嘴羹"
             },
             {
               name: "大同路魷魚羹",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "火車站前步行 3 分鐘",
               desc: "在地斗六人推爆的傳統名店！魷魚脆口彈牙，羹湯柴魚香氣濃郁，魯肉飯配滷蛋堪稱一絕。",
               address: "雲林縣斗六市大同路106號",
+              img: "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80",
               mapQuery: "大同路魷魚羹+斗六"
             },
             {
               name: "太平老街古早味碗粿",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "步行約 5 分鐘（太平老街）",
               desc: "古早味炊仔飯、傳統純米手作碗粿、特製關東煮與古早味蛋飯，物美價廉又道地。",
               address: "雲林縣斗六市太平路122號",
+              img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&auto=format&fit=crop&q=80",
               mapQuery: "太平老街古早味碗粿+斗六"
             },
             {
               name: "蕃薯仔炊飯",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "步行約 4 分鐘（中正路）",
               desc: "傳承數十載老味，炊飯米粒吸飽高湯與油蔥香氣，配上一碗古早味蒸蛋湯，暖胃又滿足。",
               address: "雲林縣斗六市中正路89號",
+              img: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&auto=format&fit=crop&q=80",
               mapQuery: "蕃薯仔炊飯+斗六"
             }
           ],
@@ -2172,33 +2749,41 @@
             {
               name: "老街傳統豆花圓仔冰",
               rating: "4.7",
+              open: "17:00 營業",
               dist: "步行約 5 分鐘（老街商圈）",
               desc: "吃完鹹食必配甜點！手工現煮軟Q圓仔、古早味香濃黑糖刨冰與滑嫩花生豆花，幸福感爆棚。",
               address: "雲林縣斗六市太平路周邊",
+              img: "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&auto=format&fit=crop&q=80",
               mapQuery: "老街傳統豆花+斗六"
             },
             {
               name: "斗六成功牛肉麵",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "站前商圈步行約 6 分鐘",
               desc: "超厚切大塊牛肉，熬煮數小時的紅燒湯頭醇厚回甘，手工家常拉麵咬勁十足。",
               address: "雲林縣斗六市莊敬路100號",
+              img: "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=600&auto=format&fit=crop&q=80",
               mapQuery: "斗六成功牛肉麵"
             },
             {
               name: "老街傳統鴨肉麵線",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "步行約 4 分鐘（大同路）",
               desc: "當歸湯頭溫潤順喉，鴨肉肉質軟嫩不乾柴，下山後喝上一口熱熱的鴨肉當歸湯超舒暢。",
               address: "雲林縣斗六市大同路老街",
+              img: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&auto=format&fit=crop&q=80",
               mapQuery: "斗六鴨肉麵線"
             },
             {
               name: "斗六正品排骨飯",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "站前步行約 5 分鐘",
               desc: "先炸後滷的古早味香酥大排骨，裹滿特調秘醬，配菜豐富，排隊人潮絡繹不絕。",
               address: "雲林縣斗六市站前商圈",
+              img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80",
               mapQuery: "斗六正品排骨飯"
             }
           ]
@@ -2208,33 +2793,41 @@
             {
               name: "鍋布町日式鍋物",
               rating: "4.8",
+              open: "17:00 營業",
               dist: "站前騎車 2 分鐘（雲林路）",
               desc: "極致日式高質感個人鍋，人氣起司香濃牛奶鍋、特選安格斯牛五花，座位寬敞舒適用餐無壓力。",
               address: "雲林縣斗六市雲林路",
+              img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop&q=80",
               mapQuery: "鍋布町+斗六"
             },
             {
               name: "養鍋 Yang Guo 石頭涮涮鍋 (斗六店)",
               rating: "4.8",
+              open: "17:00 營業",
               dist: "站前步行/騎車 3 分鐘",
               desc: "現炒洋蔥蒜香石頭鍋底香氣逼人，肉品海鮮新鮮大份量，自助飲料冰品吧無限享用。",
               address: "雲林縣斗六市大同路商圈",
+              img: "https://images.unsplash.com/photo-1547928576-a4a33237cbc3?w=600&auto=format&fit=crop&q=80",
               mapQuery: "養鍋+斗六店"
             },
             {
               name: "漢家薑母鴨 (斗六名店)",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "騎車約 3 分鐘",
               desc: "秋冬季節登山下山後的暖身聖品！老薑大火麻油爆炒，湯頭甘醇辛香，鴨肉吸飽湯汁極致入味。",
               address: "雲林縣斗六市民生南路",
+              img: "https://images.unsplash.com/photo-1541832676-9b763b0239ab?w=600&auto=format&fit=crop&q=80",
               mapQuery: "漢家薑母鴨+斗六"
             },
             {
               name: "欣欣生猛活海鮮熱炒",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "站前車程約 2 分鐘",
               desc: "大火快炒鑊氣十足！鹹酥蝦、鳳梨蝦球、蔥爆牛肉，適合朋友兩人點滿一桌大快朵頤！",
               address: "雲林縣斗六市站前商圈",
+              img: "https://images.unsplash.com/photo-1559847844-5315695dadae?w=600&auto=format&fit=crop&q=80",
               mapQuery: "欣欣海鮮熱炒+斗六"
             }
           ],
@@ -2242,33 +2835,41 @@
             {
               name: "鮮友火鍋 (斗六旗艦店)",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "騎車約 3 分鐘",
               desc: "吃到飽經典老牌！百種現切肉盤、海鮮、壽司炸物、沙拉吧與甜點飲料冰品任妳挑。",
               address: "雲林縣斗六市民生南路",
+              img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop&q=80",
               mapQuery: "鮮友火鍋+斗六"
             },
             {
               name: "六扇門時尚湯鍋 (斗六民生店)",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "步行約 5 分鐘",
               desc: "高CP值平價個人小火鍋，數十種湯頭任選，白飯、冰淇淋、爆米花無限量供應。",
               address: "雲林縣斗六市民生南路",
+              img: "https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=600&auto=format&fit=crop&q=80",
               mapQuery: "六扇門+斗六"
             },
             {
               name: "聯亭泡菜鍋 (斗六店)",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "步行約 4 分鐘",
               desc: "超狂起司奶香泡菜鍋！滿滿特製粗冬粉與肉片，湯頭濃郁酸爽，年輕人極度喜愛。",
               address: "雲林縣斗六市大同路",
+              img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&auto=format&fit=crop&q=80",
               mapQuery: "聯亭泡菜鍋+斗六"
             },
             {
               name: "品皇石頭火鍋",
               rating: "4.7",
+              open: "17:00 營業",
               dist: "騎車約 3 分鐘",
               desc: "傳統老字號爆香石頭火鍋，特調沙茶醬沾醬濃郁，在地聚餐排隊名店。",
               address: "雲林縣斗六市市區",
+              img: "https://images.unsplash.com/photo-1547928576-a4a33237cbc3?w=600&auto=format&fit=crop&q=80",
               mapQuery: "品皇火鍋+斗六"
             }
           ]
@@ -2278,33 +2879,41 @@
             {
               name: "烹小鮮 (在地文青日式定食)",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "步行約 6 分鐘（八德路）",
               desc: "斗六極具質感的文青老屋餐廳！主打友善小農食材、鮮魚定食、手作日式小菜與甘露煮，環境溫馨放鬆。",
               address: "雲林縣斗六市八德路88號",
+              img: "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=600&auto=format&fit=crop&q=80",
               mapQuery: "烹小鮮+斗六"
             },
             {
               name: "旬壽司 (超高CP值日本料理)",
               rating: "4.7",
+              open: "17:00 營業",
               dist: "騎車約 2 分鐘（民生南路）",
               desc: "現點現做厚切炙燒鮭魚丼、綜合生魚片握壽司、酥炸日式唐揚雞與鮮甜味噌湯，食材極為新鮮。",
               address: "雲林縣斗六市民生南路",
+              img: "https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=600&auto=format&fit=crop&q=80",
               mapQuery: "旬壽司+斗六"
             },
             {
               name: "和風家庭料理 (日式炸豬排)",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "步行約 5 分鐘",
               desc: "酥脆多汁厚切炸豬排定食、滑嫩壽喜燒牛丼、特濃豚骨叉燒拉麵，很有日本居酒食堂的道地感。",
               address: "雲林縣斗六市民生南路",
+              img: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=600&auto=format&fit=crop&q=80",
               mapQuery: "和風家庭料理+斗六"
             },
             {
               name: "墨竹亭 (精緻麵食定食)",
               rating: "4.7",
+              open: "17:00 營業",
               dist: "步行約 4 分鐘",
               desc: "質感川日風格！紅油燃麵、炙燒蔥油拌麵、日式胡麻時蔬與手作小菜，環境明亮舒服。",
               address: "雲林縣斗六市大同路商圈",
+              img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&auto=format&fit=crop&q=80",
               mapQuery: "墨竹亭+斗六"
             }
           ],
@@ -2312,33 +2921,41 @@
             {
               name: "花亭日本料理",
               rating: "4.7",
+              open: "17:00 營業",
               dist: "步行約 5 分鐘",
               desc: "斗六超人氣日料名店！生魚片厚度驚人，比目魚側緣炙燒握壽司入口即化，推薦點豪華海鮮散壽司。",
               address: "雲林縣斗六市民生南路",
+              img: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&auto=format&fit=crop&q=80",
               mapQuery: "花亭日本料理+斗六"
             },
             {
               name: "極品刺身手作壽司",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "騎車約 2 分鐘",
               desc: "隱身站前巷弄的職人壽司，炙燒鮭魚捲、焦糖鮭魚握壽司、厚蛋燒定食，口碑極高。",
               address: "雲林縣斗六市站前商圈",
+              img: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600&auto=format&fit=crop&q=80",
               mapQuery: "壽司+斗六火車站"
             },
             {
               name: "麵屋喜楽 (正宗日式拉麵)",
               rating: "4.8",
+              open: "17:00 營業",
               dist: "步行約 6 分鐘",
               desc: "慢火熬製濃厚豚骨湯底，自選麵條軟硬度與湯頭濃度，糖心蛋爆漿完美，拉麵迷必訪！",
               address: "雲林縣斗六市中正路",
+              img: "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=600&auto=format&fit=crop&q=80",
               mapQuery: "麵屋喜楽+斗六"
             },
             {
               name: "初丼 (日式厚切燒肉丼飯)",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "步行約 5 分鐘",
               desc: "大火炙烤直火燒肉丼，炭香醬濃，附熱騰騰味噌湯與高麗菜絲吃到飽，肉肉控最愛。",
               address: "雲林縣斗六市站前商圈",
+              img: "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=600&auto=format&fit=crop&q=80",
               mapQuery: "初丼+斗六"
             }
           ]
@@ -2359,33 +2976,41 @@
             {
               name: "王家當歸鴨肉麵線",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "走路 2 分鐘抵達泡泡貓！",
               desc: "虎尾無人不知的傳奇第一小吃！在仁愛路旁民生路。中藥慢熬當歸湯清甜回甘，鴨肉鮮嫩無腥味，麵線軟糯入味。",
               address: "雲林縣虎尾鎮民生路37-8號",
+              img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&auto=format&fit=crop&q=80",
               mapQuery: "王家當歸鴨肉麵線+虎尾"
             },
             {
               name: "阿世香菇肉羹",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "走路 3 分鐘抵達泡泡貓！",
               desc: "傳承超過一甲子的老字號！香菇肉羹肉質紮實裹粉恰到好處，香菇扁魚高湯甘醇無比，滷肉飯配特製香腸必點。",
               address: "雲林縣虎尾鎮華南路31巷1號",
+              img: "https://images.unsplash.com/photo-1541832676-9b763b0239ab?w=600&auto=format&fit=crop&q=80",
               mapQuery: "阿世香菇肉羹+虎尾"
             },
             {
               name: "虎尾美香麵店",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "走路 2 分鐘抵達泡泡貓！",
               desc: "在地人從小吃到大的古早味乾麵、黑白切與綜合扁食湯，簡單淋上特製甜辣醬與肉燥，道地樸實美味。",
               address: "雲林縣虎尾鎮民生路商圈",
+              img: "https://images.unsplash.com/photo-1612927601601-6638404737ce?w=600&auto=format&fit=crop&q=80",
               mapQuery: "虎尾美香麵店"
             },
             {
               name: "藝壽司 (平價日本料理)",
               rating: "4.7",
+              open: "17:00 營業",
               dist: "走路 4 分鐘抵達泡泡貓！",
               desc: "炙燒鮭魚丼、綜合生魚片與鮮甜土瓶蒸，食材新鮮且價格親民，做臉前來份清爽日料很舒爽。",
               address: "雲林縣虎尾鎮復興路商圈",
+              img: "https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=600&auto=format&fit=crop&q=80",
               mapQuery: "藝壽司+虎尾"
             }
           ],
@@ -2393,33 +3018,41 @@
             {
               name: "虎尾圓仔冰 (六十年老店)",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "走路 3 分鐘抵達泡泡貓！",
               desc: "純糯米手揉現煮熱呼呼圓仔，冰火交融！搭配自熬蜜紅豆與綠豆，吃完全身充滿元氣走向泡泡貓！",
               address: "雲林縣虎尾鎮公安路商圈",
+              img: "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&auto=format&fit=crop&q=80",
               mapQuery: "虎尾圓仔冰"
             },
             {
               name: "碳烤鴨蛋糕 (虎尾獨家銅板美食)",
               rating: "4.7",
+              open: "17:00 營業",
               dist: "走路 3 分鐘抵達泡泡貓！",
               desc: "全台灣極少數堅持使用古法木炭烘烤的鴨蛋糕！外皮酥脆帶有獨特炭香，內餡綿密似蜂蜜蛋糕。",
               address: "雲林縣虎尾鎮中正路50號",
+              img: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop&q=80",
               mapQuery: "碳烤鴨蛋糕+虎尾"
             },
             {
               name: "兩津芙蓉蛋塔 (虎尾店)",
               rating: "4.8",
+              open: "17:00 營業",
               dist: "走路 2 分鐘抵達泡泡貓！",
               desc: "現烤出爐的芙蓉蛋塔香氣撲鼻，千層酥皮酥脆如千層派，內餡宛如布丁般滑嫩爆漿，超強下午甜食。",
               address: "雲林縣虎尾鎮林森路一段商圈",
+              img: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&auto=format&fit=crop&q=80",
               mapQuery: "兩津蛋塔+虎尾"
             },
             {
               name: "青松傳統切仔麵",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "走路 3 分鐘抵達泡泡貓！",
               desc: "虎尾街坊鄰居最愛的傳統小吃攤，大骨清湯米粉、粉腸、豬舌切盤，湯鮮料實非常溫暖。",
               address: "雲林縣虎尾鎮仁愛路周邊",
+              img: "https://images.unsplash.com/photo-1552611052-33e04de081de?w=600&auto=format&fit=crop&q=80",
               mapQuery: "虎尾切仔麵"
             }
           ]
@@ -2429,33 +3062,41 @@
             {
               name: "虎尾肯得利香雞排",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "走路 4 分鐘抵達泡泡貓！",
               desc: "虎尾無人不知的神級炸物第一把交椅！招牌香香雞裹特製醃料外酥內嫩噴汁，甜不辣炸得如同氣球般酥脆絕倫！",
               address: "雲林縣虎尾鎮林森路一段401號",
+              img: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
               mapQuery: "虎尾肯得利香雞排"
             },
             {
               name: "虎尾第一家鹽酥雞",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "走路 3 分鐘抵達泡泡貓！",
               desc: "蒜香撲鼻、脫油乾爽！新鮮魷魚圈、香酥無骨鹽酥雞配上大量九層塔與蒜頭碎，做臉前解饞最佳首選。",
               address: "雲林縣虎尾鎮林森路二段商圈",
+              img: "https://images.unsplash.com/photo-1562967914-608f82629710?w=600&auto=format&fit=crop&q=80",
               mapQuery: "虎尾第一家鹽酥雞"
             },
             {
               name: "大陸土豆鳥烤玉米",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "走路 3 分鐘抵達泡泡貓！",
               desc: "傳統木炭慢火炭烤，刷上傳承厚重古法沙茶麻醬，玉米粒Q彈飽滿醬香濃烈，虎尾夜間必吃名物。",
               address: "雲林縣虎尾鎮中正路商圈",
+              img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=600&auto=format&fit=crop&q=80",
               mapQuery: "大陸土豆鳥烤玉米+虎尾"
             },
             {
               name: "正老牌臭豆腐 (虎尾)",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "走路 3 分鐘抵達泡泡貓！",
               desc: "外皮金黃酥脆無比，戳洞淋上蒜汁醬油與自製酸甜爽脆高麗菜泡菜，咬下湯汁四溢超銷魂！",
               address: "雲林縣虎尾鎮仁愛路周邊",
+              img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80",
               mapQuery: "虎尾臭豆腐"
             }
           ],
@@ -2463,33 +3104,41 @@
             {
               name: "吉利炸雞 (虎尾排隊店)",
               rating: "4.7",
+              open: "17:00 營業",
               dist: "走路 5 分鐘抵達泡泡貓！",
               desc: "黃金薄皮脆皮炸雞！剛起鍋的雞腿外皮金黃爆汁，鮮嫩肉汁鎖在裡面，在地學生宵夜首選。",
               address: "雲林縣虎尾鎮民生路商圈",
+              img: "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?w=600&auto=format&fit=crop&q=80",
               mapQuery: "吉利炸雞+虎尾"
             },
             {
               name: "阿忠炭烤 (虎尾老字號)",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "走路 4 分鐘抵達泡泡貓！",
               desc: "炭火慢烤香菇、培根蔥捲、甜不辣與烤雞腿，自製微甜甘醇烤肉醬，香氣瀰漫整個街角。",
               address: "雲林縣虎尾鎮林森路商圈",
+              img: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&auto=format&fit=crop&q=80",
               mapQuery: "阿忠炭烤+虎尾"
             },
             {
               name: "虎尾地瓜球 (現炸酥軟)",
               rating: "4.7",
+              open: "17:00 營業",
               dist: "走路 3 分鐘抵達泡泡貓！",
               desc: "大顆巨無霸現壓地瓜球，外殼酥香內層QQ彈牙，吃起來不油膩，逛街邊走邊吃剛剛好。",
               address: "雲林縣虎尾鎮中正路老街",
+              img: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=600&auto=format&fit=crop&q=80",
               mapQuery: "地瓜球+虎尾"
             },
             {
               name: "虎尾香香雞炸物專売",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "走路 3 分鐘抵達泡泡貓！",
               desc: "特選去骨雞腿肉丁現炸，撒上梅子粉或椒鹽，香脆爽口，女生吃一口就停不下來。",
               address: "雲林縣虎尾鎮仁愛路口",
+              img: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&auto=format&fit=crop&q=80",
               mapQuery: "炸物+虎尾仁愛路"
             }
           ]
@@ -2499,33 +3148,41 @@
             {
               name: "野川堂秘境鍋物 (虎尾店)",
               rating: "4.8",
+              open: "17:00 營業",
               dist: "騎車 2 分鐘抵達泡泡貓！",
               desc: "氣派日式禪風庭園裝潢！環境舒適優雅，招牌牛奶起司鍋、特選Prime冷藏牛與現打冰沙，做臉前放鬆首選。",
               address: "雲林縣虎尾鎮林森路二段477號",
+              img: "https://images.unsplash.com/photo-1547928576-a4a33237cbc3?w=600&auto=format&fit=crop&q=80",
               mapQuery: "野川堂秘境鍋物+虎尾店"
             },
             {
               name: "惹鍋 (虎尾店)",
               rating: "4.7",
+              open: "17:00 營業",
               dist: "走路 5 分鐘 / 騎車 1 分鐘",
               desc: "高CP值時尚個人小火鍋，數十種風味湯底，原肉現切、時蔬新鮮，室內冷氣充足環境極佳。",
               address: "雲林縣虎尾鎮林森路二段",
+              img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&auto=format&fit=crop&q=80",
               mapQuery: "惹鍋+虎尾"
             },
             {
               name: "栮苳麵疙瘩 (溫暖手作)",
               rating: "4.7",
+              open: "17:00 營業",
               dist: "走路 4 分鐘抵達泡泡貓！",
               desc: "純手工現捏Q彈麵疙瘩，熬煮數小時的大骨蔬菜白湯鮮美無比，配上海鮮蔬菜超有飽足感。",
               address: "雲林縣虎尾鎮和平路商圈",
+              img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&auto=format&fit=crop&q=80",
               mapQuery: "栮苳麵疙瘩+虎尾"
             },
             {
               name: "虎尾米多力休閒農莊鍋物",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "騎車 3 分鐘抵達泡泡貓！",
               desc: "休閒農莊風質感火鍋，滿滿自產新鮮時蔬與健康湯頭，清爽無負擔，非常適合女生聚餐。",
               address: "雲林縣虎尾鎮林森路周邊",
+              img: "https://images.unsplash.com/photo-1547928576-a4a33237cbc3?w=600&auto=format&fit=crop&q=80",
               mapQuery: "米多力+虎尾"
             }
           ],
@@ -2533,33 +3190,41 @@
             {
               name: "築間幸福鍋物 (虎尾店)",
               rating: "4.7",
+              open: "17:00 營業",
               dist: "騎車 2 分鐘抵達泡泡貓！",
               desc: "招牌老石鍋湯底與胡椒豬肚骨湯，滿滿冷藏肉品與數十種蔬食自助吧吃到飽。",
               address: "雲林縣虎尾鎮林森路商圈",
+              img: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&auto=format&fit=crop&q=80",
               mapQuery: "築間+虎尾"
             },
             {
               name: "五鮮級平價鍋物 (虎尾店)",
               rating: "4.6",
+              open: "17:00 營業",
               dist: "騎車 2 分鐘抵達泡泡貓！",
               desc: "大盎司平價肉盤霸主！自選湯底與肉品自由配，白飯飲料與特調冰淇淋無限享用。",
               address: "雲林縣虎尾鎮林森路二段",
+              img: "https://images.unsplash.com/photo-1547928576-a4a33237cbc3?w=600&auto=format&fit=crop&q=80",
               mapQuery: "五鮮級+虎尾"
             },
             {
               name: "川頁居酒屋 (日式定食火鍋)",
               rating: "4.8",
+              open: "17:00 營業",
               dist: "走路 3 分鐘抵達泡泡貓！",
               desc: "日式居酒食堂氛圍，提供日式壽喜燒鍋物、鮭魚烤飯糰與酥炸唐揚雞，做臉前的小聚餐極有氣氛。",
               address: "雲林縣虎尾鎮仁愛路商圈",
+              img: "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=600&auto=format&fit=crop&q=80",
               mapQuery: "居酒屋+虎尾仁愛路"
             },
             {
               name: "圓環香菇肉羹小排骨飯",
               rating: "4.5",
+              open: "17:00 營業",
               dist: "走路 3 分鐘抵達泡泡貓！",
               desc: "排骨先炸後燜軟嫩入骨，配上一碗古早味肉羹湯，地道雲林滋味，美味又省時。",
               address: "雲林縣虎尾鎮圓環商圈",
+              img: "https://images.unsplash.com/photo-1541832676-9b763b0239ab?w=600&auto=format&fit=crop&q=80",
               mapQuery: "虎尾圓環美食"
             }
           ]
@@ -2725,31 +3390,42 @@
 
       customResults.forEach(item => {
         const card = document.createElement('div');
-        card.className = "rpg-box p-4 rounded-xl flex flex-col justify-between space-y-3 transition duration-200 hover:border-pink-400";
+        const customAddr = (currentDinnerMode === 'douliu') ? '雲林縣斗六市站前商圈' : '雲林縣虎尾鎮仁愛路商圈';
+        const gmapsStoreUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.name + ' ' + customAddr)}`;
+        card.className = "rpg-box p-4 rounded-xl flex flex-col justify-between space-y-3 transition duration-200 hover:border-pink-400 group";
         card.innerHTML = `
           <div>
-            <div class="flex items-center justify-between gap-1 text-[11px] mb-1">
-              <span class="px-2 py-0.5 rounded bg-pink-500/20 text-pink-300 font-bold border border-pink-500/30">
-                <i class="fa-solid fa-utensils"></i> 自選美食
-              </span>
-              <span class="text-amber-400 font-bold flex items-center gap-1 font-mono">
+            <!-- 餐廳美食與實景圖片 (對齊圖三樣式) -->
+            <div class="relative w-full h-36 rounded-lg overflow-hidden mb-2.5 bg-slate-800">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop&q=80" alt="${item.name}" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-300" loading="lazy">
+              <span class="absolute top-2 right-2 px-2 py-0.5 rounded bg-slate-950/85 text-amber-300 font-bold text-[11px] backdrop-blur-sm border border-amber-400/40 font-mono">
                 <i class="fa-solid fa-star text-amber-400"></i> ${item.rating}
               </span>
+              <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-slate-950/85 text-emerald-300 font-bold text-[10px] backdrop-blur-sm border border-emerald-500/40">
+                <i class="fa-solid fa-clock"></i> 17:00 營業
+              </span>
             </div>
-            <h4 class="text-base font-bold text-white mt-1">${item.name}</h4>
-            <div class="text-[11px] text-sky-300 font-medium mt-0.5 flex items-center gap-1">
-              <i class="fa-solid fa-location-dot text-xs"></i> ${item.dist}
+
+            <h4 class="text-base font-bold text-white group-hover:text-pink-300 transition">${item.name}</h4>
+            
+            <div class="text-[11px] text-sky-300 font-medium mt-1 flex items-center gap-1">
+              <i class="fa-solid fa-person-walking text-xs"></i> ${item.dist}
             </div>
-            <p class="text-xs text-slate-300 leading-relaxed mt-2 line-clamp-3">
+
+            <div class="text-[11px] text-slate-400 mt-1 flex items-center gap-1 truncate" title="${customAddr}">
+              <i class="fa-solid fa-location-dot text-amber-400"></i> ${customAddr}
+            </div>
+
+            <p class="text-xs text-slate-300 leading-relaxed mt-2 line-clamp-2">
               ${item.desc}
             </p>
           </div>
-          <div class="pt-2 border-t border-slate-700/80 space-y-1.5">
-            <button onclick="lockDinner('${escapeQuotes(item.name)}', '${escapeQuotes(item.desc)}', '${escapeQuotes(item.mapQuery)}')" class="rpg-btn w-full py-2 bg-gradient-to-r from-pink-500 to-rose-400 hover:from-pink-400 hover:to-rose-300 text-white font-black text-xs rounded-lg flex items-center justify-center gap-1.5 shadow">
+          <div class="pt-2 border-t border-slate-700/80 space-y-2">
+            <button onclick="lockDinner('${escapeQuotes(item.name)}', '${escapeQuotes(item.desc)}', '${escapeQuotes(customAddr)}', '${escapeQuotes(item.mapQuery)}')" class="rpg-btn w-full py-2 bg-gradient-to-r from-pink-500 to-rose-400 hover:from-pink-400 hover:to-rose-300 text-white font-black text-xs rounded-lg flex items-center justify-center gap-1.5 shadow">
               <i class="fa-solid fa-check"></i> 選擇這家店！
             </button>
-            <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.mapQuery)}" target="_blank" class="rpg-btn w-full py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-[10px] rounded-lg flex items-center justify-center gap-1">
-              <i class="fa-solid fa-magnifying-glass"></i> Google Maps 即時搜尋
+            <a href="${gmapsStoreUrl}" target="_blank" class="rpg-btn w-full py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white font-bold text-[11px] rounded-lg flex items-center justify-center gap-1.5 border border-slate-700 transition">
+              <i class="fa-solid fa-map-location-dot text-amber-400"></i> 開啟 Google Maps 店家資訊
             </a>
           </div>
         `;
@@ -2788,32 +3464,43 @@
       list.forEach((item) => {
         const card = document.createElement('div');
         const borderColor = (currentDinnerMode === 'douliu') ? 'hover:border-amber-400' : 'hover:border-pink-400';
-        const btnBg = (currentDinnerMode === 'douliu') ? 'bg-amber-400 hover:bg-amber-300 text-slate-950' : 'bg-pink-500 hover:bg-pink-400 text-white';
+        const btnBg = (currentDinnerMode === 'douliu') ? 'bg-amber-500 hover:bg-amber-400 text-slate-950' : 'bg-pink-500 hover:bg-pink-400 text-white';
+        const gmapsStoreUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.name + ' ' + item.address)}`;
         
-        card.className = `rpg-box p-4 rounded-xl flex flex-col justify-between space-y-3 transition duration-200 ${borderColor}`;
+        card.className = `rpg-box p-4 rounded-xl flex flex-col justify-between space-y-3 transition duration-200 ${borderColor} group`;
         card.innerHTML = `
           <div>
-            <div class="flex items-center justify-between gap-1 text-[11px] mb-1">
-              <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30">
-                <i class="fa-solid fa-clock"></i> 晚餐時段推薦
-              </span>
-              <span class="text-amber-400 font-bold flex items-center gap-1 font-mono">
+            <!-- 餐廳美食與實景圖片 (對齊圖三樣式) -->
+            <div class="relative w-full h-36 rounded-lg overflow-hidden mb-2.5 bg-slate-800">
+              <img src="${item.img || 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop&q=80'}" alt="${item.name}" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop&q=80'">
+              <span class="absolute top-2 right-2 px-2 py-0.5 rounded bg-slate-950/85 text-amber-300 font-bold text-[11px] backdrop-blur-sm border border-amber-400/40 font-mono">
                 <i class="fa-solid fa-star text-amber-400"></i> ${item.rating}
               </span>
+              <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-slate-950/85 text-emerald-300 font-bold text-[10px] backdrop-blur-sm border border-emerald-500/40">
+                <i class="fa-solid fa-clock"></i> ${item.open || '17:00 營業'}
+              </span>
             </div>
-            <h4 class="text-base font-bold text-white mt-1">${item.name}</h4>
-            <div class="text-[11px] text-sky-300 font-medium mt-0.5 flex items-center gap-1">
-              <i class="fa-solid fa-location-dot text-xs"></i> ${item.dist}
+
+            <h4 class="text-base font-bold text-white group-hover:text-amber-300 transition">${item.name}</h4>
+            
+            <div class="text-[11px] text-sky-300 font-medium mt-1 flex items-center gap-1">
+              <i class="fa-solid fa-person-walking text-xs"></i> ${item.dist}
             </div>
-            <p class="text-xs text-slate-300 leading-relaxed mt-2 line-clamp-3">
+
+            <div class="text-[11px] text-slate-400 mt-1 flex items-center gap-1 truncate" title="${item.address}">
+              <i class="fa-solid fa-location-dot text-amber-400"></i> ${item.address}
+            </div>
+
+            <p class="text-xs text-slate-300 leading-relaxed mt-2 line-clamp-2">
               ${item.desc}
             </p>
           </div>
+
           <div class="pt-2 border-t border-slate-700/80 space-y-2">
-            <button onclick="lockDinner('${escapeQuotes(item.name)}', '${escapeQuotes(item.desc)}', '${escapeQuotes(item.mapQuery)}')" class="rpg-btn w-full py-2 ${btnBg} font-black text-xs rounded-lg flex items-center justify-center gap-1.5 shadow">
+            <button onclick="lockDinner('${escapeQuotes(item.name)}', '${escapeQuotes(item.desc)}', '${escapeQuotes(item.address)}', '${escapeQuotes(item.mapQuery)}')" class="rpg-btn w-full py-2 ${btnBg} font-black text-xs rounded-lg flex items-center justify-center gap-1.5 shadow">
               <i class="fa-solid fa-check"></i> 選擇這家店！
             </button>
-            <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.mapQuery)}" target="_blank" class="rpg-btn w-full py-1.5 bg-slate-800 hover:bg-slate-700 text-sky-300 hover:text-white font-bold text-[11px] rounded-lg flex items-center justify-center gap-1.5 border border-slate-700 transition">
+            <a href="${gmapsStoreUrl}" target="_blank" class="rpg-btn w-full py-1.5 bg-slate-800 hover:bg-slate-700 text-sky-300 hover:text-white font-bold text-[11px] rounded-lg flex items-center justify-center gap-1.5 border border-slate-700 transition">
               <i class="fa-solid fa-map-location-dot text-amber-400"></i> 開啟 Google Maps 店家資訊
             </a>
           </div>
@@ -2822,13 +3509,16 @@
       });
     }
 
-    function lockDinner(name, desc, mapQuery) {
+    function lockDinner(name, desc, address, mapQuery) {
       playVictoryChime();
       const card = document.getElementById('lockedDinnerCard');
       card.classList.remove('hidden');
       
       document.getElementById('lockedDinnerName').innerText = name;
       document.getElementById('lockedDinnerDesc').innerText = desc;
+      if (document.getElementById('lockedDinnerAddress')) {
+        document.getElementById('lockedDinnerAddress').innerHTML = `<i class="fa-solid fa-location-dot text-amber-400"></i> <span>${address || '雲林在地美食'}</span>`;
+      }
       
       const navUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQuery)}`;
       document.getElementById('lockedDinnerNavBtn').href = navUrl;
@@ -2837,8 +3527,12 @@
       triggerVictoryConfetti();
     }
 
+
+
     window.addEventListener('DOMContentLoaded', () => {
       renderRestaurants();
+      renderBusTrackNodes();
+      confirmBusStation(false);
       switchDinnerMode('douliu');
       updatePlayerDOM();
       checkLocalAudio();
